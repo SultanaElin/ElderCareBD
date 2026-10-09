@@ -1,0 +1,818 @@
+[
+  {
+    "candidate_key": "logistic_regression",
+    "feature_set": "full_42",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        16432,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2054,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        821,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        821,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        410,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "feature_set": "full_42",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        2198,
+        2678,
+        3688,
+        3687,
+        4181
+      ],
+      [
+        243,
+        325,
+        478,
+        492,
+        516
+      ],
+      [
+        107,
+        115,
+        209,
+        191,
+        199
+      ],
+      [
+        103,
+        126,
+        196,
+        194,
+        202
+      ],
+      [
+        68,
+        67,
+        70,
+        105,
+        100
+      ]
+    ]
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "feature_set": "full_42",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        16275,
+        155,
+        1,
+        1,
+        0
+      ],
+      [
+        2039,
+        14,
+        1,
+        0,
+        0
+      ],
+      [
+        814,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        815,
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        407,
+        3,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "feature_set": "biomarker_excluded_14",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        16432,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2054,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        821,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        821,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        410,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "feature_set": "biomarker_excluded_14",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        1859,
+        2572,
+        3566,
+        3774,
+        4661
+      ],
+      [
+        218,
+        334,
+        440,
+        485,
+        577
+      ],
+      [
+        83,
+        135,
+        182,
+        186,
+        235
+      ],
+      [
+        87,
+        121,
+        187,
+        186,
+        240
+      ],
+      [
+        43,
+        54,
+        96,
+        100,
+        117
+      ]
+    ]
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "feature_set": "biomarker_excluded_14",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        15680,
+        536,
+        95,
+        89,
+        32
+      ],
+      [
+        1958,
+        72,
+        14,
+        7,
+        3
+      ],
+      [
+        785,
+        27,
+        1,
+        4,
+        4
+      ],
+      [
+        785,
+        25,
+        9,
+        1,
+        1
+      ],
+      [
+        389,
+        14,
+        0,
+        5,
+        2
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "feature_set": "eldercare_non_lab_12",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        16432,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2054,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        821,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        821,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        410,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "feature_set": "eldercare_non_lab_12",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        2071,
+        2813,
+        3310,
+        3382,
+        4856
+      ],
+      [
+        258,
+        358,
+        434,
+        410,
+        594
+      ],
+      [
+        106,
+        137,
+        167,
+        174,
+        237
+      ],
+      [
+        96,
+        145,
+        176,
+        156,
+        248
+      ],
+      [
+        45,
+        64,
+        80,
+        98,
+        123
+      ]
+    ]
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "feature_set": "eldercare_non_lab_12",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        14219,
+        1298,
+        393,
+        368,
+        154
+      ],
+      [
+        1811,
+        133,
+        42,
+        52,
+        16
+      ],
+      [
+        719,
+        61,
+        16,
+        19,
+        6
+      ],
+      [
+        703,
+        67,
+        26,
+        19,
+        6
+      ],
+      [
+        353,
+        34,
+        9,
+        12,
+        2
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "feature_set": "compact_home_7",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        16432,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2054,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        821,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        821,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        410,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "feature_set": "compact_home_7",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        3003,
+        1325,
+        4497,
+        2861,
+        4746
+      ],
+      [
+        366,
+        143,
+        596,
+        372,
+        577
+      ],
+      [
+        145,
+        56,
+        239,
+        156,
+        225
+      ],
+      [
+        147,
+        77,
+        233,
+        118,
+        246
+      ],
+      [
+        59,
+        35,
+        110,
+        79,
+        127
+      ]
+    ]
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "feature_set": "compact_home_7",
+    "formulation": "original_five_class",
+    "labels": [
+      "No_Disease",
+      "Low_Risk",
+      "Moderate_Risk",
+      "High_Risk",
+      "Severe_Disease"
+    ],
+    "matrix": [
+      [
+        12263,
+        1977,
+        930,
+        820,
+        442
+      ],
+      [
+        1547,
+        231,
+        112,
+        103,
+        61
+      ],
+      [
+        596,
+        90,
+        61,
+        47,
+        27
+      ],
+      [
+        609,
+        99,
+        52,
+        37,
+        24
+      ],
+      [
+        294,
+        51,
+        26,
+        22,
+        17
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "feature_set": "full_42",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        16432,
+        0
+      ],
+      [
+        4106,
+        0
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "feature_set": "full_42",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        8526,
+        7906
+      ],
+      [
+        2095,
+        2011
+      ]
+    ]
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "feature_set": "full_42",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        16144,
+        288
+      ],
+      [
+        4036,
+        70
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "feature_set": "biomarker_excluded_14",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        16432,
+        0
+      ],
+      [
+        4106,
+        0
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "feature_set": "biomarker_excluded_14",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        8389,
+        8043
+      ],
+      [
+        2044,
+        2062
+      ]
+    ]
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "feature_set": "biomarker_excluded_14",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        15724,
+        708
+      ],
+      [
+        3924,
+        182
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "feature_set": "eldercare_non_lab_12",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        16432,
+        0
+      ],
+      [
+        4106,
+        0
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "feature_set": "eldercare_non_lab_12",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        8414,
+        8018
+      ],
+      [
+        2046,
+        2060
+      ]
+    ]
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "feature_set": "eldercare_non_lab_12",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        14953,
+        1479
+      ],
+      [
+        3759,
+        347
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "feature_set": "compact_home_7",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        16432,
+        0
+      ],
+      [
+        4106,
+        0
+      ]
+    ]
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "feature_set": "compact_home_7",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        8342,
+        8090
+      ],
+      [
+        2089,
+        2017
+      ]
+    ]
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "feature_set": "compact_home_7",
+    "formulation": "binary_any_non_no_disease",
+    "labels": [
+      "No_Disease",
+      "Any_non_No_Disease_label"
+    ],
+    "matrix": [
+      [
+        13902,
+        2530
+      ],
+      [
+        3488,
+        618
+      ]
+    ]
+  }
+]

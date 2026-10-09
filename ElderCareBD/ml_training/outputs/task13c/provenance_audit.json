@@ -1,0 +1,19 @@
+{
+  "age_range_in_local_file": "5 to 90 years",
+  "assessment": "Provenance is insufficient for a health-screening model. The local data patterns strongly suggest simulation, but no source record proves the generation mechanism.",
+  "clinical_setting": "not stated",
+  "closest_public_listing": "https://www.kaggle.com/datasets/amanik000/kidney-disease-dataset",
+  "collection_period": "not stated",
+  "country": "not stated",
+  "diagnostic_adjudication": "not stated",
+  "identity_limit": "Filename, 5.48 MB display size, and 43-column description match the public listing. No external copy was downloaded, so byte identity is unverified.",
+  "license": "Unknown on the public listing; no local license file",
+  "local_authority": "The repository file and fixed SHA-256 are authoritative for this audit.",
+  "original_source": "not stated",
+  "population": "not stated",
+  "publication_or_doi": "none stated",
+  "row_type": "real/synthetic/simulated/augmented/mixed status not stated",
+  "sample_generation_method": "not stated",
+  "sampling_method": "not stated",
+  "version": "public listing displays Version 1; local byte lineage unverified"
+}

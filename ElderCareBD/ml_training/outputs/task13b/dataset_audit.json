@@ -1,0 +1,197 @@
+{
+  "age_counts": {
+    "age_60_or_older": 1066,
+    "age_65_or_older": 605,
+    "age_70_or_older": 336,
+    "age_75_or_older": 110
+  },
+  "bmi_recomputation": {
+    "absolute_difference_over_0_25": 7,
+    "absolute_difference_over_0_5": 2,
+    "formula": "weight_kg / height_m^2",
+    "maximum_absolute_difference": 13.944814814814777,
+    "mean_absolute_difference": 0.07471506591118215,
+    "median_absolute_difference": 0.077000595120019,
+    "p95_absolute_difference": 0.15006925207756439,
+    "p99_absolute_difference": 0.17895215639770767,
+    "within_one_percent": 5286
+  },
+  "bytes": 286998,
+  "categories": {
+    "cardiovascular_disease": {
+      "0": 5228,
+      "1": 60
+    },
+    "family_diabetes": {
+      "0": 5119,
+      "1": 169
+    },
+    "family_hypertension": {
+      "0": 5110,
+      "1": 178
+    },
+    "gender": {
+      "Female": 3752,
+      "Male": 1536
+    },
+    "hypertensive": {
+      "0": 4701,
+      "1": 587
+    },
+    "stroke": {
+      "0": 5268,
+      "1": 20
+    }
+  },
+  "columns": [
+    "age",
+    "gender",
+    "pulse_rate",
+    "systolic_bp",
+    "diastolic_bp",
+    "glucose",
+    "height",
+    "weight",
+    "bmi",
+    "family_diabetes",
+    "hypertensive",
+    "family_hypertension",
+    "cardiovascular_disease",
+    "stroke",
+    "diabetic"
+  ],
+  "duplicate_predictor_rows": 0,
+  "exact_duplicate_rows": 0,
+  "explicit_missing_cells": 0,
+  "local_filename": "DiaBD_A Diabetes Dataset for Enhanced Risk Analysis and Research in Bangladesh.csv",
+  "local_path": "data/DiaBD_A Diabetes Dataset for Enhanced Risk Analysis and Research in Bangladesh.csv",
+  "numeric_summary": {
+    "age": {
+      "maximum": 80.0,
+      "mean": 45.74565052950076,
+      "median": 45.0,
+      "minimum": 21.0,
+      "q1": 35.0,
+      "q3": 55.0,
+      "standard_deviation": 13.422023997672433
+    },
+    "bmi": {
+      "maximum": 574.13,
+      "mean": 22.46658093797277,
+      "median": 21.87,
+      "minimum": 1.22,
+      "q1": 19.62,
+      "q3": 24.4725,
+      "standard_deviation": 8.819897947692434
+    },
+    "diastolic_bp": {
+      "maximum": 119.0,
+      "mean": 82.22957639939486,
+      "median": 81.0,
+      "minimum": 45.0,
+      "q1": 73.0,
+      "q3": 90.0,
+      "standard_deviation": 12.479006727276065
+    },
+    "glucose": {
+      "maximum": 33.46,
+      "mean": 7.563922087745839,
+      "median": 6.93,
+      "minimum": 0.0,
+      "q1": 6.0,
+      "q3": 8.13,
+      "standard_deviation": 2.9443814554939736
+    },
+    "height": {
+      "maximum": 1.96,
+      "mean": 1.5488861573373676,
+      "median": 1.55,
+      "minimum": 0.36,
+      "q1": 1.52,
+      "q3": 1.6,
+      "standard_deviation": 0.08032812822171645
+    },
+    "pulse_rate": {
+      "maximum": 133.0,
+      "mean": 76.62613464447806,
+      "median": 76.0,
+      "minimum": 5.0,
+      "q1": 69.0,
+      "q3": 84.0,
+      "standard_deviation": 12.229319080222893
+    },
+    "systolic_bp": {
+      "maximum": 231.0,
+      "mean": 133.99659606656581,
+      "median": 130.0,
+      "minimum": 62.0,
+      "q1": 119.0,
+      "q3": 147.0,
+      "standard_deviation": 22.23175189384693
+    },
+    "weight": {
+      "maximum": 100.7,
+      "mean": 53.64409984871407,
+      "median": 53.0,
+      "minimum": 3.0,
+      "q1": 46.775,
+      "q3": 59.9,
+      "standard_deviation": 10.076058925956207
+    }
+  },
+  "parsed_dtypes": {
+    "age": "int64",
+    "bmi": "float64",
+    "cardiovascular_disease": "int64",
+    "diabetic": "str",
+    "diastolic_bp": "int64",
+    "family_diabetes": "int64",
+    "family_hypertension": "int64",
+    "gender": "str",
+    "glucose": "float64",
+    "height": "float64",
+    "hypertensive": "int64",
+    "pulse_rate": "int64",
+    "stroke": "int64",
+    "systolic_bp": "int64",
+    "weight": "float64"
+  },
+  "predictors": [
+    "age",
+    "gender",
+    "pulse_rate",
+    "systolic_bp",
+    "diastolic_bp",
+    "glucose",
+    "height",
+    "weight",
+    "bmi",
+    "family_diabetes",
+    "hypertensive",
+    "family_hypertension",
+    "cardiovascular_disease",
+    "stroke"
+  ],
+  "rows": 5288,
+  "sha256": "D9F868C9CE8EEFE545294156ED1626F60FDB33F507F9CA021FD34FA4B575741A",
+  "source": {
+    "collection": "CHW household screening across 63 urban, semi-urban, and rural Bangladeshi Unions, 2021-04-10 through 2024-05-27.",
+    "distribution": "https://data.mendeley.com/datasets/m8cgwxs9s6/2",
+    "distribution_doi": "10.17632/m8cgwxs9s6.2",
+    "license": "CC BY 4.0",
+    "local_version_identity": "Filename, schema, row count, categories, and published summaries match; exact byte identity with Mendeley V2/V3 is unverified because the repository has no source manifest and no external copy was downloaded.",
+    "paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12221696/",
+    "paper_doi": "10.1016/j.dib.2025.111746"
+  },
+  "target": "diabetic",
+  "target_distribution": {
+    "No": 4946,
+    "Yes": 342,
+    "negative_to_positive_ratio": 14.461988304093568,
+    "positive_prevalence": 0.06467473524962178
+  },
+  "target_mapping": {
+    "No": 0,
+    "Yes": 1
+  }
+}

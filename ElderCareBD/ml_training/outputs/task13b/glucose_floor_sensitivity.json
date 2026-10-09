@@ -1,0 +1,542 @@
+{
+  "additional_cells_from_1_to_below_2": 8,
+  "baseline": {
+    "calibration": {
+      "bins": [
+        {
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 4510,
+          "mean_score": 0.03646897603442773,
+          "observed_positive_fraction": 0.035698447893569844
+        },
+        {
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 486,
+          "mean_score": 0.13524225045579527,
+          "observed_positive_fraction": 0.13991769547325103
+        },
+        {
+          "bin_lower": 0.2,
+          "bin_upper": 0.30000000000000004,
+          "count": 136,
+          "mean_score": 0.24521354302394435,
+          "observed_positive_fraction": 0.3235294117647059
+        },
+        {
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "count": 58,
+          "mean_score": 0.353322516320962,
+          "observed_positive_fraction": 0.4827586206896552
+        },
+        {
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 31,
+          "mean_score": 0.43822295913517595,
+          "observed_positive_fraction": 0.4838709677419355
+        },
+        {
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "count": 25,
+          "mean_score": 0.5600438854837793,
+          "observed_positive_fraction": 0.4
+        },
+        {
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "count": 19,
+          "mean_score": 0.6484119541874368,
+          "observed_positive_fraction": 0.3157894736842105
+        },
+        {
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "count": 12,
+          "mean_score": 0.7444321710427543,
+          "observed_positive_fraction": 0.4166666666666667
+        },
+        {
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 9,
+          "mean_score": 0.8423354886107411,
+          "observed_positive_fraction": 0.5555555555555556
+        },
+        {
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 2,
+          "mean_score": 0.9073339710055975,
+          "observed_positive_fraction": 0.0
+        }
+      ],
+      "expected_calibration_error": 0.008315144917051171,
+      "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+      "method": "10 fixed-width bins"
+    },
+    "cv_summary": {
+      "accuracy": {
+        "fold_values": [
+          0.9347826086956522,
+          0.9319470699432892,
+          0.9338374291115312,
+          0.9309366130558183,
+          0.9309366130558183
+        ],
+        "mean": 0.9324880667724219,
+        "std": 0.001561563075788218
+      },
+      "balanced_accuracy": {
+        "fold_values": [
+          0.54058229352347,
+          0.5456690259521402,
+          0.519716885743175,
+          0.5454038541604711,
+          0.5180143341461964
+        ],
+        "mean": 0.5338772787050906,
+        "std": 0.012401727359493034
+      },
+      "brier_score": {
+        "fold_values": [
+          0.05355294292124045,
+          0.05318953069792693,
+          0.05158569862603797,
+          0.055137521771258115,
+          0.055507560787639625
+        ],
+        "mean": 0.05379465096082061,
+        "std": 0.0014171397824238865
+      },
+      "f1": {
+        "fold_values": [
+          0.14814814814814814,
+          0.16279069767441862,
+          0.07894736842105263,
+          0.16091954022988506,
+          0.0759493670886076
+        ],
+        "mean": 0.1253510243124224,
+        "std": 0.039447130029316775
+      },
+      "pr_auc_average_precision": {
+        "fold_values": [
+          0.28609320250894643,
+          0.31300134356380904,
+          0.34073594131977175,
+          0.2576740986258286,
+          0.2506480538010525
+        ],
+        "mean": 0.28963052796388167,
+        "std": 0.033797389352877405
+      },
+      "precision": {
+        "fold_values": [
+          0.46153846153846156,
+          0.4117647058823529,
+          0.42857142857142855,
+          0.3684210526315789,
+          0.2727272727272727
+        ],
+        "mean": 0.38860458427021893,
+        "std": 0.06525031281104182
+      },
+      "recall": {
+        "fold_values": [
+          0.08823529411764706,
+          0.10144927536231885,
+          0.043478260869565216,
+          0.10294117647058823,
+          0.04411764705882353
+        ],
+        "mean": 0.07604433077578858,
+        "std": 0.02682287511538322
+      },
+      "roc_auc": {
+        "fold_values": [
+          0.810323826500297,
+          0.8338682024003164,
+          0.8750751014785834,
+          0.7979985725331589,
+          0.7843038125260214
+        ],
+        "mean": 0.8203139030876754,
+        "std": 0.03186537339904426
+      },
+      "specificity": {
+        "fold_values": [
+          0.9929292929292929,
+          0.9898887765419616,
+          0.9959555106167847,
+          0.9878665318503539,
+          0.9919110212335692
+        ],
+        "mean": 0.9917102266343925,
+        "std": 0.00274374004693004
+      }
+    },
+    "fold_metrics": [
+      {
+        "accuracy": 0.9347826086956522,
+        "balanced_accuracy": 0.54058229352347,
+        "brier_score": 0.05355294292124045,
+        "f1": 0.14814814814814814,
+        "fold": 1,
+        "pr_auc_average_precision": 0.28609320250894643,
+        "precision": 0.46153846153846156,
+        "recall": 0.08823529411764706,
+        "roc_auc": 0.810323826500297,
+        "specificity": 0.9929292929292929
+      },
+      {
+        "accuracy": 0.9319470699432892,
+        "balanced_accuracy": 0.5456690259521402,
+        "brier_score": 0.05318953069792693,
+        "f1": 0.16279069767441862,
+        "fold": 2,
+        "pr_auc_average_precision": 0.31300134356380904,
+        "precision": 0.4117647058823529,
+        "recall": 0.10144927536231885,
+        "roc_auc": 0.8338682024003164,
+        "specificity": 0.9898887765419616
+      },
+      {
+        "accuracy": 0.9338374291115312,
+        "balanced_accuracy": 0.519716885743175,
+        "brier_score": 0.05158569862603797,
+        "f1": 0.07894736842105263,
+        "fold": 3,
+        "pr_auc_average_precision": 0.34073594131977175,
+        "precision": 0.42857142857142855,
+        "recall": 0.043478260869565216,
+        "roc_auc": 0.8750751014785834,
+        "specificity": 0.9959555106167847
+      },
+      {
+        "accuracy": 0.9309366130558183,
+        "balanced_accuracy": 0.5454038541604711,
+        "brier_score": 0.055137521771258115,
+        "f1": 0.16091954022988506,
+        "fold": 4,
+        "pr_auc_average_precision": 0.2576740986258286,
+        "precision": 0.3684210526315789,
+        "recall": 0.10294117647058823,
+        "roc_auc": 0.7979985725331589,
+        "specificity": 0.9878665318503539
+      },
+      {
+        "accuracy": 0.9309366130558183,
+        "balanced_accuracy": 0.5180143341461964,
+        "brier_score": 0.055507560787639625,
+        "f1": 0.0759493670886076,
+        "fold": 5,
+        "pr_auc_average_precision": 0.2506480538010525,
+        "precision": 0.2727272727272727,
+        "recall": 0.04411764705882353,
+        "roc_auc": 0.7843038125260214,
+        "specificity": 0.9919110212335692
+      }
+    ],
+    "observed_positive_prevalence": 0.06467473524962178,
+    "oof_confusion_matrix": [
+      [
+        4905,
+        41
+      ],
+      [
+        316,
+        26
+      ]
+    ],
+    "oof_log_loss": 0.19742179446746305,
+    "oof_mean_score": 0.06472754781137006,
+    "oof_metrics": {
+      "accuracy": 0.9324886535552194,
+      "balanced_accuracy": 0.5338669324612245,
+      "brier_score": 0.05379407309004957,
+      "f1": 0.1271393643031785,
+      "pr_auc_average_precision": 0.27368005801598316,
+      "precision": 0.3880597014925373,
+      "recall": 0.07602339181286549,
+      "roc_auc": 0.8197935362736266,
+      "specificity": 0.9917104731095835
+    },
+    "threshold": 0.5
+  },
+  "baseline_plausibility_minimum_mmol_l": 1.0,
+  "glucose_below_2_to_missing": {
+    "calibration": {
+      "bins": [
+        {
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 4512,
+          "mean_score": 0.03641320679551915,
+          "observed_positive_fraction": 0.03546099290780142
+        },
+        {
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 482,
+          "mean_score": 0.13499629045828,
+          "observed_positive_fraction": 0.14107883817427386
+        },
+        {
+          "bin_lower": 0.2,
+          "bin_upper": 0.30000000000000004,
+          "count": 138,
+          "mean_score": 0.24506435223734865,
+          "observed_positive_fraction": 0.32608695652173914
+        },
+        {
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "count": 58,
+          "mean_score": 0.35363427288188176,
+          "observed_positive_fraction": 0.4827586206896552
+        },
+        {
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 30,
+          "mean_score": 0.437361383326298,
+          "observed_positive_fraction": 0.4666666666666667
+        },
+        {
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "count": 24,
+          "mean_score": 0.556157089281805,
+          "observed_positive_fraction": 0.4583333333333333
+        },
+        {
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "count": 21,
+          "mean_score": 0.646312821776307,
+          "observed_positive_fraction": 0.2857142857142857
+        },
+        {
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "count": 11,
+          "mean_score": 0.7409339774087708,
+          "observed_positive_fraction": 0.45454545454545453
+        },
+        {
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 10,
+          "mean_score": 0.8405939431423836,
+          "observed_positive_fraction": 0.5
+        },
+        {
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 2,
+          "mean_score": 0.9081922648562405,
+          "observed_positive_fraction": 0.0
+        }
+      ],
+      "expected_calibration_error": 0.008523185370177343,
+      "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+      "method": "10 fixed-width bins"
+    },
+    "cv_summary": {
+      "accuracy": {
+        "fold_values": [
+          0.9347826086956522,
+          0.9328922495274102,
+          0.9338374291115312,
+          0.9309366130558183,
+          0.9309366130558183
+        ],
+        "mean": 0.9326771026892461,
+        "std": 0.0015417139448922687
+      },
+      "balanced_accuracy": {
+        "fold_values": [
+          0.54058229352347,
+          0.5529154027637344,
+          0.519716885743175,
+          0.5454038541604711,
+          0.5180143341461964
+        ],
+        "mean": 0.5353265540674095,
+        "std": 0.014013686714429438
+      },
+      "brier_score": {
+        "fold_values": [
+          0.05356608131728587,
+          0.05318754261309845,
+          0.05156593475521516,
+          0.05485496552873746,
+          0.055499278665379535
+        ],
+        "mean": 0.0537347605759433,
+        "std": 0.0013711374005569712
+      },
+      "f1": {
+        "fold_values": [
+          0.14814814814814814,
+          0.1839080459770115,
+          0.07894736842105263,
+          0.16091954022988506,
+          0.0759493670886076
+        ],
+        "mean": 0.129574493972941,
+        "std": 0.044087158000163065
+      },
+      "pr_auc_average_precision": {
+        "fold_values": [
+          0.2843567984105117,
+          0.3132140836541686,
+          0.3430763625275046,
+          0.2629895643977715,
+          0.25100086191790344
+        ],
+        "mean": 0.29092753418157197,
+        "std": 0.033567944433676854
+      },
+      "precision": {
+        "fold_values": [
+          0.46153846153846156,
+          0.4444444444444444,
+          0.42857142857142855,
+          0.3684210526315789,
+          0.2727272727272727
+        ],
+        "mean": 0.3951405319826372,
+        "std": 0.06878389680497164
+      },
+      "recall": {
+        "fold_values": [
+          0.08823529411764706,
+          0.11594202898550725,
+          0.043478260869565216,
+          0.10294117647058823,
+          0.04411764705882353
+        ],
+        "mean": 0.07894288150042626,
+        "std": 0.030005800368428263
+      },
+      "roc_auc": {
+        "fold_values": [
+          0.8103089720736779,
+          0.8338242405591947,
+          0.8752949106841929,
+          0.7996342116219592,
+          0.7841105097246179
+        ],
+        "mean": 0.8206345689327286,
+        "std": 0.03175959778307674
+      },
+      "specificity": {
+        "fold_values": [
+          0.9929292929292929,
+          0.9898887765419616,
+          0.9959555106167847,
+          0.9878665318503539,
+          0.9919110212335692
+        ],
+        "mean": 0.9917102266343925,
+        "std": 0.00274374004693004
+      }
+    },
+    "fold_metrics": [
+      {
+        "accuracy": 0.9347826086956522,
+        "balanced_accuracy": 0.54058229352347,
+        "brier_score": 0.05356608131728587,
+        "f1": 0.14814814814814814,
+        "fold": 1,
+        "pr_auc_average_precision": 0.2843567984105117,
+        "precision": 0.46153846153846156,
+        "recall": 0.08823529411764706,
+        "roc_auc": 0.8103089720736779,
+        "specificity": 0.9929292929292929
+      },
+      {
+        "accuracy": 0.9328922495274102,
+        "balanced_accuracy": 0.5529154027637344,
+        "brier_score": 0.05318754261309845,
+        "f1": 0.1839080459770115,
+        "fold": 2,
+        "pr_auc_average_precision": 0.3132140836541686,
+        "precision": 0.4444444444444444,
+        "recall": 0.11594202898550725,
+        "roc_auc": 0.8338242405591947,
+        "specificity": 0.9898887765419616
+      },
+      {
+        "accuracy": 0.9338374291115312,
+        "balanced_accuracy": 0.519716885743175,
+        "brier_score": 0.05156593475521516,
+        "f1": 0.07894736842105263,
+        "fold": 3,
+        "pr_auc_average_precision": 0.3430763625275046,
+        "precision": 0.42857142857142855,
+        "recall": 0.043478260869565216,
+        "roc_auc": 0.8752949106841929,
+        "specificity": 0.9959555106167847
+      },
+      {
+        "accuracy": 0.9309366130558183,
+        "balanced_accuracy": 0.5454038541604711,
+        "brier_score": 0.05485496552873746,
+        "f1": 0.16091954022988506,
+        "fold": 4,
+        "pr_auc_average_precision": 0.2629895643977715,
+        "precision": 0.3684210526315789,
+        "recall": 0.10294117647058823,
+        "roc_auc": 0.7996342116219592,
+        "specificity": 0.9878665318503539
+      },
+      {
+        "accuracy": 0.9309366130558183,
+        "balanced_accuracy": 0.5180143341461964,
+        "brier_score": 0.055499278665379535,
+        "f1": 0.0759493670886076,
+        "fold": 5,
+        "pr_auc_average_precision": 0.25100086191790344,
+        "precision": 0.2727272727272727,
+        "recall": 0.04411764705882353,
+        "roc_auc": 0.7841105097246179,
+        "specificity": 0.9919110212335692
+      }
+    ],
+    "observed_positive_prevalence": 0.06467473524962178,
+    "oof_confusion_matrix": [
+      [
+        4905,
+        41
+      ],
+      [
+        315,
+        27
+      ]
+    ],
+    "oof_log_loss": 0.19720355108516166,
+    "oof_mean_score": 0.06469516794831016,
+    "oof_metrics": {
+      "accuracy": 0.93267776096823,
+      "balanced_accuracy": 0.535328920765318,
+      "brier_score": 0.05373421505343153,
+      "f1": 0.13170731707317074,
+      "pr_auc_average_precision": 0.2752882755361433,
+      "precision": 0.39705882352941174,
+      "recall": 0.07894736842105263,
+      "roc_auc": 0.8201931739984819,
+      "specificity": 0.9917104731095835
+    },
+    "threshold": 0.5
+  },
+  "purpose": "Assess whether additionally treating glucose values from 1.0 to below 2.0 mmol/L as invalid materially changes internal discrimination/calibration.",
+  "row_deletion": "none",
+  "sensitivity_plausibility_minimum_mmol_l": 2.0,
+  "total_cells_below_2": 26
+}

@@ -1,0 +1,7 @@
+Dataset,Model,CV Accuracy Mean,CV Precision Mean,CV Recall Mean,CV F1 Mean,CV ROC-AUC Mean,Overall Accuracy,Overall Precision,Overall Recall,Overall F1,Overall ROC-AUC
+Diabetes,Logistic Regression,0.7473,0.6234,0.7274,0.6688,0.8362,0.7474,0.6171,0.7276,0.6678,0.8347
+Diabetes,Random Forest,0.763,0.6458,0.7166,0.6785,0.832,0.763,0.6443,0.7164,0.6784,0.8307
+Diabetes,Neural Network,0.7213,0.6018,0.589,0.5939,0.7813,0.7214,0.6031,0.5896,0.5962,0.7786
+Heart Disease,Logistic Regression,0.8354,0.8296,0.818,0.8224,0.9104,0.835,0.8235,0.8175,0.8205,0.9042
+Heart Disease,Random Forest,0.8253,0.8255,0.7892,0.8051,0.9007,0.8249,0.8244,0.7883,0.806,0.9
+Heart Disease,Neural Network,0.7882,0.7786,0.7669,0.7715,0.8769,0.7879,0.7721,0.7664,0.7692,0.8781

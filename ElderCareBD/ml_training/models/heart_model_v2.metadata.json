@@ -1,0 +1,678 @@
+{
+  "artifact": {
+    "filename": "heart_model_v2.pkl",
+    "relative_path": "models/heart_model_v2.pkl",
+    "serialization": "joblib/pickle; load only this trusted hash-matched artifact",
+    "sha256": "E0007FA3135DBF97B5E15D2C9B0BEAF385928DE54D814566F4877D712FE4A103"
+  },
+  "classifier": {
+    "candidate_key": "logistic_regression_balanced",
+    "class": "LogisticRegression",
+    "display_name": "Logistic Regression (balanced)",
+    "parameters": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 2000,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 42,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "created_at_utc": "2026-08-23T13:42:30+00:00",
+  "disease": "heart",
+  "display_name": "Heart Disease",
+  "evaluation": {
+    "calibration": {
+      "bins": [
+        {
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 33,
+          "mean_score": 0.06005704293895141,
+          "observed_positive_fraction": 0.030303030303030304
+        },
+        {
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 36,
+          "mean_score": 0.15952301227199042,
+          "observed_positive_fraction": 0.16666666666666666
+        },
+        {
+          "bin_lower": 0.2,
+          "bin_upper": 0.30000000000000004,
+          "count": 32,
+          "mean_score": 0.24443460774929793,
+          "observed_positive_fraction": 0.125
+        },
+        {
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "count": 32,
+          "mean_score": 0.3420705920624901,
+          "observed_positive_fraction": 0.375
+        },
+        {
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 25,
+          "mean_score": 0.446226633309174,
+          "observed_positive_fraction": 0.36
+        },
+        {
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "count": 22,
+          "mean_score": 0.5585325394003424,
+          "observed_positive_fraction": 0.6818181818181818
+        },
+        {
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "count": 25,
+          "mean_score": 0.6460154806157362,
+          "observed_positive_fraction": 0.64
+        },
+        {
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "count": 27,
+          "mean_score": 0.7616874276546631,
+          "observed_positive_fraction": 0.8148148148148148
+        },
+        {
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 55,
+          "mean_score": 0.8602461878438814,
+          "observed_positive_fraction": 0.7818181818181819
+        },
+        {
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 10,
+          "mean_score": 0.9180540365543294,
+          "observed_positive_fraction": 0.9
+        }
+      ],
+      "expected_calibration_error": 0.05744632864904942,
+      "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+      "method": "10 fixed-width bins"
+    },
+    "classification_threshold": 0.53,
+    "cv_summary_at_standard_threshold": {
+      "accuracy": {
+        "fold_values": [
+          0.75,
+          0.7,
+          0.8305084745762712,
+          0.8135593220338984,
+          0.7966101694915254
+        ],
+        "mean": 0.778135593220339,
+        "std": 0.04740432842417179
+      },
+      "brier_score": {
+        "fold_values": [
+          0.1751004684961396,
+          0.2017389003671288,
+          0.139286873376739,
+          0.14751350709218947,
+          0.16132542801074415
+        ],
+        "mean": 0.1649930354685882,
+        "std": 0.02205543386908007
+      },
+      "f1": {
+        "fold_values": [
+          0.7169811320754716,
+          0.6785714285714286,
+          0.8148148148148148,
+          0.8,
+          0.7931034482758621
+        ],
+        "mean": 0.7606941647475155,
+        "std": 0.0532528461771906
+      },
+      "precision": {
+        "fold_values": [
+          0.76,
+          0.6785714285714286,
+          0.8148148148148148,
+          0.7857142857142857,
+          0.7419354838709677
+        ],
+        "mean": 0.7562072025942994,
+        "std": 0.04593669739989789
+      },
+      "recall": {
+        "fold_values": [
+          0.6785714285714286,
+          0.6785714285714286,
+          0.8148148148148148,
+          0.8148148148148148,
+          0.8518518518518519
+        ],
+        "mean": 0.7677248677248677,
+        "std": 0.07403910739324429
+      },
+      "roc_auc": {
+        "fold_values": [
+          0.8158482142857143,
+          0.7689732142857143,
+          0.8877314814814814,
+          0.8657407407407407,
+          0.8449074074074074
+        ],
+        "mean": 0.8366402116402115,
+        "std": 0.04131981330727498
+      }
+    },
+    "final_threshold_development_diagnostic": {
+      "confusion_matrix": [
+        [
+          127,
+          33
+        ],
+        [
+          34,
+          103
+        ]
+      ],
+      "metrics": {
+        "accuracy": 0.7744107744107744,
+        "f1": 0.7545787545787546,
+        "precision": 0.7573529411764706,
+        "recall": 0.7518248175182481,
+        "roc_auc": 0.8336222627737225
+      },
+      "threshold": 0.53,
+      "warning": "Development diagnostic only: this fixed threshold was derived from these same full-dataset out-of-fold scores. Use the nested policy results for less biased classification-performance estimation."
+    },
+    "folds": 5,
+    "method": "5-fold StratifiedKFold with shuffle",
+    "oof_brier_score": 0.16515079068046057,
+    "oof_confusion_matrix_at_standard_threshold": [
+      [
+        126,
+        34
+      ],
+      [
+        32,
+        105
+      ]
+    ],
+    "oof_log_loss": 0.504740809307657,
+    "oof_metrics_at_standard_threshold": {
+      "accuracy": 0.7777777777777778,
+      "f1": 0.7608695652173914,
+      "precision": 0.7553956834532374,
+      "recall": 0.7664233576642335,
+      "roc_auc": 0.8336222627737225
+    },
+    "oof_roc_auc": 0.8336222627737225,
+    "random_seed": 42,
+    "selection_and_evaluation_warning": "Feature/model development used the same small datasets. CV estimates are internal and there is no held-out Bangladeshi external validation cohort.",
+    "standard_threshold": 0.5,
+    "threshold_selection": {
+      "aggregate_confusion_matrix": [
+        [
+          128,
+          32
+        ],
+        [
+          37,
+          100
+        ]
+      ],
+      "aggregate_metrics": {
+        "accuracy": 0.7676767676767676,
+        "f1": 0.7434944237918215,
+        "precision": 0.7575757575757576,
+        "recall": 0.7299270072992701,
+        "roc_auc": 0.8336222627737225
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.7333333333333333,
+            0.7166666666666667,
+            0.8135593220338984,
+            0.7966101694915254,
+            0.7796610169491526
+          ],
+          "mean": 0.7679661016949153,
+          "std": 0.037059563090312185
+        },
+        "f1": {
+          "fold_values": [
+            0.68,
+            0.6792452830188679,
+            0.7924528301886793,
+            0.7777777777777778,
+            0.7796610169491526
+          ],
+          "mean": 0.7418273815868954,
+          "std": 0.05104095448207721
+        },
+        "precision": {
+          "fold_values": [
+            0.7727272727272727,
+            0.72,
+            0.8076923076923077,
+            0.7777777777777778,
+            0.71875
+          ],
+          "mean": 0.7593894716394717,
+          "std": 0.034791630724681874
+        },
+        "recall": {
+          "fold_values": [
+            0.6071428571428571,
+            0.6428571428571429,
+            0.7777777777777778,
+            0.7777777777777778,
+            0.8518518518518519
+          ],
+          "mean": 0.7314814814814815,
+          "std": 0.09174975429245796
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8158482142857143,
+            0.7689732142857143,
+            0.8877314814814814,
+            0.8657407407407407,
+            0.8449074074074074
+          ],
+          "mean": 0.8366402116402115,
+          "std": 0.04131981330727498
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.7333333333333333,
+          "f1": 0.68,
+          "fold": 1,
+          "precision": 0.7727272727272727,
+          "recall": 0.6071428571428571,
+          "roc_auc": 0.8158482142857143,
+          "selected_threshold": 0.56
+        },
+        {
+          "accuracy": 0.7166666666666667,
+          "f1": 0.6792452830188679,
+          "fold": 2,
+          "precision": 0.72,
+          "recall": 0.6428571428571429,
+          "roc_auc": 0.7689732142857143,
+          "selected_threshold": 0.56
+        },
+        {
+          "accuracy": 0.8135593220338984,
+          "f1": 0.7924528301886793,
+          "fold": 3,
+          "precision": 0.8076923076923077,
+          "recall": 0.7777777777777778,
+          "roc_auc": 0.8877314814814814,
+          "selected_threshold": 0.52
+        },
+        {
+          "accuracy": 0.7966101694915254,
+          "f1": 0.7777777777777778,
+          "fold": 4,
+          "precision": 0.7777777777777778,
+          "recall": 0.7777777777777778,
+          "roc_auc": 0.8657407407407407,
+          "selected_threshold": 0.52
+        },
+        {
+          "accuracy": 0.7796610169491526,
+          "f1": 0.7796610169491526,
+          "fold": 5,
+          "precision": 0.71875,
+          "recall": 0.8518518518518519,
+          "roc_auc": 0.8449074074074074,
+          "selected_threshold": 0.49
+        }
+      ],
+      "fold_thresholds": [
+        0.56,
+        0.56,
+        0.52,
+        0.52,
+        0.49
+      ],
+      "inner_folds": 4,
+      "minimum_recall": 0.75,
+      "outer_folds": 5,
+      "policy": "Within each training partition, choose the largest threshold on a 0.01 grid whose inner out-of-fold recall is at least the declared floor.",
+      "threshold_mean": 0.53,
+      "threshold_std": 0.0268328157299975
+    }
+  },
+  "feature_contract": {
+    "feature_order": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps"
+    ],
+    "feature_set": "eldercare_structured_cp_4",
+    "features": [
+      {
+        "allowed_values": null,
+        "maximum": 77,
+        "measurement_context": "Completed age at assessment; 29-77 is the observed source-data range.",
+        "minimum": 29,
+        "name": "age",
+        "task14_note": "Values outside the training range are unsupported and need a fallback.",
+        "type": "integer",
+        "unit": "years",
+        "value_labels": null
+      },
+      {
+        "allowed_values": [
+          0,
+          1
+        ],
+        "maximum": null,
+        "measurement_context": "Binary coding used by the Cleveland dataset.",
+        "minimum": null,
+        "name": "sex",
+        "task14_note": "The source dataset has no category for Other/unknown. Do not fabricate a mapping; route unsupported values to a non-model fallback.",
+        "type": "integer",
+        "unit": null,
+        "value_labels": {
+          "0": "female",
+          "1": "male"
+        }
+      },
+      {
+        "allowed_values": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "maximum": null,
+        "measurement_context": "Four-level chest-pain type in this zero-based Cleveland derivative; it is not equivalent to a yes/no chest-pain symptom.",
+        "minimum": null,
+        "name": "cp",
+        "task14_note": "Add a guided four-category field. Never derive this value from the current boolean chest_pain field.",
+        "type": "integer",
+        "unit": null,
+        "value_labels": {
+          "0": "typical angina",
+          "1": "atypical angina",
+          "2": "non-anginal pain",
+          "3": "asymptomatic"
+        }
+      },
+      {
+        "allowed_values": null,
+        "maximum": 200,
+        "measurement_context": "Resting blood pressure matching the Cleveland trestbps field (conventionally systolic; source setting was hospital admission).",
+        "minimum": 94,
+        "name": "trestbps",
+        "task14_note": "Use an explicitly resting systolic measurement; do not map diastolic BP.",
+        "type": "integer",
+        "unit": "mmHg",
+        "value_labels": null
+      }
+    ],
+    "strict_missing_feature_policy": "reject",
+    "strict_non_finite_policy": "reject",
+    "strict_unexpected_feature_policy": "reject"
+  },
+  "intended_use": "Research/demo screening risk-score support for ElderCareBD after a separate Task 14 integration and validation step.",
+  "legacy_comparison": {
+    "bytes": 2481,
+    "feature_order": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "filename": "heart_disease_best_model.pkl",
+    "model": "Logistic Regression (legacy ordinal preprocessing)",
+    "sha256": "8CCFED2469EE7C08D291E67C27B7F570674E026FD8E91A8C18CCCE4BA5F0D21C",
+    "status": "verified unchanged"
+  },
+  "limitations": [
+    "Historical Cleveland clinical/referral cases are not a Bangladeshi or elderly-community cohort; only a small minority of local rows are age 65 or older. The target denotes disease presence, not future event risk.",
+    "The local 297-row file appears to be the common complete-case, binary-target, zero-based recoding of the 303-row Cleveland dataset. The repo does not contain a provenance/transformation record, so this relationship is documented as an inference and the local file hash is authoritative.",
+    "The model has not been externally validated, clinically calibrated, or prospectively evaluated.",
+    "The score is an internal model risk estimate and must not be presented as a diagnosis or personal disease probability.",
+    "Model selection on these cross-validation results can make estimates optimistic; independent validation remains required."
+  ],
+  "model_selection": {
+    "best_experimental": {
+      "candidate_key": "logistic_regression",
+      "candidate_name": "Logistic Regression",
+      "class_weight": null,
+      "cv_f1_mean": 0.8245391162420626,
+      "cv_recall_mean": 0.7888888888888889,
+      "cv_roc_auc_mean": 0.9141699735449735,
+      "cv_roc_auc_std": 0.038739735338119786,
+      "feature_set": "full_13",
+      "features": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+      ],
+      "oof_brier_score": 0.11589754405488388
+    },
+    "deployability_precedence": "The reduced feature contract is preferred despite the full model's stronger experimental discrimination because the omitted clinical fields cannot be collected faithfully in the caregiver workflow.",
+    "selected_deployable": {
+      "candidate_key": "logistic_regression_balanced",
+      "candidate_name": "Logistic Regression (balanced)",
+      "class_weight": "balanced",
+      "cv_f1_mean": 0.7606941647475155,
+      "cv_recall_mean": 0.7677248677248677,
+      "cv_roc_auc_mean": 0.8366402116402115,
+      "cv_roc_auc_std": 0.04131981330727498,
+      "feature_set": "eldercare_structured_cp_4",
+      "features": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps"
+      ],
+      "oof_brier_score": 0.16515079068046057
+    }
+  },
+  "model_version": "2.0.0",
+  "output_references": {
+    "aggregate_metrics": "outputs/task13/cv_results.csv",
+    "calibration": "outputs/task13/heart_selected_calibration.csv",
+    "confusion_matrix": "outputs/task13/heart_selected_confusion_matrix.png",
+    "fold_metrics": "outputs/task13/fold_metrics.csv",
+    "roc_curve": "outputs/task13/heart_selected_roc_curve.csv"
+  },
+  "positive_class": 1,
+  "preprocessing": {
+    "categorical_mappings": {
+      "cp": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sex": [
+        0,
+        1
+      ]
+    },
+    "inside_serialized_pipeline": true,
+    "pima_zero_sentinels": [],
+    "steps": [
+      "exact named-column schema selection",
+      "dataset-specific impossible-zero sentinel conversion to missing",
+      "fold-local median imputation for numeric fields",
+      "fold-local standardization for logistic numeric fields",
+      "fold-local most-frequent imputation and explicit-category one-hot encoding for categorical fields"
+    ]
+  },
+  "prohibited_use": [
+    "clinical diagnosis",
+    "treatment decisions",
+    "claiming an individual patient's real-world chance of disease",
+    "scoring inputs outside the exact contract or training support"
+  ],
+  "runtime": {
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.0",
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.6",
+    "scikit_learn": "1.9.0",
+    "scipy": "1.18.0"
+  },
+  "schema_version": "1.0.0",
+  "target": {
+    "definition": "Binary recoding of the Cleveland diagnostic num target: 0 means no angiographic disease and 1 represents original values greater than zero.",
+    "mapping": {
+      "0": "no disease",
+      "1": "disease present"
+    },
+    "name": "condition",
+    "note": "The target is not a prospective Bangladeshi clinical outcome."
+  },
+  "training_dataset": {
+    "age_counts": {
+      "age_60_or_older": 91,
+      "age_65_or_older": 41
+    },
+    "bytes": 11106,
+    "class_distribution": {
+      "0": 160,
+      "1": 137
+    },
+    "columns": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal",
+      "condition"
+    ],
+    "disease": "heart",
+    "display_name": "Heart Disease",
+    "distribution_url": "https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci/data",
+    "duplicate_predictor_rows": 0,
+    "exact_duplicate_rows": 0,
+    "explicit_missing_values": 0,
+    "invalid_zero_convention": {},
+    "license_note": "UCI publishes the upstream dataset under CC BY 4.0. The repository does not include a local provenance/license manifest for this transformed copy.",
+    "local_path": "data/heart_cleveland_upload.csv",
+    "missing_value_convention": "The 297-row derivative has no null or '?' markers. It is a complete-case transformation of the 303-row upstream Cleveland data, which does contain missing values.",
+    "non_finite_values": 0,
+    "observed_ranges_after_zero_sentinel_exclusion": {
+      "age": {
+        "maximum": 77,
+        "minimum": 29
+      },
+      "ca": {
+        "maximum": 3,
+        "minimum": 0
+      },
+      "chol": {
+        "maximum": 564,
+        "minimum": 126
+      },
+      "cp": {
+        "maximum": 3,
+        "minimum": 0
+      },
+      "exang": {
+        "maximum": 1,
+        "minimum": 0
+      },
+      "fbs": {
+        "maximum": 1,
+        "minimum": 0
+      },
+      "oldpeak": {
+        "maximum": 6.2,
+        "minimum": 0
+      },
+      "restecg": {
+        "maximum": 2,
+        "minimum": 0
+      },
+      "sex": {
+        "maximum": 1,
+        "minimum": 0
+      },
+      "slope": {
+        "maximum": 2,
+        "minimum": 0
+      },
+      "thal": {
+        "maximum": 2,
+        "minimum": 0
+      },
+      "thalach": {
+        "maximum": 202,
+        "minimum": 71
+      },
+      "trestbps": {
+        "maximum": 200,
+        "minimum": 94
+      }
+    },
+    "population_and_generalizability": "Historical Cleveland clinical/referral cases are not a Bangladeshi or elderly-community cohort; only a small minority of local rows are age 65 or older. The target denotes disease presence, not future event risk.",
+    "predictor_count": 13,
+    "rows": 297,
+    "rows_with_any_invalid_zero_full_contract": 0,
+    "rows_with_any_invalid_zero_selected_contract": 0,
+    "screening_only": true,
+    "sha256": "386015BE85BCC9112CBAC782DAFD145AEEF7ABD4F8B9F2EE65F6C4C56ED82D9F",
+    "source_name": "UCI Heart Disease, Cleveland processed-data derivative",
+    "source_note": "The local 297-row file appears to be the common complete-case, binary-target, zero-based recoding of the 303-row Cleveland dataset. The repo does not contain a provenance/transformation record, so this relationship is documented as an inference and the local file hash is authoritative.",
+    "source_url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+    "target": "condition",
+    "target_definition": "Binary recoding of the Cleveland diagnostic num target: 0 means no angiographic disease and 1 represents original values greater than zero.",
+    "target_mapping": {
+      "0": "no disease",
+      "1": "disease present"
+    }
+  }
+}

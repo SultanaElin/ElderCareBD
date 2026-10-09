@@ -1,0 +1,406 @@
+{
+  "diabetes": {
+    "best_experimental": {
+      "candidate_key": "logistic_regression",
+      "candidate_name": "Logistic Regression",
+      "class_weight": null,
+      "cv_f1_mean": 0.6358217623317021,
+      "cv_recall_mean": 0.5710691823899372,
+      "cv_roc_auc_mean": 0.8365520614954576,
+      "cv_roc_auc_std": 0.020324628862485806,
+      "feature_set": "full_8",
+      "features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "oof_brier_score": 0.15708721726138386
+    },
+    "disease": "diabetes",
+    "final_training_oof_threshold": {
+      "confusion_matrix": [
+        [
+          354,
+          146
+        ],
+        [
+          64,
+          204
+        ]
+      ],
+      "metrics": {
+        "accuracy": 0.7265625,
+        "f1": 0.6601941747572816,
+        "precision": 0.5828571428571429,
+        "recall": 0.7611940298507462,
+        "roc_auc": 0.8259328358208955
+      },
+      "threshold": 0.31,
+      "warning": "Development diagnostic only: this fixed threshold was derived from these same full-dataset out-of-fold scores. Use the nested policy results for less biased classification-performance estimation."
+    },
+    "nested_threshold_policy": {
+      "aggregate_confusion_matrix": [
+        [
+          350,
+          150
+        ],
+        [
+          62,
+          206
+        ]
+      ],
+      "aggregate_metrics": {
+        "accuracy": 0.7239583333333334,
+        "f1": 0.6602564102564102,
+        "precision": 0.5786516853932584,
+        "recall": 0.7686567164179104,
+        "roc_auc": 0.8259328358208955
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.7467532467532467,
+            0.7597402597402597,
+            0.7467532467532467,
+            0.7124183006535948,
+            0.6535947712418301
+          ],
+          "mean": 0.7238519650284356,
+          "std": 0.03848040817456651
+        },
+        "f1": {
+          "fold_values": [
+            0.7022900763358778,
+            0.6942148760330579,
+            0.688,
+            0.6271186440677966,
+            0.5891472868217055
+          ],
+          "mean": 0.6601541766516876,
+          "std": 0.04437179279433766
+        },
+        "precision": {
+          "fold_values": [
+            0.5974025974025974,
+            0.6268656716417911,
+            0.6056338028169014,
+            0.5692307692307692,
+            0.5
+          ],
+          "mean": 0.5798265682184118,
+          "std": 0.0439821767539886
+        },
+        "recall": {
+          "fold_values": [
+            0.8518518518518519,
+            0.7777777777777778,
+            0.7962962962962963,
+            0.6981132075471698,
+            0.7169811320754716
+          ],
+          "mean": 0.7682040531097135,
+          "std": 0.05552350643940245
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8277777777777777,
+            0.8499999999999999,
+            0.8655555555555555,
+            0.800377358490566,
+            0.7828301886792453
+          ],
+          "mean": 0.8253081761006289,
+          "std": 0.03053379024945191
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.7467532467532467,
+          "f1": 0.7022900763358778,
+          "fold": 1,
+          "precision": 0.5974025974025974,
+          "recall": 0.8518518518518519,
+          "roc_auc": 0.8277777777777777,
+          "selected_threshold": 0.29
+        },
+        {
+          "accuracy": 0.7597402597402597,
+          "f1": 0.6942148760330579,
+          "fold": 2,
+          "precision": 0.6268656716417911,
+          "recall": 0.7777777777777778,
+          "roc_auc": 0.8499999999999999,
+          "selected_threshold": 0.3
+        },
+        {
+          "accuracy": 0.7467532467532467,
+          "f1": 0.688,
+          "fold": 3,
+          "precision": 0.6056338028169014,
+          "recall": 0.7962962962962963,
+          "roc_auc": 0.8655555555555555,
+          "selected_threshold": 0.3
+        },
+        {
+          "accuracy": 0.7124183006535948,
+          "f1": 0.6271186440677966,
+          "fold": 4,
+          "precision": 0.5692307692307692,
+          "recall": 0.6981132075471698,
+          "roc_auc": 0.800377358490566,
+          "selected_threshold": 0.3
+        },
+        {
+          "accuracy": 0.6535947712418301,
+          "f1": 0.5891472868217055,
+          "fold": 5,
+          "precision": 0.5,
+          "recall": 0.7169811320754716,
+          "roc_auc": 0.7828301886792453,
+          "selected_threshold": 0.33
+        }
+      ],
+      "fold_thresholds": [
+        0.29,
+        0.3,
+        0.3,
+        0.3,
+        0.33
+      ],
+      "inner_folds": 4,
+      "minimum_recall": 0.75,
+      "outer_folds": 5,
+      "policy": "Within each training partition, choose the largest threshold on a 0.01 grid whose inner out-of-fold recall is at least the declared floor.",
+      "threshold_mean": 0.304,
+      "threshold_std": 0.01356465996625055
+    },
+    "rationale": "Age, exact two-hour OGTT glucose, and BMI retain most full-model discrimination while removing five impractical fields. Diastolic BP was evaluated but added no useful discrimination. Unweighted logistic regression is compact/interpretable and had materially better internal calibration than the balanced variant; nested thresholding recovers screening sensitivity.",
+    "selected_deployable": {
+      "candidate_key": "logistic_regression",
+      "candidate_name": "Logistic Regression",
+      "class_weight": null,
+      "cv_f1_mean": 0.6257803663482981,
+      "cv_recall_mean": 0.5598881900768693,
+      "cv_roc_auc_mean": 0.8253081761006289,
+      "cv_roc_auc_std": 0.03053379024945191,
+      "feature_set": "eldercare_reduced_3",
+      "features": [
+        "Age",
+        "Glucose",
+        "BMI"
+      ],
+      "oof_brier_score": 0.16033861717293293
+    },
+    "selection_policy": "Restrict deployment to the predefined usable feature contract. Prefer logistic regression when it is within 0.02 mean ROC-AUC of the strongest candidate, retain logistic variants within 0.005 Brier score of the best calibrated logistic variant, then prioritize recall, ROC-AUC, F1, and lower AUC fold variability."
+  },
+  "heart": {
+    "best_experimental": {
+      "candidate_key": "logistic_regression",
+      "candidate_name": "Logistic Regression",
+      "class_weight": null,
+      "cv_f1_mean": 0.8245391162420626,
+      "cv_recall_mean": 0.7888888888888889,
+      "cv_roc_auc_mean": 0.9141699735449735,
+      "cv_roc_auc_std": 0.038739735338119786,
+      "feature_set": "full_13",
+      "features": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+      ],
+      "oof_brier_score": 0.11589754405488388
+    },
+    "disease": "heart",
+    "final_training_oof_threshold": {
+      "confusion_matrix": [
+        [
+          127,
+          33
+        ],
+        [
+          34,
+          103
+        ]
+      ],
+      "metrics": {
+        "accuracy": 0.7744107744107744,
+        "f1": 0.7545787545787546,
+        "precision": 0.7573529411764706,
+        "recall": 0.7518248175182481,
+        "roc_auc": 0.8336222627737225
+      },
+      "threshold": 0.53,
+      "warning": "Development diagnostic only: this fixed threshold was derived from these same full-dataset out-of-fold scores. Use the nested policy results for less biased classification-performance estimation."
+    },
+    "nested_threshold_policy": {
+      "aggregate_confusion_matrix": [
+        [
+          128,
+          32
+        ],
+        [
+          37,
+          100
+        ]
+      ],
+      "aggregate_metrics": {
+        "accuracy": 0.7676767676767676,
+        "f1": 0.7434944237918215,
+        "precision": 0.7575757575757576,
+        "recall": 0.7299270072992701,
+        "roc_auc": 0.8336222627737225
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.7333333333333333,
+            0.7166666666666667,
+            0.8135593220338984,
+            0.7966101694915254,
+            0.7796610169491526
+          ],
+          "mean": 0.7679661016949153,
+          "std": 0.037059563090312185
+        },
+        "f1": {
+          "fold_values": [
+            0.68,
+            0.6792452830188679,
+            0.7924528301886793,
+            0.7777777777777778,
+            0.7796610169491526
+          ],
+          "mean": 0.7418273815868954,
+          "std": 0.05104095448207721
+        },
+        "precision": {
+          "fold_values": [
+            0.7727272727272727,
+            0.72,
+            0.8076923076923077,
+            0.7777777777777778,
+            0.71875
+          ],
+          "mean": 0.7593894716394717,
+          "std": 0.034791630724681874
+        },
+        "recall": {
+          "fold_values": [
+            0.6071428571428571,
+            0.6428571428571429,
+            0.7777777777777778,
+            0.7777777777777778,
+            0.8518518518518519
+          ],
+          "mean": 0.7314814814814815,
+          "std": 0.09174975429245796
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8158482142857143,
+            0.7689732142857143,
+            0.8877314814814814,
+            0.8657407407407407,
+            0.8449074074074074
+          ],
+          "mean": 0.8366402116402115,
+          "std": 0.04131981330727498
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.7333333333333333,
+          "f1": 0.68,
+          "fold": 1,
+          "precision": 0.7727272727272727,
+          "recall": 0.6071428571428571,
+          "roc_auc": 0.8158482142857143,
+          "selected_threshold": 0.56
+        },
+        {
+          "accuracy": 0.7166666666666667,
+          "f1": 0.6792452830188679,
+          "fold": 2,
+          "precision": 0.72,
+          "recall": 0.6428571428571429,
+          "roc_auc": 0.7689732142857143,
+          "selected_threshold": 0.56
+        },
+        {
+          "accuracy": 0.8135593220338984,
+          "f1": 0.7924528301886793,
+          "fold": 3,
+          "precision": 0.8076923076923077,
+          "recall": 0.7777777777777778,
+          "roc_auc": 0.8877314814814814,
+          "selected_threshold": 0.52
+        },
+        {
+          "accuracy": 0.7966101694915254,
+          "f1": 0.7777777777777778,
+          "fold": 4,
+          "precision": 0.7777777777777778,
+          "recall": 0.7777777777777778,
+          "roc_auc": 0.8657407407407407,
+          "selected_threshold": 0.52
+        },
+        {
+          "accuracy": 0.7796610169491526,
+          "f1": 0.7796610169491526,
+          "fold": 5,
+          "precision": 0.71875,
+          "recall": 0.8518518518518519,
+          "roc_auc": 0.8449074074074074,
+          "selected_threshold": 0.49
+        }
+      ],
+      "fold_thresholds": [
+        0.56,
+        0.56,
+        0.52,
+        0.52,
+        0.49
+      ],
+      "inner_folds": 4,
+      "minimum_recall": 0.75,
+      "outer_folds": 5,
+      "policy": "Within each training partition, choose the largest threshold on a 0.01 grid whose inner out-of-fold recall is at least the declared floor.",
+      "threshold_mean": 0.53,
+      "threshold_std": 0.0268328157299975
+    },
+    "rationale": "The four-field structured contract materially outperformed the currently faithful age/sex/resting-BP subset while avoiding seven specialist tests. Balanced logistic regression modestly improved screening recall with essentially unchanged AUC and calibration. Task 14 must collect exact chest-pain type and binary clinical sex, and must not map boolean chest pain or Other/unknown values.",
+    "selected_deployable": {
+      "candidate_key": "logistic_regression_balanced",
+      "candidate_name": "Logistic Regression (balanced)",
+      "class_weight": "balanced",
+      "cv_f1_mean": 0.7606941647475155,
+      "cv_recall_mean": 0.7677248677248677,
+      "cv_roc_auc_mean": 0.8366402116402115,
+      "cv_roc_auc_std": 0.04131981330727498,
+      "feature_set": "eldercare_structured_cp_4",
+      "features": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps"
+      ],
+      "oof_brier_score": 0.16515079068046057
+    },
+    "selection_policy": "Restrict deployment to the predefined usable feature contract. Prefer logistic regression when it is within 0.02 mean ROC-AUC of the strongest candidate, retain logistic variants within 0.005 Brier score of the best calibrated logistic variant, then prioritize recall, ROC-AUC, F1, and lower AUC fold variability."
+  }
+}

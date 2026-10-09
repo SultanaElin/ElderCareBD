@@ -1,0 +1,20 @@
+{
+  "authorized_runtime_feature_contract": null,
+  "authorized_threshold": null,
+  "decision": "C. Dataset has serious target/provenance issues and should not be deployed",
+  "kidney_artifact_created": false,
+  "kidney_metadata_created": false,
+  "outcome": "C",
+  "reason": "The target and provenance are unverified, source records are clinically incoherent, and full/reduced negative-control evaluations remain near chance.",
+  "required_next_evidence": [
+    "licensed and traceable cohort",
+    "documented population, setting, dates, and sampling",
+    "independently adjudicated CKD status with chronicity or prospective outcome",
+    "units and measurement protocols",
+    "patient/site/time identifiers for leakage-safe validation",
+    "external elderly and Bangladesh-relevant validation"
+  ],
+  "status": "COMPLETE",
+  "task": "13C",
+  "task14_status": "PAUSED"
+}

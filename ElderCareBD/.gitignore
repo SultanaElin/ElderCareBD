@@ -1,0 +1,39 @@
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+**/local.properties
+**/key.properties
+**/*.jks
+**/*.keystore
+
+# Python environments and caches
+.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+*.py[cod]
+
+# Flutter/Dart generated files
+**/.dart_tool/
+**/build/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/ephemeral/
+**/flutter_*.log
+
+# Private runtime data: never publish
+backend/*.db
+backend/*.db-*
+backend/*.sqlite*
+backend/backups/
+backend/private_uploads/
+backend/uploads/
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+

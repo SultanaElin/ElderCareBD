@@ -1,0 +1,3 @@
+Dataset,Best Model,Saved Model Path
+Diabetes,Random Forest,E:\Project Software Engineer\8th Semester\SPL-3\ElderCareBD\ml_training\models\diabetes_best_model.pkl
+Heart Disease,Logistic Regression,E:\Project Software Engineer\8th Semester\SPL-3\ElderCareBD\ml_training\models\heart_disease_best_model.pkl

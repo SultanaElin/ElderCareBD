@@ -1,0 +1,39 @@
+{
+  "duplicates": {
+    "evidence": {
+      "diabetes": {
+        "exact": 0,
+        "predictor": 0
+      },
+      "heart": {
+        "exact": 0,
+        "predictor": 0
+      }
+    },
+    "status": "pass"
+  },
+  "oversampling": {
+    "evidence": "No synthetic sampling or resampling is present; class weights are estimator-local and learned only from training folds.",
+    "status": "not used"
+  },
+  "preprocessing_before_cv": {
+    "evidence": "Sentinel conversion, imputation, scaling, and one-hot encoding are pipeline steps fitted/used independently in each fold.",
+    "status": "pass"
+  },
+  "target_derived_features": {
+    "evidence": "No diagnosis flags, prior risk labels, recommendations, or symptoms were added.",
+    "status": "pass"
+  },
+  "target_leakage": {
+    "evidence": "Target columns are schema-validated and excluded from every feature set.",
+    "status": "pass"
+  },
+  "test_set_tuning": {
+    "evidence": "The project uses internal 5-fold CV. Model-development selection bias and absence of external validation are disclosed.",
+    "status": "no held-out test set"
+  },
+  "threshold_tuning": {
+    "evidence": "Outer-fold results use thresholds selected only from inner out-of-fold training predictions.",
+    "status": "nested"
+  }
+}

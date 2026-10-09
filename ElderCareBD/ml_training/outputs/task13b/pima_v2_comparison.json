@@ -1,0 +1,533 @@
+{
+  "artifact": "diabetes_model_v2.pkl",
+  "artifact_sha256": "2CF6B92BEF3A452DD680A9B37E1FAE5B788BADCB55B4A4EE6A4CFB90F46DCA07",
+  "comparison_kind": "Same-method re-evaluation of the fixed Pima dataset/selected v2 contract; not a claim that stored artifact predictions are cross-validated.",
+  "comparison_warning": "Targets and prevalence differ (34.90% Pima vs 6.47% DiaBD). Absolute precision, AP/PR-AUC, Brier, and ECE are not directly comparable, and neither dataset externally validates the other.",
+  "dataset": "Pima Indians Diabetes benchmark",
+  "dataset_sha256": "698C203A14AA31941D2251175330C9199F3CCDB31597ABBBA2A3E35416257A72",
+  "features": [
+    "Age",
+    "Glucose",
+    "BMI"
+  ],
+  "fixed_threshold_0_5": {
+    "calibration": {
+      "bins": [
+        {
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 147,
+          "mean_score": 0.06356046069365817,
+          "observed_positive_fraction": 0.034013605442176874
+        },
+        {
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 153,
+          "mean_score": 0.1468185672548838,
+          "observed_positive_fraction": 0.1503267973856209
+        },
+        {
+          "bin_lower": 0.2,
+          "bin_upper": 0.30000000000000004,
+          "count": 106,
+          "mean_score": 0.2445323093518014,
+          "observed_positive_fraction": 0.3018867924528302
+        },
+        {
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "count": 93,
+          "mean_score": 0.3411152379528875,
+          "observed_positive_fraction": 0.3655913978494624
+        },
+        {
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 57,
+          "mean_score": 0.4521400408101043,
+          "observed_positive_fraction": 0.42105263157894735
+        },
+        {
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "count": 46,
+          "mean_score": 0.5525847275924215,
+          "observed_positive_fraction": 0.5434782608695652
+        },
+        {
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "count": 51,
+          "mean_score": 0.652262420254328,
+          "observed_positive_fraction": 0.6666666666666666
+        },
+        {
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "count": 43,
+          "mean_score": 0.7548376643132324,
+          "observed_positive_fraction": 0.6744186046511628
+        },
+        {
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 55,
+          "mean_score": 0.8495183921561552,
+          "observed_positive_fraction": 0.8727272727272727
+        },
+        {
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 17,
+          "mean_score": 0.9358991655921036,
+          "observed_positive_fraction": 0.8235294117647058
+        }
+      ],
+      "expected_calibration_error": 0.029695696856072738,
+      "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+      "method": "10 fixed-width bins"
+    },
+    "cv_summary": {
+      "accuracy": {
+        "fold_values": [
+          0.7467532467532467,
+          0.7987012987012987,
+          0.7857142857142857,
+          0.7777777777777778,
+          0.7189542483660131
+        ],
+        "mean": 0.7655801714625243,
+        "std": 0.02891229158922745
+      },
+      "balanced_accuracy": {
+        "fold_values": [
+          0.69,
+          0.747037037037037,
+          0.7327777777777778,
+          0.7280188679245283,
+          0.6918867924528302
+        ],
+        "mean": 0.7179440950384347,
+        "std": 0.022925068950852532
+      },
+      "brier_score": {
+        "fold_values": [
+          0.16418463117516854,
+          0.14369462619502318,
+          0.1425209459756952,
+          0.17006866959903208,
+          0.18142431519538554
+        ],
+        "mean": 0.16037863762806093,
+        "std": 0.015156228022800167
+      },
+      "f1": {
+        "fold_values": [
+          0.5806451612903226,
+          0.6666666666666666,
+          0.6451612903225806,
+          0.6382978723404256,
+          0.5981308411214953
+        ],
+        "mean": 0.6257803663482981,
+        "std": 0.03164073546862269
+      },
+      "pr_auc_average_precision": {
+        "fold_values": [
+          0.6693299641099908,
+          0.7765616144426821,
+          0.7873513838830466,
+          0.6744680968676875,
+          0.663973650941859
+        ],
+        "mean": 0.7143369420490531,
+        "std": 0.055415940921859294
+      },
+      "precision": {
+        "fold_values": [
+          0.6923076923076923,
+          0.7948717948717948,
+          0.7692307692307693,
+          0.7317073170731707,
+          0.5925925925925926
+        ],
+        "mean": 0.7161420332152039,
+        "std": 0.07084011209543464
+      },
+      "recall": {
+        "fold_values": [
+          0.5,
+          0.5740740740740741,
+          0.5555555555555556,
+          0.5660377358490566,
+          0.6037735849056604
+        ],
+        "mean": 0.5598881900768693,
+        "std": 0.033971609116566034
+      },
+      "roc_auc": {
+        "fold_values": [
+          0.8277777777777777,
+          0.8499999999999999,
+          0.8655555555555555,
+          0.800377358490566,
+          0.7828301886792453
+        ],
+        "mean": 0.8253081761006289,
+        "std": 0.03053379024945191
+      },
+      "specificity": {
+        "fold_values": [
+          0.88,
+          0.92,
+          0.91,
+          0.89,
+          0.78
+        ],
+        "mean": 0.876,
+        "std": 0.05003998401278722
+      }
+    },
+    "fold_metrics": [
+      {
+        "accuracy": 0.7467532467532467,
+        "balanced_accuracy": 0.69,
+        "brier_score": 0.16418463117516854,
+        "f1": 0.5806451612903226,
+        "fold": 1,
+        "pr_auc_average_precision": 0.6693299641099908,
+        "precision": 0.6923076923076923,
+        "recall": 0.5,
+        "roc_auc": 0.8277777777777777,
+        "specificity": 0.88
+      },
+      {
+        "accuracy": 0.7987012987012987,
+        "balanced_accuracy": 0.747037037037037,
+        "brier_score": 0.14369462619502318,
+        "f1": 0.6666666666666666,
+        "fold": 2,
+        "pr_auc_average_precision": 0.7765616144426821,
+        "precision": 0.7948717948717948,
+        "recall": 0.5740740740740741,
+        "roc_auc": 0.8499999999999999,
+        "specificity": 0.92
+      },
+      {
+        "accuracy": 0.7857142857142857,
+        "balanced_accuracy": 0.7327777777777778,
+        "brier_score": 0.1425209459756952,
+        "f1": 0.6451612903225806,
+        "fold": 3,
+        "pr_auc_average_precision": 0.7873513838830466,
+        "precision": 0.7692307692307693,
+        "recall": 0.5555555555555556,
+        "roc_auc": 0.8655555555555555,
+        "specificity": 0.91
+      },
+      {
+        "accuracy": 0.7777777777777778,
+        "balanced_accuracy": 0.7280188679245283,
+        "brier_score": 0.17006866959903208,
+        "f1": 0.6382978723404256,
+        "fold": 4,
+        "pr_auc_average_precision": 0.6744680968676875,
+        "precision": 0.7317073170731707,
+        "recall": 0.5660377358490566,
+        "roc_auc": 0.800377358490566,
+        "specificity": 0.89
+      },
+      {
+        "accuracy": 0.7189542483660131,
+        "balanced_accuracy": 0.6918867924528302,
+        "brier_score": 0.18142431519538554,
+        "f1": 0.5981308411214953,
+        "fold": 5,
+        "pr_auc_average_precision": 0.663973650941859,
+        "precision": 0.5925925925925926,
+        "recall": 0.6037735849056604,
+        "roc_auc": 0.7828301886792453,
+        "specificity": 0.78
+      }
+    ],
+    "observed_positive_prevalence": 0.3489583333333333,
+    "oof_confusion_matrix": [
+      [
+        438,
+        62
+      ],
+      [
+        118,
+        150
+      ]
+    ],
+    "oof_log_loss": 0.48468105667343037,
+    "oof_mean_score": 0.3502589200656196,
+    "oof_metrics": {
+      "accuracy": 0.765625,
+      "balanced_accuracy": 0.7178507462686567,
+      "brier_score": 0.16033861717293293,
+      "f1": 0.625,
+      "pr_auc_average_precision": 0.7002889089253761,
+      "precision": 0.7075471698113207,
+      "recall": 0.5597014925373134,
+      "roc_auc": 0.8259328358208955,
+      "specificity": 0.876
+    },
+    "threshold": 0.5
+  },
+  "glucose_semantics": "2-hour OGTT plasma glucose, mg/dL",
+  "nested_threshold_policy": {
+    "aggregate_confusion_matrix": [
+      [
+        350,
+        150
+      ],
+      [
+        62,
+        206
+      ]
+    ],
+    "aggregate_metrics": {
+      "accuracy": 0.7239583333333334,
+      "balanced_accuracy": 0.7343283582089553,
+      "brier_score": 0.16033861717293293,
+      "f1": 0.6602564102564102,
+      "pr_auc_average_precision": 0.7002889089253761,
+      "precision": 0.5786516853932584,
+      "recall": 0.7686567164179104,
+      "roc_auc": 0.8259328358208955,
+      "specificity": 0.7
+    },
+    "cv_summary": {
+      "accuracy": {
+        "fold_values": [
+          0.7467532467532467,
+          0.7597402597402597,
+          0.7467532467532467,
+          0.7124183006535948,
+          0.6535947712418301
+        ],
+        "mean": 0.7238519650284356,
+        "std": 0.03848040817456651
+      },
+      "balanced_accuracy": {
+        "fold_values": [
+          0.7709259259259259,
+          0.7638888888888888,
+          0.7581481481481481,
+          0.7090566037735848,
+          0.6684905660377358
+        ],
+        "mean": 0.7341020265548567,
+        "std": 0.039379206822278516
+      },
+      "brier_score": {
+        "fold_values": [
+          0.16418463117516854,
+          0.14369462619502318,
+          0.1425209459756952,
+          0.17006866959903208,
+          0.18142431519538554
+        ],
+        "mean": 0.16037863762806093,
+        "std": 0.015156228022800167
+      },
+      "f1": {
+        "fold_values": [
+          0.7022900763358778,
+          0.6942148760330579,
+          0.688,
+          0.6271186440677966,
+          0.5891472868217055
+        ],
+        "mean": 0.6601541766516876,
+        "std": 0.04437179279433766
+      },
+      "pr_auc_average_precision": {
+        "fold_values": [
+          0.6693299641099908,
+          0.7765616144426821,
+          0.7873513838830466,
+          0.6744680968676875,
+          0.663973650941859
+        ],
+        "mean": 0.7143369420490531,
+        "std": 0.055415940921859294
+      },
+      "precision": {
+        "fold_values": [
+          0.5974025974025974,
+          0.6268656716417911,
+          0.6056338028169014,
+          0.5692307692307692,
+          0.5
+        ],
+        "mean": 0.5798265682184118,
+        "std": 0.0439821767539886
+      },
+      "recall": {
+        "fold_values": [
+          0.8518518518518519,
+          0.7777777777777778,
+          0.7962962962962963,
+          0.6981132075471698,
+          0.7169811320754716
+        ],
+        "mean": 0.7682040531097135,
+        "std": 0.05552350643940245
+      },
+      "roc_auc": {
+        "fold_values": [
+          0.8277777777777777,
+          0.8499999999999999,
+          0.8655555555555555,
+          0.800377358490566,
+          0.7828301886792453
+        ],
+        "mean": 0.8253081761006289,
+        "std": 0.03053379024945191
+      },
+      "specificity": {
+        "fold_values": [
+          0.69,
+          0.75,
+          0.72,
+          0.72,
+          0.62
+        ],
+        "mean": 0.7,
+        "std": 0.04427188724235731
+      }
+    },
+    "fold_metrics": [
+      {
+        "accuracy": 0.7467532467532467,
+        "balanced_accuracy": 0.7709259259259259,
+        "brier_score": 0.16418463117516854,
+        "f1": 0.7022900763358778,
+        "fold": 1,
+        "pr_auc_average_precision": 0.6693299641099908,
+        "precision": 0.5974025974025974,
+        "recall": 0.8518518518518519,
+        "roc_auc": 0.8277777777777777,
+        "selected_threshold": 0.29,
+        "specificity": 0.69
+      },
+      {
+        "accuracy": 0.7597402597402597,
+        "balanced_accuracy": 0.7638888888888888,
+        "brier_score": 0.14369462619502318,
+        "f1": 0.6942148760330579,
+        "fold": 2,
+        "pr_auc_average_precision": 0.7765616144426821,
+        "precision": 0.6268656716417911,
+        "recall": 0.7777777777777778,
+        "roc_auc": 0.8499999999999999,
+        "selected_threshold": 0.3,
+        "specificity": 0.75
+      },
+      {
+        "accuracy": 0.7467532467532467,
+        "balanced_accuracy": 0.7581481481481481,
+        "brier_score": 0.1425209459756952,
+        "f1": 0.688,
+        "fold": 3,
+        "pr_auc_average_precision": 0.7873513838830466,
+        "precision": 0.6056338028169014,
+        "recall": 0.7962962962962963,
+        "roc_auc": 0.8655555555555555,
+        "selected_threshold": 0.3,
+        "specificity": 0.72
+      },
+      {
+        "accuracy": 0.7124183006535948,
+        "balanced_accuracy": 0.7090566037735848,
+        "brier_score": 0.17006866959903208,
+        "f1": 0.6271186440677966,
+        "fold": 4,
+        "pr_auc_average_precision": 0.6744680968676875,
+        "precision": 0.5692307692307692,
+        "recall": 0.6981132075471698,
+        "roc_auc": 0.800377358490566,
+        "selected_threshold": 0.3,
+        "specificity": 0.72
+      },
+      {
+        "accuracy": 0.6535947712418301,
+        "balanced_accuracy": 0.6684905660377358,
+        "brier_score": 0.18142431519538554,
+        "f1": 0.5891472868217055,
+        "fold": 5,
+        "pr_auc_average_precision": 0.663973650941859,
+        "precision": 0.5,
+        "recall": 0.7169811320754716,
+        "roc_auc": 0.7828301886792453,
+        "selected_threshold": 0.33,
+        "specificity": 0.62
+      }
+    ],
+    "fold_thresholds": [
+      0.29,
+      0.3,
+      0.3,
+      0.3,
+      0.33
+    ],
+    "minimum_recall": 0.75,
+    "policy": "Within each outer-training partition, choose the largest 0.01-grid threshold whose four-fold inner out-of-fold recall is at least 0.75.",
+    "threshold_mean": 0.304,
+    "threshold_std": 0.01356465996625055
+  },
+  "null_prevalence_brier": 0.22718641493055558,
+  "population": "768 Pima women age>=21; only 16 are age>=65",
+  "target": "documented five-year onset benchmark interpretation",
+  "verified_existing_artifact_contract": {
+    "classification_threshold": 0.31,
+    "disease": "diabetes",
+    "feature_order": [
+      "Age",
+      "Glucose",
+      "BMI"
+    ],
+    "features": [
+      {
+        "allowed_values": null,
+        "maximum": 81,
+        "measurement_context": "Completed age at assessment; 21-81 is the observed source-data range.",
+        "minimum": 21,
+        "name": "Age",
+        "task14_note": "Values outside the training range are unsupported and need a fallback.",
+        "type": "integer",
+        "unit": "years",
+        "value_labels": null
+      },
+      {
+        "allowed_values": null,
+        "maximum": 199,
+        "measurement_context": "Two-hour plasma glucose from an oral glucose tolerance test, matching the Pima dataset; a generic, fasting, or random reading must not be silently substituted.",
+        "minimum": 44,
+        "name": "Glucose",
+        "task14_note": "Clarify timing/test context and units in the assessment UI before model integration.",
+        "type": "number",
+        "unit": "mg/dL",
+        "value_labels": null
+      },
+      {
+        "allowed_values": null,
+        "maximum": 67.1,
+        "measurement_context": "BMI computed from measured height and weight; 18.2-67.1 is the observed non-missing source-data range.",
+        "minimum": 18.2,
+        "name": "BMI",
+        "task14_note": "Values outside the training range are unsupported and need a fallback.",
+        "type": "number",
+        "unit": "kg/m^2",
+        "value_labels": null
+      }
+    ],
+    "model_name": "Logistic Regression",
+    "model_version": "2.0.0"
+  },
+  "verified_existing_metadata_version": "2.0.0"
+}

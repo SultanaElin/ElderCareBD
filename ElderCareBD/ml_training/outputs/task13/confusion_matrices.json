@@ -1,0 +1,750 @@
+{
+  "diabetes::caregiver_no_glucose_3::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        431,
+        69
+      ],
+      [
+        169,
+        99
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::caregiver_no_glucose_3::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        327,
+        173
+      ],
+      [
+        92,
+        176
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::caregiver_no_glucose_3::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        435,
+        65
+      ],
+      [
+        174,
+        94
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::caregiver_no_glucose_3::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        334,
+        166
+      ],
+      [
+        91,
+        177
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::caregiver_no_lab_2::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        432,
+        68
+      ],
+      [
+        169,
+        99
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::caregiver_no_lab_2::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        329,
+        171
+      ],
+      [
+        92,
+        176
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::caregiver_no_lab_2::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        424,
+        76
+      ],
+      [
+        163,
+        105
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::caregiver_no_lab_2::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        330,
+        170
+      ],
+      [
+        91,
+        177
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::eldercare_reduced_3::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        438,
+        62
+      ],
+      [
+        118,
+        150
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::eldercare_reduced_3::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        382,
+        118
+      ],
+      [
+        82,
+        186
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::eldercare_reduced_3::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        444,
+        56
+      ],
+      [
+        122,
+        146
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::eldercare_reduced_3::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        380,
+        120
+      ],
+      [
+        70,
+        198
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::eldercare_reduced_4::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        437,
+        63
+      ],
+      [
+        118,
+        150
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::eldercare_reduced_4::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        381,
+        119
+      ],
+      [
+        83,
+        185
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::eldercare_reduced_4::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        446,
+        54
+      ],
+      [
+        146,
+        122
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::eldercare_reduced_4::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        381,
+        119
+      ],
+      [
+        70,
+        198
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::full_8::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        440,
+        60
+      ],
+      [
+        115,
+        153
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::full_8::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        379,
+        121
+      ],
+      [
+        73,
+        195
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::full_8::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        440,
+        60
+      ],
+      [
+        128,
+        140
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "diabetes::full_8::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        394,
+        106
+      ],
+      [
+        76,
+        192
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::current_ui_3::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        109,
+        51
+      ],
+      [
+        52,
+        85
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::current_ui_3::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        97,
+        63
+      ],
+      [
+        45,
+        92
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::current_ui_3::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        160,
+        0
+      ],
+      [
+        137,
+        0
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::current_ui_3::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        85,
+        75
+      ],
+      [
+        39,
+        98
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::eldercare_structured_cp_4::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        127,
+        33
+      ],
+      [
+        34,
+        103
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::eldercare_structured_cp_4::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        126,
+        34
+      ],
+      [
+        32,
+        105
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::eldercare_structured_cp_4::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        160,
+        0
+      ],
+      [
+        137,
+        0
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::eldercare_structured_cp_4::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        121,
+        39
+      ],
+      [
+        33,
+        104
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::full_13::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        143,
+        17
+      ],
+      [
+        29,
+        108
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::full_13::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        139,
+        21
+      ],
+      [
+        27,
+        110
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::full_13::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        130,
+        30
+      ],
+      [
+        34,
+        103
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::full_13::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        134,
+        26
+      ],
+      [
+        27,
+        110
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::inclusive_current_ui_2::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        111,
+        49
+      ],
+      [
+        68,
+        69
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::inclusive_current_ui_2::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        97,
+        63
+      ],
+      [
+        46,
+        91
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::inclusive_current_ui_2::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        147,
+        13
+      ],
+      [
+        117,
+        20
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::inclusive_current_ui_2::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        88,
+        72
+      ],
+      [
+        64,
+        73
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::structured_cp_no_sex_3::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        120,
+        40
+      ],
+      [
+        40,
+        97
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::structured_cp_no_sex_3::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        113,
+        47
+      ],
+      [
+        37,
+        100
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::structured_cp_no_sex_3::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        141,
+        19
+      ],
+      [
+        91,
+        46
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::structured_cp_no_sex_3::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        114,
+        46
+      ],
+      [
+        37,
+        100
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::structured_cp_plus_fbs_5::logistic_regression": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        127,
+        33
+      ],
+      [
+        34,
+        103
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::structured_cp_plus_fbs_5::logistic_regression_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        124,
+        36
+      ],
+      [
+        31,
+        106
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::structured_cp_plus_fbs_5::neural_network_mlp": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        135,
+        25
+      ],
+      [
+        69,
+        68
+      ]
+    ],
+    "threshold": 0.5
+  },
+  "heart::structured_cp_plus_fbs_5::random_forest_balanced": {
+    "labels": [
+      0,
+      1
+    ],
+    "matrix": [
+      [
+        120,
+        40
+      ],
+      [
+        34,
+        103
+      ]
+    ],
+    "threshold": 0.5
+  }
+}

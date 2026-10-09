@@ -1,0 +1,74 @@
+[
+  {
+    "classification": "clearly invalid if present",
+    "count": 0,
+    "decision": "none present; no imputation is activated by the audited CSV",
+    "pattern": "explicit missing, blank, or non-finite values"
+  },
+  {
+    "classification": "valid pediatric age but outside adult/elderly scope",
+    "count": 3150,
+    "decision": "retain for source audit; exclude only by declared subgroup analysis",
+    "pattern": "age below 18 years"
+  },
+  {
+    "classification": "likely invalid paired history",
+    "count": 9963,
+    "decision": "retain in full research baseline; exclude duration from reduced contracts",
+    "pattern": "diabetes=no with positive diabetes duration"
+  },
+  {
+    "classification": "unknown (new diagnosis possible)",
+    "count": 358,
+    "decision": "retain; do not invent duration",
+    "pattern": "diabetes=yes with zero diabetes duration"
+  },
+  {
+    "classification": "clearly invalid",
+    "count": 2498,
+    "decision": "retain only to expose source quality; exclude duration from reduced contracts",
+    "pattern": "diabetes duration greater than age"
+  },
+  {
+    "classification": "likely invalid paired history",
+    "count": 9879,
+    "decision": "retain in full research baseline; exclude duration from reduced contracts",
+    "pattern": "hypertension=no with positive hypertension duration"
+  },
+  {
+    "classification": "unknown (new diagnosis possible)",
+    "count": 330,
+    "decision": "retain; do not invent duration",
+    "pattern": "hypertension=yes with zero hypertension duration"
+  },
+  {
+    "classification": "clearly invalid",
+    "count": 2503,
+    "decision": "retain only to expose source quality; exclude duration from reduced contracts",
+    "pattern": "hypertension duration greater than age"
+  },
+  {
+    "classification": "clinically discordant; target semantics unknown",
+    "count": 1491,
+    "decision": "do not relabel or delete; treat as target-validity evidence",
+    "pattern": "No_Disease label with eGFR below 15"
+  },
+  {
+    "classification": "discordant with any simple eGFR severity interpretation",
+    "count": 103,
+    "decision": "do not relabel or delete; treat as target-validity evidence",
+    "pattern": "Severe_Disease label with eGFR at least 90"
+  },
+  {
+    "classification": "clinically discordant or unit/source error",
+    "count": 5637,
+    "decision": "do not relabel or delete; target and provenance are unverified",
+    "pattern": "No_Disease label with serum creatinine above 10 mg/dl"
+  },
+  {
+    "classification": "mostly plausible ranges; distribution shape suspicious",
+    "count": 575064,
+    "decision": "preserve exactly; no value clipping, row deletion, or cleaned copy",
+    "pattern": "all individually bounded numeric values"
+  }
+]

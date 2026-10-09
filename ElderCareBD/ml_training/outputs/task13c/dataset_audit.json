@@ -1,0 +1,578 @@
+{
+  "age_subgroups": {
+    "age_60_or_older": 7411,
+    "age_65_or_older": 6247
+  },
+  "blank_cells": 0,
+  "bytes": 5483328,
+  "categorical_mappings_for_research_models": {
+    "Anemia (yes/no)": {
+      "no": 0,
+      "yes": 1
+    },
+    "Appetite (good/poor)": {
+      "good": 0,
+      "poor": 1
+    },
+    "Bacteria in urine": {
+      "not present": 0,
+      "present": 1
+    },
+    "Coronary artery disease (yes/no)": {
+      "no": 0,
+      "yes": 1
+    },
+    "Diabetes mellitus (yes/no)": {
+      "no": 0,
+      "yes": 1
+    },
+    "Family history of chronic kidney disease": {
+      "no": 0,
+      "yes": 1
+    },
+    "Hypertension (yes/no)": {
+      "no": 0,
+      "yes": 1
+    },
+    "Pedal edema (yes/no)": {
+      "no": 0,
+      "yes": 1
+    },
+    "Physical activity level": {
+      "high": 2,
+      "low": 0,
+      "moderate": 1
+    },
+    "Pus cell clumps in urine": {
+      "not present": 0,
+      "present": 1
+    },
+    "Pus cells in urine": {
+      "abnormal": 1,
+      "normal": 0
+    },
+    "Red blood cells in urine": {
+      "abnormal": 1,
+      "normal": 0
+    },
+    "Smoking status": {
+      "no": 0,
+      "yes": 1
+    },
+    "Urinary sediment microscopy results": {
+      "abnormal": 1,
+      "normal": 0
+    }
+  },
+  "category_counts": {
+    "Anemia (yes/no)": {
+      "no": 10136,
+      "yes": 10402
+    },
+    "Appetite (good/poor)": {
+      "good": 10384,
+      "poor": 10154
+    },
+    "Bacteria in urine": {
+      "not present": 10353,
+      "present": 10185
+    },
+    "Coronary artery disease (yes/no)": {
+      "no": 10235,
+      "yes": 10303
+    },
+    "Diabetes mellitus (yes/no)": {
+      "no": 10300,
+      "yes": 10238
+    },
+    "Family history of chronic kidney disease": {
+      "no": 10323,
+      "yes": 10215
+    },
+    "Hypertension (yes/no)": {
+      "no": 10227,
+      "yes": 10311
+    },
+    "Pedal edema (yes/no)": {
+      "no": 10251,
+      "yes": 10287
+    },
+    "Physical activity level": {
+      "high": 6869,
+      "low": 6869,
+      "moderate": 6800
+    },
+    "Pus cell clumps in urine": {
+      "not present": 10240,
+      "present": 10298
+    },
+    "Pus cells in urine": {
+      "abnormal": 10274,
+      "normal": 10264
+    },
+    "Red blood cells in urine": {
+      "abnormal": 10266,
+      "normal": 10272
+    },
+    "Smoking status": {
+      "no": 10293,
+      "yes": 10245
+    },
+    "Urinary sediment microscopy results": {
+      "abnormal": 10302,
+      "normal": 10236
+    }
+  },
+  "columns": [
+    "Age of the patient",
+    "Blood pressure (mm/Hg)",
+    "Specific gravity of urine",
+    "Albumin in urine",
+    "Sugar in urine",
+    "Red blood cells in urine",
+    "Pus cells in urine",
+    "Pus cell clumps in urine",
+    "Bacteria in urine",
+    "Random blood glucose level (mg/dl)",
+    "Blood urea (mg/dl)",
+    "Serum creatinine (mg/dl)",
+    "Sodium level (mEq/L)",
+    "Potassium level (mEq/L)",
+    "Hemoglobin level (gms)",
+    "Packed cell volume (%)",
+    "White blood cell count (cells/cumm)",
+    "Red blood cell count (millions/cumm)",
+    "Hypertension (yes/no)",
+    "Diabetes mellitus (yes/no)",
+    "Coronary artery disease (yes/no)",
+    "Appetite (good/poor)",
+    "Pedal edema (yes/no)",
+    "Anemia (yes/no)",
+    "Estimated Glomerular Filtration Rate (eGFR)",
+    "Urine protein-to-creatinine ratio",
+    "Urine output (ml/day)",
+    "Serum albumin level",
+    "Cholesterol level",
+    "Parathyroid hormone (PTH) level",
+    "Serum calcium level",
+    "Serum phosphate level",
+    "Family history of chronic kidney disease",
+    "Smoking status",
+    "Body Mass Index (BMI)",
+    "Physical activity level",
+    "Duration of diabetes mellitus (years)",
+    "Duration of hypertension (years)",
+    "Cystatin C level",
+    "Urinary sediment microscopy results",
+    "C-reactive protein (CRP) level",
+    "Interleukin-6 (IL-6) level",
+    "Target"
+  ],
+  "columns_count": 43,
+  "duplicate_predictor_profiles": 0,
+  "exact_duplicate_rows": 0,
+  "feature_types": {
+    "categorical": [
+      "Red blood cells in urine",
+      "Pus cells in urine",
+      "Pus cell clumps in urine",
+      "Bacteria in urine",
+      "Hypertension (yes/no)",
+      "Diabetes mellitus (yes/no)",
+      "Coronary artery disease (yes/no)",
+      "Appetite (good/poor)",
+      "Pedal edema (yes/no)",
+      "Anemia (yes/no)",
+      "Family history of chronic kidney disease",
+      "Smoking status",
+      "Physical activity level",
+      "Urinary sediment microscopy results"
+    ],
+    "numeric": [
+      "Age of the patient",
+      "Blood pressure (mm/Hg)",
+      "Specific gravity of urine",
+      "Albumin in urine",
+      "Sugar in urine",
+      "Random blood glucose level (mg/dl)",
+      "Blood urea (mg/dl)",
+      "Serum creatinine (mg/dl)",
+      "Sodium level (mEq/L)",
+      "Potassium level (mEq/L)",
+      "Hemoglobin level (gms)",
+      "Packed cell volume (%)",
+      "White blood cell count (cells/cumm)",
+      "Red blood cell count (millions/cumm)",
+      "Estimated Glomerular Filtration Rate (eGFR)",
+      "Urine protein-to-creatinine ratio",
+      "Urine output (ml/day)",
+      "Serum albumin level",
+      "Cholesterol level",
+      "Parathyroid hormone (PTH) level",
+      "Serum calcium level",
+      "Serum phosphate level",
+      "Body Mass Index (BMI)",
+      "Duration of diabetes mellitus (years)",
+      "Duration of hypertension (years)",
+      "Cystatin C level",
+      "C-reactive protein (CRP) level",
+      "Interleukin-6 (IL-6) level"
+    ]
+  },
+  "local_filename": "kidney_disease_dataset.csv",
+  "local_path": "data/kidney_disease_dataset.csv",
+  "missing_cells": 0,
+  "non_finite_numeric_cells": 0,
+  "numeric_summary": {
+    "Age of the patient": {
+      "maximum": 90.0,
+      "mean": 47.47789463433635,
+      "median": 47.0,
+      "minimum": 5.0,
+      "q1": 26.0,
+      "q3": 69.0,
+      "standard_deviation": 24.941946975037542
+    },
+    "Albumin in urine": {
+      "maximum": 5.0,
+      "mean": 2.5012659460512223,
+      "median": 3.0,
+      "minimum": 0.0,
+      "q1": 1.0,
+      "q3": 4.0,
+      "standard_deviation": 1.6970836340479898
+    },
+    "Blood pressure (mm/Hg)": {
+      "maximum": 180.0,
+      "mean": 130.35207907293798,
+      "median": 131.0,
+      "minimum": 80.0,
+      "q1": 105.0,
+      "q3": 156.0,
+      "standard_deviation": 29.063838036556383
+    },
+    "Blood urea (mg/dl)": {
+      "maximum": 199.99436091042605,
+      "mean": 104.09423964977674,
+      "median": 104.40135460093562,
+      "minimum": 7.002369676897138,
+      "q1": 55.86466531743018,
+      "q3": 152.48004770596324,
+      "standard_deviation": 55.72648249651176
+    },
+    "Body Mass Index (BMI)": {
+      "maximum": 40.0,
+      "mean": 27.544239945466945,
+      "median": 27.6,
+      "minimum": 15.0,
+      "q1": 21.3,
+      "q3": 33.8,
+      "standard_deviation": 7.221082327079722
+    },
+    "C-reactive protein (CRP) level": {
+      "maximum": 10.0,
+      "mean": 5.061633070406077,
+      "median": 5.07,
+      "minimum": 0.1,
+      "q1": 2.6,
+      "q3": 7.5375,
+      "standard_deviation": 2.8532165108265
+    },
+    "Cholesterol level": {
+      "maximum": 300.0,
+      "mean": 200.2364397701821,
+      "median": 200.0,
+      "minimum": 100.0,
+      "q1": 150.0,
+      "q3": 250.0,
+      "standard_deviation": 57.86337379719273
+    },
+    "Cystatin C level": {
+      "maximum": 3.0,
+      "mean": 1.7494590515142663,
+      "median": 1.75,
+      "minimum": 0.5,
+      "q1": 1.13,
+      "q3": 2.37,
+      "standard_deviation": 0.7189801851916836
+    },
+    "Duration of diabetes mellitus (years)": {
+      "maximum": 30.0,
+      "mean": 14.918151718765216,
+      "median": 15.0,
+      "minimum": 0.0,
+      "q1": 7.0,
+      "q3": 23.0,
+      "standard_deviation": 8.963722346517692
+    },
+    "Duration of hypertension (years)": {
+      "maximum": 30.0,
+      "mean": 14.94687895608141,
+      "median": 15.0,
+      "minimum": 0.0,
+      "q1": 7.0,
+      "q3": 23.0,
+      "standard_deviation": 8.945499569756802
+    },
+    "Estimated Glomerular Filtration Rate (eGFR)": {
+      "maximum": 120.0,
+      "mean": 62.231311227967666,
+      "median": 62.144999999999996,
+      "minimum": 5.0,
+      "q1": 33.04,
+      "q3": 91.22,
+      "standard_deviation": 33.35260420863875
+    },
+    "Hemoglobin level (gms)": {
+      "maximum": 18.0,
+      "mean": 11.95790242477359,
+      "median": 11.9,
+      "minimum": 6.0,
+      "q1": 9.0,
+      "q3": 14.9,
+      "standard_deviation": 3.450184038570661
+    },
+    "Interleukin-6 (IL-6) level": {
+      "maximum": 15.0,
+      "mean": 7.702504138669783,
+      "median": 7.71,
+      "minimum": 0.5,
+      "q1": 4.05,
+      "q3": 11.2975,
+      "standard_deviation": 4.191765239462503
+    },
+    "Packed cell volume (%)": {
+      "maximum": 55.0,
+      "mean": 37.49897750511247,
+      "median": 38.0,
+      "minimum": 20.0,
+      "q1": 28.0,
+      "q3": 47.0,
+      "standard_deviation": 10.413874127118731
+    },
+    "Parathyroid hormone (PTH) level": {
+      "maximum": 69.99987063142414,
+      "mean": 40.265400298987764,
+      "median": 40.42338553093737,
+      "minimum": 10.000045167618758,
+      "q1": 25.396841158860987,
+      "q3": 55.27266533923184,
+      "standard_deviation": 17.31048786511241
+    },
+    "Potassium level (mEq/L)": {
+      "maximum": 6.499826843943752,
+      "mean": 4.992314061306345,
+      "median": 4.99099115825302,
+      "minimum": 3.500004548599251,
+      "q1": 4.229885105696408,
+      "q3": 5.749898662853173,
+      "standard_deviation": 0.8710261856536655
+    },
+    "Random blood glucose level (mg/dl)": {
+      "maximum": 500.0,
+      "mean": 284.6302950628104,
+      "median": 284.5,
+      "minimum": 70.0,
+      "q1": 176.0,
+      "q3": 393.0,
+      "standard_deviation": 124.63326458770378
+    },
+    "Red blood cell count (millions/cumm)": {
+      "maximum": 6.0,
+      "mean": 4.244980037004576,
+      "median": 4.2,
+      "minimum": 2.5,
+      "q1": 3.4,
+      "q3": 5.1,
+      "standard_deviation": 1.0108947218034874
+    },
+    "Serum albumin level": {
+      "maximum": 4.5,
+      "mean": 3.2560044795014123,
+      "median": 3.25,
+      "minimum": 2.0,
+      "q1": 2.63,
+      "q3": 3.88,
+      "standard_deviation": 0.7215640702553469
+    },
+    "Serum calcium level": {
+      "maximum": 10.5,
+      "mean": 9.00184000389522,
+      "median": 8.99,
+      "minimum": 7.5,
+      "q1": 8.25,
+      "q3": 9.75,
+      "standard_deviation": 0.8673013355653602
+    },
+    "Serum creatinine (mg/dl)": {
+      "maximum": 15.0,
+      "mean": 7.7818648359139155,
+      "median": 7.78,
+      "minimum": 0.5,
+      "q1": 4.2,
+      "q3": 11.43,
+      "standard_deviation": 4.179924622335842
+    },
+    "Serum phosphate level": {
+      "maximum": 6.0,
+      "mean": 4.241157366832213,
+      "median": 4.23,
+      "minimum": 2.5,
+      "q1": 3.38,
+      "q3": 5.11,
+      "standard_deviation": 1.0067345462329567
+    },
+    "Sodium level (mEq/L)": {
+      "maximum": 149.9999141526236,
+      "mean": 135.0766464171229,
+      "median": 135.04497426496428,
+      "minimum": 120.00061266511358,
+      "q1": 127.56346808712176,
+      "q3": 142.60731134454218,
+      "standard_deviation": 8.651000078484987
+    },
+    "Specific gravity of urine": {
+      "maximum": 1.025,
+      "mean": 1.0150405589638718,
+      "median": 1.015,
+      "minimum": 1.005,
+      "q1": 1.01,
+      "q3": 1.02,
+      "standard_deviation": 0.005792668533122707
+    },
+    "Sugar in urine": {
+      "maximum": 5.0,
+      "mean": 2.4945953841659363,
+      "median": 2.0,
+      "minimum": 0.0,
+      "q1": 1.0,
+      "q3": 4.0,
+      "standard_deviation": 1.7010590219493709
+    },
+    "Urine output (ml/day)": {
+      "maximum": 3000.0,
+      "mean": 1653.682831823936,
+      "median": 1645.0,
+      "minimum": 300.0,
+      "q1": 983.0,
+      "q3": 2333.0,
+      "standard_deviation": 776.2136252680289
+    },
+    "Urine protein-to-creatinine ratio": {
+      "maximum": 4.5,
+      "mean": 2.2803836790339855,
+      "median": 2.28,
+      "minimum": 0.1,
+      "q1": 1.18,
+      "q3": 3.37,
+      "standard_deviation": 1.2716091008028536
+    },
+    "White blood cell count (cells/cumm)": {
+      "maximum": 15000.0,
+      "mean": 9033.067143830947,
+      "median": 9084.5,
+      "minimum": 3000.0,
+      "q1": 6016.0,
+      "q3": 12062.0,
+      "standard_deviation": 3481.773547336543
+    }
+  },
+  "parsed_dtypes": {
+    "Age of the patient": "int64",
+    "Albumin in urine": "int64",
+    "Anemia (yes/no)": "str",
+    "Appetite (good/poor)": "str",
+    "Bacteria in urine": "str",
+    "Blood pressure (mm/Hg)": "int64",
+    "Blood urea (mg/dl)": "float64",
+    "Body Mass Index (BMI)": "float64",
+    "C-reactive protein (CRP) level": "float64",
+    "Cholesterol level": "int64",
+    "Coronary artery disease (yes/no)": "str",
+    "Cystatin C level": "float64",
+    "Diabetes mellitus (yes/no)": "str",
+    "Duration of diabetes mellitus (years)": "int64",
+    "Duration of hypertension (years)": "int64",
+    "Estimated Glomerular Filtration Rate (eGFR)": "float64",
+    "Family history of chronic kidney disease": "str",
+    "Hemoglobin level (gms)": "float64",
+    "Hypertension (yes/no)": "str",
+    "Interleukin-6 (IL-6) level": "float64",
+    "Packed cell volume (%)": "int64",
+    "Parathyroid hormone (PTH) level": "float64",
+    "Pedal edema (yes/no)": "str",
+    "Physical activity level": "str",
+    "Potassium level (mEq/L)": "float64",
+    "Pus cell clumps in urine": "str",
+    "Pus cells in urine": "str",
+    "Random blood glucose level (mg/dl)": "int64",
+    "Red blood cell count (millions/cumm)": "float64",
+    "Red blood cells in urine": "str",
+    "Serum albumin level": "float64",
+    "Serum calcium level": "float64",
+    "Serum creatinine (mg/dl)": "float64",
+    "Serum phosphate level": "float64",
+    "Smoking status": "str",
+    "Sodium level (mEq/L)": "float64",
+    "Specific gravity of urine": "float64",
+    "Sugar in urine": "int64",
+    "Target": "str",
+    "Urinary sediment microscopy results": "str",
+    "Urine output (ml/day)": "int64",
+    "Urine protein-to-creatinine ratio": "float64",
+    "White blood cell count (cells/cumm)": "int64"
+  },
+  "predictor_count": 42,
+  "rows": 20538,
+  "sha256": "4A73DF2405F6E102257887502329CC5EC79DB3BD4729D00DA9C96698D8C05199",
+  "suspicious_or_incoherent_values": {
+    "age_below_18": 3150,
+    "diabetes_duration_exceeds_age": 2498,
+    "diabetes_no_but_duration_positive": 9963,
+    "diabetes_yes_but_duration_zero": 358,
+    "hypertension_duration_exceeds_age": 2503,
+    "hypertension_no_but_duration_positive": 9879,
+    "hypertension_yes_but_duration_zero": 330,
+    "no_disease_with_creatinine_above_10": 5637,
+    "no_disease_with_egfr_below_15": 1491,
+    "no_disease_with_upcr_above_3": 5493,
+    "severe_disease_with_egfr_at_least_90": 103
+  },
+  "target_classes": [
+    "No_Disease",
+    "Low_Risk",
+    "Moderate_Risk",
+    "High_Risk",
+    "Severe_Disease"
+  ],
+  "target_column": "Target",
+  "target_distribution": {
+    "High_Risk": {
+      "count": 821,
+      "fraction": 0.03997468107897556
+    },
+    "Low_Risk": {
+      "count": 2054,
+      "fraction": 0.10000973804654786
+    },
+    "Moderate_Risk": {
+      "count": 821,
+      "fraction": 0.03997468107897556
+    },
+    "No_Disease": {
+      "count": 16432,
+      "fraction": 0.8000779043723829
+    },
+    "Severe_Disease": {
+      "count": 410,
+      "fraction": 0.01996299542311812
+    }
+  },
+  "target_mapping_for_research_models": {
+    "High_Risk": 3,
+    "Low_Risk": 1,
+    "Moderate_Risk": 2,
+    "No_Disease": 0,
+    "Severe_Disease": 4
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "classification": "clearly invalid",
+    "count": 3,
+    "decision": "set affected pulse cells to missing inside pipeline",
+    "pattern": "pulse_rate < 30 bpm"
+  },
+  {
+    "classification": "zero clearly invalid; positive sub-1 likely invalid",
+    "count": 18,
+    "decision": "set affected glucose cells to missing; disclose <2 sensitivity",
+    "pattern": "glucose < 1 mmol/L"
+  },
+  {
+    "classification": "unknown; physiologically severe or possible source error",
+    "count": 8,
+    "decision": "retain in primary analysis; evaluate <2-to-missing sensitivity",
+    "pattern": "glucose 1 to <2 mmol/L"
+  },
+  {
+    "classification": "0.36 clearly invalid; 0.64/0.99 likely invalid",
+    "count": 3,
+    "decision": "set affected height cells to missing inside full baseline",
+    "pattern": "height < 1 metre"
+  },
+  {
+    "classification": "3 kg clearly invalid for adult cohort",
+    "count": 1,
+    "decision": "set affected weight cells to missing inside full baseline",
+    "pattern": "weight < 20 kg"
+  },
+  {
+    "classification": "plausible extreme",
+    "count": 8,
+    "decision": "retain unchanged and document",
+    "pattern": "weight 20 to <30 kg"
+  },
+  {
+    "classification": "clearly/likely invalid anthropometric combinations",
+    "count": 4,
+    "decision": "set affected BMI cells to missing inside pipeline",
+    "pattern": "BMI outside 10-80 kg/m^2"
+  },
+  {
+    "classification": "plausible extreme",
+    "count": 1,
+    "decision": "retain unchanged and document",
+    "pattern": "BMI >50 to 80 kg/m^2"
+  },
+  {
+    "classification": "plausible extreme",
+    "count": 13,
+    "decision": "retain unchanged and document",
+    "pattern": "pulse 30-39 or >120 bpm"
+  },
+  {
+    "classification": "plausible extreme",
+    "count": 6,
+    "decision": "retain unchanged and document",
+    "pattern": "systolic BP <80 or >220 mmHg"
+  },
+  {
+    "classification": "plausible extreme",
+    "count": 133,
+    "decision": "retain unchanged and document",
+    "pattern": "diastolic BP <50 or >110 mmHg"
+  },
+  {
+    "classification": "invalid paired measurement if present",
+    "count": 0,
+    "decision": "none found; future inference adapter must reject",
+    "pattern": "diastolic BP >= systolic BP"
+  },
+  {
+    "classification": "plausible severe hyperglycaemia / label discordance unknown",
+    "count": 2,
+    "decision": "retain; never relabel target",
+    "pattern": "glucose >30 mmol/L"
+  },
+  {
+    "classification": "unknown; possible age heaping",
+    "count": 3303,
+    "decision": "retain and disclose",
+    "pattern": "age divisible by five"
+  }
+]

@@ -1,0 +1,22 @@
+disease,feature,available_in_dataset,available_in_current_ui,caregiver_can_reasonably_provide,requires_lab_or_clinical_test,decision,reason
+diabetes,Pregnancies,yes,no,sometimes,no,drop,"Not in the UI, excludes/does not apply to many patients, and is not portable beyond the all-female source cohort."
+diabetes,Glucose,yes,partially,only from a measured result,yes,use conditionally,"Strong predictor, but Pima semantics are two-hour OGTT plasma glucose; Task 14 must not treat an unqualified reading as equivalent."
+diabetes,BloodPressure,yes,yes (diastolic only),yes with a cuff,no,"evaluate, then drop","Directly maps to diastolic BP, but the predefined reduced-set comparison showed no useful gain over Age+Glucose+BMI."
+diabetes,SkinThickness,yes,no,no,clinical measurement,drop,Requires standardized triceps skin-fold measurement and has many invalid zero sentinels.
+diabetes,Insulin,yes,no,no without a result,yes,drop,Two-hour serum insulin is not a routine caregiver-entered value and has extensive missing-value sentinels.
+diabetes,BMI,yes,yes (derived),yes via height and weight,no,use,Direct dataset feature that the app can calculate without fabrication.
+diabetes,DiabetesPedigreeFunction,yes,no,no,no,drop,The derived pedigree function cannot be reconstructed faithfully from a basic family-history answer.
+diabetes,Age,yes,yes,yes,no,use,Directly available with matching units.
+heart,age,yes,yes,yes,no,use,"Direct match, while extrapolation beyond the source age range remains a limitation."
+heart,sex,yes (binary),"partially (gender is Male/Female/Other, not automatically clinical sex)",yes,no,use only after Task 14 adds an exact binary clinical-sex contract,"Do not silently translate the current gender profile field; the dataset also cannot represent Other/unknown, which must never receive a fabricated code."
+heart,cp,yes (four categories),no (current field is boolean),with a guided structured question,"no, but interpretation can be difficult",use after Task 14 contract change,"Adds substantial signal, but must be collected as the exact four-level chest-pain type; boolean chest pain is invalid."
+heart,trestbps,yes,partially (systolic BP),yes with a cuff,no,use with resting context,Task 14 must explicitly collect a resting systolic value; diastolic BP must not be substituted.
+heart,chol,yes,no,only from a result,yes,drop,Serum cholesterol adds burden and did not justify the full clinical contract for caregiver screening.
+heart,fbs,yes (fasting >120 mg/dL flag),no faithful mapping,only with fasting context,yes,drop,Generic glucose is not equivalent to the dataset's binary fasting-threshold field and the evaluated addition gave no useful gain.
+heart,restecg,yes,no,no,ECG,drop,Requires resting electrocardiographic interpretation.
+heart,thalach,yes,no,no reliably,exercise testing,drop,Maximum achieved heart rate is not an ordinary resting caregiver measurement.
+heart,exang,yes,no faithful mapping,not reliably from current UI,exercise context,drop,Exercise-induced angina is not equivalent to generic chest pain or shortness of breath.
+heart,oldpeak,yes,no,no,exercise ECG,drop,Requires ST-depression measurement during exercise testing.
+heart,slope,yes,no,no,exercise ECG,drop,Requires clinical ECG interpretation.
+heart,ca,yes,no,no,fluoroscopy/angiography,drop,Major-vessel count is invasive/specialist information.
+heart,thal,yes,no,no,specialist test,drop,Thalassemia/perfusion-test coding is not a caregiver screening input.

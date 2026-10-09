@@ -1,0 +1,38 @@
+{
+  "candidate_count": 15,
+  "classification_threshold": 0.06,
+  "created_at": "2026-09-02T00:00:00+06:00",
+  "decision": "Option C: preserve Pima v2 for historical/research comparison and select DiaBD v3 for eventual ElderCareBD research/demo current-status screening.",
+  "feature_order": [
+    "age",
+    "gender",
+    "systolic_bp",
+    "diastolic_bp",
+    "glucose",
+    "bmi"
+  ],
+  "fold_result_count": 75,
+  "protected_hashes_after": {
+    "diabd": "D9F868C9CE8EEFE545294156ED1626F60FDB33F507F9CA021FD34FA4B575741A",
+    "kidney": "4A73DF2405F6E102257887502329CC5EC79DB3BD4729D00DA9C96698D8C05199",
+    "pima_data": "698C203A14AA31941D2251175330C9199F3CCDB31597ABBBA2A3E35416257A72",
+    "pima_v2": "2CF6B92BEF3A452DD680A9B37E1FAE5B788BADCB55B4A4EE6A4CFB90F46DCA07"
+  },
+  "protected_hashes_before": {
+    "diabd": "D9F868C9CE8EEFE545294156ED1626F60FDB33F507F9CA021FD34FA4B575741A",
+    "kidney": "4A73DF2405F6E102257887502329CC5EC79DB3BD4729D00DA9C96698D8C05199",
+    "pima_data": "698C203A14AA31941D2251175330C9199F3CCDB31597ABBBA2A3E35416257A72",
+    "pima_v2": "2CF6B92BEF3A452DD680A9B37E1FAE5B788BADCB55B4A4EE6A4CFB90F46DCA07"
+  },
+  "raw_data_modified": false,
+  "selected_artifact": {
+    "filename": "diabetes_model_v3_diabd.pkl",
+    "metadata_filename": "diabetes_model_v3_diabd.metadata.json",
+    "metadata_sha256": "53A33B967D807F94A0B37EB11CA616E7A1EF72A879DC2FE9FC5FA8BB169492BB",
+    "sha256": "9A02FFDEF3A4117BE48E734F9D44CE0FB31FEFA5839F912426B55EEAB66BDBF4"
+  },
+  "status": "COMPLETE",
+  "task": "13B",
+  "task13c_started": false,
+  "task14_modified": false
+}

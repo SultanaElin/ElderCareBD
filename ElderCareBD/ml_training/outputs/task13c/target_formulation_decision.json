@@ -1,0 +1,36 @@
+{
+  "A_original_five_class": {
+    "counts": {
+      "High_Risk": 821,
+      "Low_Risk": 2054,
+      "Moderate_Risk": 821,
+      "No_Disease": 16432,
+      "Severe_Disease": 410
+    },
+    "decision": "reject for deployment; evaluate only as a source-label audit",
+    "reason": "The classes have no clinical definitions and are not demonstrated CKD stages, severity categories, or future-risk outcomes."
+  },
+  "B_binary_disease_vs_no_disease": {
+    "construction": "No_Disease=0; every other supplied label=1",
+    "counts": {
+      "0": 16432,
+      "1": 4106
+    },
+    "decision": "reject for deployment; evaluate only as a negative control",
+    "reason": "Low_Risk, Moderate_Risk, and High_Risk are not documented disease diagnoses, so calling all four nonzero labels disease would be invented."
+  },
+  "C_elevated_or_severe_group": {
+    "construction_considered": "No_Disease and Low_Risk=0; Moderate_Risk, High_Risk, and Severe_Disease=1",
+    "counts": {
+      "0": 18486,
+      "1": 2052
+    },
+    "decision": "reject without modeling",
+    "reason": "No source threshold or outcome definition justifies this boundary. Merging labels only to create a prediction task would be arbitrary."
+  },
+  "D_do_not_deploy": {
+    "decision": "selected",
+    "outcome": "C. Dataset has serious target/provenance issues and should not be deployed",
+    "reason": "Unverifiable provenance and target construction, clinical incoherence, and chance-level full/reduced validation make deployment indefensible."
+  }
+}

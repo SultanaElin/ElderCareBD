@@ -1,0 +1,612 @@
+{
+  "artifact": {
+    "filename": "diabetes_model_v2.pkl",
+    "relative_path": "models/diabetes_model_v2.pkl",
+    "serialization": "joblib/pickle; load only this trusted hash-matched artifact",
+    "sha256": "2CF6B92BEF3A452DD680A9B37E1FAE5B788BADCB55B4A4EE6A4CFB90F46DCA07"
+  },
+  "classifier": {
+    "candidate_key": "logistic_regression",
+    "class": "LogisticRegression",
+    "display_name": "Logistic Regression",
+    "parameters": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 2000,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 42,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    }
+  },
+  "created_at_utc": "2026-08-23T13:42:30+00:00",
+  "disease": "diabetes",
+  "display_name": "Diabetes",
+  "evaluation": {
+    "calibration": {
+      "bins": [
+        {
+          "bin_lower": 0.0,
+          "bin_upper": 0.1,
+          "count": 147,
+          "mean_score": 0.06356046069365817,
+          "observed_positive_fraction": 0.034013605442176874
+        },
+        {
+          "bin_lower": 0.1,
+          "bin_upper": 0.2,
+          "count": 153,
+          "mean_score": 0.1468185672548838,
+          "observed_positive_fraction": 0.1503267973856209
+        },
+        {
+          "bin_lower": 0.2,
+          "bin_upper": 0.30000000000000004,
+          "count": 106,
+          "mean_score": 0.2445323093518014,
+          "observed_positive_fraction": 0.3018867924528302
+        },
+        {
+          "bin_lower": 0.30000000000000004,
+          "bin_upper": 0.4,
+          "count": 93,
+          "mean_score": 0.3411152379528875,
+          "observed_positive_fraction": 0.3655913978494624
+        },
+        {
+          "bin_lower": 0.4,
+          "bin_upper": 0.5,
+          "count": 57,
+          "mean_score": 0.4521400408101043,
+          "observed_positive_fraction": 0.42105263157894735
+        },
+        {
+          "bin_lower": 0.5,
+          "bin_upper": 0.6000000000000001,
+          "count": 46,
+          "mean_score": 0.5525847275924215,
+          "observed_positive_fraction": 0.5434782608695652
+        },
+        {
+          "bin_lower": 0.6000000000000001,
+          "bin_upper": 0.7000000000000001,
+          "count": 51,
+          "mean_score": 0.652262420254328,
+          "observed_positive_fraction": 0.6666666666666666
+        },
+        {
+          "bin_lower": 0.7000000000000001,
+          "bin_upper": 0.8,
+          "count": 43,
+          "mean_score": 0.7548376643132324,
+          "observed_positive_fraction": 0.6744186046511628
+        },
+        {
+          "bin_lower": 0.8,
+          "bin_upper": 0.9,
+          "count": 55,
+          "mean_score": 0.8495183921561552,
+          "observed_positive_fraction": 0.8727272727272727
+        },
+        {
+          "bin_lower": 0.9,
+          "bin_upper": 1.0,
+          "count": 17,
+          "mean_score": 0.9358991655921036,
+          "observed_positive_fraction": 0.8235294117647058
+        }
+      ],
+      "expected_calibration_error": 0.029695696856072738,
+      "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+      "method": "10 fixed-width bins"
+    },
+    "classification_threshold": 0.31,
+    "cv_summary_at_standard_threshold": {
+      "accuracy": {
+        "fold_values": [
+          0.7467532467532467,
+          0.7987012987012987,
+          0.7857142857142857,
+          0.7777777777777778,
+          0.7189542483660131
+        ],
+        "mean": 0.7655801714625243,
+        "std": 0.02891229158922745
+      },
+      "brier_score": {
+        "fold_values": [
+          0.16418463117516854,
+          0.14369462619502318,
+          0.1425209459756952,
+          0.17006866959903208,
+          0.18142431519538554
+        ],
+        "mean": 0.16037863762806093,
+        "std": 0.015156228022800167
+      },
+      "f1": {
+        "fold_values": [
+          0.5806451612903226,
+          0.6666666666666666,
+          0.6451612903225806,
+          0.6382978723404256,
+          0.5981308411214953
+        ],
+        "mean": 0.6257803663482981,
+        "std": 0.03164073546862269
+      },
+      "precision": {
+        "fold_values": [
+          0.6923076923076923,
+          0.7948717948717948,
+          0.7692307692307693,
+          0.7317073170731707,
+          0.5925925925925926
+        ],
+        "mean": 0.7161420332152039,
+        "std": 0.07084011209543464
+      },
+      "recall": {
+        "fold_values": [
+          0.5,
+          0.5740740740740741,
+          0.5555555555555556,
+          0.5660377358490566,
+          0.6037735849056604
+        ],
+        "mean": 0.5598881900768693,
+        "std": 0.033971609116566034
+      },
+      "roc_auc": {
+        "fold_values": [
+          0.8277777777777777,
+          0.8499999999999999,
+          0.8655555555555555,
+          0.800377358490566,
+          0.7828301886792453
+        ],
+        "mean": 0.8253081761006289,
+        "std": 0.03053379024945191
+      }
+    },
+    "final_threshold_development_diagnostic": {
+      "confusion_matrix": [
+        [
+          354,
+          146
+        ],
+        [
+          64,
+          204
+        ]
+      ],
+      "metrics": {
+        "accuracy": 0.7265625,
+        "f1": 0.6601941747572816,
+        "precision": 0.5828571428571429,
+        "recall": 0.7611940298507462,
+        "roc_auc": 0.8259328358208955
+      },
+      "threshold": 0.31,
+      "warning": "Development diagnostic only: this fixed threshold was derived from these same full-dataset out-of-fold scores. Use the nested policy results for less biased classification-performance estimation."
+    },
+    "folds": 5,
+    "method": "5-fold StratifiedKFold with shuffle",
+    "oof_brier_score": 0.16033861717293293,
+    "oof_confusion_matrix_at_standard_threshold": [
+      [
+        438,
+        62
+      ],
+      [
+        118,
+        150
+      ]
+    ],
+    "oof_log_loss": 0.48468105667343037,
+    "oof_metrics_at_standard_threshold": {
+      "accuracy": 0.765625,
+      "f1": 0.625,
+      "precision": 0.7075471698113207,
+      "recall": 0.5597014925373134,
+      "roc_auc": 0.8259328358208955
+    },
+    "oof_roc_auc": 0.8259328358208955,
+    "random_seed": 42,
+    "selection_and_evaluation_warning": "Feature/model development used the same small datasets. CV estimates are internal and there is no held-out Bangladeshi external validation cohort.",
+    "standard_threshold": 0.5,
+    "threshold_selection": {
+      "aggregate_confusion_matrix": [
+        [
+          350,
+          150
+        ],
+        [
+          62,
+          206
+        ]
+      ],
+      "aggregate_metrics": {
+        "accuracy": 0.7239583333333334,
+        "f1": 0.6602564102564102,
+        "precision": 0.5786516853932584,
+        "recall": 0.7686567164179104,
+        "roc_auc": 0.8259328358208955
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.7467532467532467,
+            0.7597402597402597,
+            0.7467532467532467,
+            0.7124183006535948,
+            0.6535947712418301
+          ],
+          "mean": 0.7238519650284356,
+          "std": 0.03848040817456651
+        },
+        "f1": {
+          "fold_values": [
+            0.7022900763358778,
+            0.6942148760330579,
+            0.688,
+            0.6271186440677966,
+            0.5891472868217055
+          ],
+          "mean": 0.6601541766516876,
+          "std": 0.04437179279433766
+        },
+        "precision": {
+          "fold_values": [
+            0.5974025974025974,
+            0.6268656716417911,
+            0.6056338028169014,
+            0.5692307692307692,
+            0.5
+          ],
+          "mean": 0.5798265682184118,
+          "std": 0.0439821767539886
+        },
+        "recall": {
+          "fold_values": [
+            0.8518518518518519,
+            0.7777777777777778,
+            0.7962962962962963,
+            0.6981132075471698,
+            0.7169811320754716
+          ],
+          "mean": 0.7682040531097135,
+          "std": 0.05552350643940245
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8277777777777777,
+            0.8499999999999999,
+            0.8655555555555555,
+            0.800377358490566,
+            0.7828301886792453
+          ],
+          "mean": 0.8253081761006289,
+          "std": 0.03053379024945191
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.7467532467532467,
+          "f1": 0.7022900763358778,
+          "fold": 1,
+          "precision": 0.5974025974025974,
+          "recall": 0.8518518518518519,
+          "roc_auc": 0.8277777777777777,
+          "selected_threshold": 0.29
+        },
+        {
+          "accuracy": 0.7597402597402597,
+          "f1": 0.6942148760330579,
+          "fold": 2,
+          "precision": 0.6268656716417911,
+          "recall": 0.7777777777777778,
+          "roc_auc": 0.8499999999999999,
+          "selected_threshold": 0.3
+        },
+        {
+          "accuracy": 0.7467532467532467,
+          "f1": 0.688,
+          "fold": 3,
+          "precision": 0.6056338028169014,
+          "recall": 0.7962962962962963,
+          "roc_auc": 0.8655555555555555,
+          "selected_threshold": 0.3
+        },
+        {
+          "accuracy": 0.7124183006535948,
+          "f1": 0.6271186440677966,
+          "fold": 4,
+          "precision": 0.5692307692307692,
+          "recall": 0.6981132075471698,
+          "roc_auc": 0.800377358490566,
+          "selected_threshold": 0.3
+        },
+        {
+          "accuracy": 0.6535947712418301,
+          "f1": 0.5891472868217055,
+          "fold": 5,
+          "precision": 0.5,
+          "recall": 0.7169811320754716,
+          "roc_auc": 0.7828301886792453,
+          "selected_threshold": 0.33
+        }
+      ],
+      "fold_thresholds": [
+        0.29,
+        0.3,
+        0.3,
+        0.3,
+        0.33
+      ],
+      "inner_folds": 4,
+      "minimum_recall": 0.75,
+      "outer_folds": 5,
+      "policy": "Within each training partition, choose the largest threshold on a 0.01 grid whose inner out-of-fold recall is at least the declared floor.",
+      "threshold_mean": 0.304,
+      "threshold_std": 0.01356465996625055
+    }
+  },
+  "feature_contract": {
+    "feature_order": [
+      "Age",
+      "Glucose",
+      "BMI"
+    ],
+    "feature_set": "eldercare_reduced_3",
+    "features": [
+      {
+        "allowed_values": null,
+        "maximum": 81,
+        "measurement_context": "Completed age at assessment; 21-81 is the observed source-data range.",
+        "minimum": 21,
+        "name": "Age",
+        "task14_note": "Values outside the training range are unsupported and need a fallback.",
+        "type": "integer",
+        "unit": "years",
+        "value_labels": null
+      },
+      {
+        "allowed_values": null,
+        "maximum": 199,
+        "measurement_context": "Two-hour plasma glucose from an oral glucose tolerance test, matching the Pima dataset; a generic, fasting, or random reading must not be silently substituted.",
+        "minimum": 44,
+        "name": "Glucose",
+        "task14_note": "Clarify timing/test context and units in the assessment UI before model integration.",
+        "type": "number",
+        "unit": "mg/dL",
+        "value_labels": null
+      },
+      {
+        "allowed_values": null,
+        "maximum": 67.1,
+        "measurement_context": "BMI computed from measured height and weight; 18.2-67.1 is the observed non-missing source-data range.",
+        "minimum": 18.2,
+        "name": "BMI",
+        "task14_note": "Values outside the training range are unsupported and need a fallback.",
+        "type": "number",
+        "unit": "kg/m^2",
+        "value_labels": null
+      }
+    ],
+    "strict_missing_feature_policy": "reject",
+    "strict_non_finite_policy": "reject",
+    "strict_unexpected_feature_policy": "reject"
+  },
+  "intended_use": "Research/demo screening risk-score support for ElderCareBD after a separate Task 14 integration and validation step.",
+  "legacy_comparison": {
+    "bytes": 5097106,
+    "feature_order": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age"
+    ],
+    "filename": "diabetes_best_model.pkl",
+    "model": "Random Forest (balanced)",
+    "sha256": "E4290C48301F679323B9673BA34D34C592855279D38392ED24D0B1FD111D5AB6",
+    "status": "verified unchanged"
+  },
+  "limitations": [
+    "All subjects were women at least 21 years old of Pima Indian heritage near Phoenix, Arizona. The data are not representative validation for Bangladeshi elders, men, or gender-diverse patients.",
+    "The repository does not record the download URL, license, or chain of custody. Identification is based on the exact conventional 768-row schema and the original study; no replacement dataset was downloaded.",
+    "The model has not been externally validated, clinically calibrated, or prospectively evaluated.",
+    "The score is an internal model risk estimate and must not be presented as a diagnosis or personal disease probability.",
+    "Model selection on these cross-validation results can make estimates optimistic; independent validation remains required."
+  ],
+  "model_selection": {
+    "best_experimental": {
+      "candidate_key": "logistic_regression",
+      "candidate_name": "Logistic Regression",
+      "class_weight": null,
+      "cv_f1_mean": 0.6358217623317021,
+      "cv_recall_mean": 0.5710691823899372,
+      "cv_roc_auc_mean": 0.8365520614954576,
+      "cv_roc_auc_std": 0.020324628862485806,
+      "feature_set": "full_8",
+      "features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "oof_brier_score": 0.15708721726138386
+    },
+    "deployability_precedence": "The reduced feature contract is preferred despite the full model's stronger experimental discrimination because the omitted clinical fields cannot be collected faithfully in the caregiver workflow.",
+    "selected_deployable": {
+      "candidate_key": "logistic_regression",
+      "candidate_name": "Logistic Regression",
+      "class_weight": null,
+      "cv_f1_mean": 0.6257803663482981,
+      "cv_recall_mean": 0.5598881900768693,
+      "cv_roc_auc_mean": 0.8253081761006289,
+      "cv_roc_auc_std": 0.03053379024945191,
+      "feature_set": "eldercare_reduced_3",
+      "features": [
+        "Age",
+        "Glucose",
+        "BMI"
+      ],
+      "oof_brier_score": 0.16033861717293293
+    }
+  },
+  "model_version": "2.0.0",
+  "output_references": {
+    "aggregate_metrics": "outputs/task13/cv_results.csv",
+    "calibration": "outputs/task13/diabetes_selected_calibration.csv",
+    "confusion_matrix": "outputs/task13/diabetes_selected_confusion_matrix.png",
+    "fold_metrics": "outputs/task13/fold_metrics.csv",
+    "roc_curve": "outputs/task13/diabetes_selected_roc_curve.csv"
+  },
+  "positive_class": 1,
+  "preprocessing": {
+    "categorical_mappings": {},
+    "inside_serialized_pipeline": true,
+    "pima_zero_sentinels": [
+      "Glucose",
+      "BMI"
+    ],
+    "steps": [
+      "exact named-column schema selection",
+      "dataset-specific impossible-zero sentinel conversion to missing",
+      "fold-local median imputation for numeric fields",
+      "fold-local standardization for logistic numeric fields",
+      "fold-local most-frequent imputation and explicit-category one-hot encoding for categorical fields"
+    ]
+  },
+  "prohibited_use": [
+    "clinical diagnosis",
+    "treatment decisions",
+    "claiming an individual patient's real-world chance of disease",
+    "scoring inputs outside the exact contract or training support"
+  ],
+  "runtime": {
+    "joblib": "1.5.3",
+    "matplotlib": "3.11.0",
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.6",
+    "scikit_learn": "1.9.0",
+    "scipy": "1.18.0"
+  },
+  "schema_version": "1.0.0",
+  "target": {
+    "definition": "The commonly documented Pima benchmark outcome forecasts diabetes onset within five years under the source study's WHO-based criteria. Because the repository lacks a byte-level provenance manifest, this is retained as the source-label interpretation rather than asserted as a current clinical diagnosis.",
+    "mapping": {
+      "0": "no diabetes onset within the five-year study horizon",
+      "1": "diabetes onset within the five-year study horizon"
+    },
+    "name": "Outcome",
+    "note": "The target is not a prospective Bangladeshi clinical outcome."
+  },
+  "training_dataset": {
+    "age_counts": {
+      "age_60_or_older": 32,
+      "age_65_or_older": 16
+    },
+    "bytes": 23873,
+    "class_distribution": {
+      "0": 500,
+      "1": 268
+    },
+    "columns": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age",
+      "Outcome"
+    ],
+    "disease": "diabetes",
+    "display_name": "Diabetes",
+    "distribution_url": "https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database",
+    "duplicate_predictor_rows": 0,
+    "exact_duplicate_rows": 0,
+    "explicit_missing_values": 0,
+    "invalid_zero_convention": {
+      "BMI": 11,
+      "BloodPressure": 35,
+      "Glucose": 5,
+      "Insulin": 374,
+      "SkinThickness": 227
+    },
+    "license_note": "The matching distribution page labels its copy CC0, but the repository does not include a provenance or license manifest tying that grant to these exact bytes.",
+    "local_path": "data/diabetes.csv",
+    "missing_value_convention": "No explicit null markers are present. Zero is an invalid/missing sentinel for Glucose, BloodPressure, SkinThickness, Insulin, and BMI; zero Pregnancies is valid. Sentinel conversion occurs inside the pipeline.",
+    "non_finite_values": 0,
+    "observed_ranges_after_zero_sentinel_exclusion": {
+      "Age": {
+        "maximum": 81,
+        "minimum": 21
+      },
+      "BMI": {
+        "maximum": 67.1,
+        "minimum": 18.2
+      },
+      "BloodPressure": {
+        "maximum": 122,
+        "minimum": 24
+      },
+      "DiabetesPedigreeFunction": {
+        "maximum": 2.42,
+        "minimum": 0.078
+      },
+      "Glucose": {
+        "maximum": 199,
+        "minimum": 44
+      },
+      "Insulin": {
+        "maximum": 846,
+        "minimum": 14
+      },
+      "Pregnancies": {
+        "maximum": 17,
+        "minimum": 0
+      },
+      "SkinThickness": {
+        "maximum": 99,
+        "minimum": 7
+      }
+    },
+    "population_and_generalizability": "All subjects were women at least 21 years old of Pima Indian heritage near Phoenix, Arizona. The data are not representative validation for Bangladeshi elders, men, or gender-diverse patients.",
+    "predictor_count": 8,
+    "rows": 768,
+    "rows_with_any_invalid_zero_full_contract": 376,
+    "rows_with_any_invalid_zero_selected_contract": 16,
+    "screening_only": true,
+    "sha256": "698C203A14AA31941D2251175330C9199F3CCDB31597ABBBA2A3E35416257A72",
+    "source_name": "Pima Indians Diabetes Database, originally owned by the US National Institute of Diabetes and Digestive and Kidney Diseases",
+    "source_note": "The repository does not record the download URL, license, or chain of custody. Identification is based on the exact conventional 768-row schema and the original study; no replacement dataset was downloaded.",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2245318/",
+    "target": "Outcome",
+    "target_definition": "The commonly documented Pima benchmark outcome forecasts diabetes onset within five years under the source study's WHO-based criteria. Because the repository lacks a byte-level provenance manifest, this is retained as the source-label interpretation rather than asserted as a current clinical diagnosis.",
+    "target_mapping": {
+      "0": "no diabetes onset within the five-year study horizon",
+      "1": "diabetes onset within the five-year study horizon"
+    }
+  }
+}

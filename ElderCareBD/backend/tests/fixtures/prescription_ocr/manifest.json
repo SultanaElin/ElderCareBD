@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "description": "Deterministic, de-identified synthetic images for OCR-assisted prescription digitization tests. Not clinical data.",
+  "generator": "tests/generate_ocr_fixtures.py",
+  "fixtures": [
+    {
+      "file": "clear_english.png",
+      "category": "clear English printed prescription",
+      "dimensions": [
+        1200,
+        520
+      ],
+      "mode": "RGB",
+      "expected_text_lines": [
+        "PRESCRIPTION - SYNTHETIC ONLY",
+        "PARACETAMOL 500 MG",
+        "1 TABLET TWICE DAILY FOR 5 DAYS"
+      ],
+      "expectation": "Medicine name, strength, dosage, frequency, and duration are visible.",
+      "sha256": "10241ae3ccafef98002ba5d3f07456459183589c4cea17cff98bcb169e0d4333"
+    },
+    {
+      "file": "noisy_low_resolution.png",
+      "category": "noisy low-resolution printed prescription",
+      "dimensions": [
+        520,
+        300
+      ],
+      "mode": "RGB",
+      "expected_text_lines": [
+        "PRESCRIPTION - SYNTHETIC ONLY",
+        "TAB CETIRIZINE 10 MG",
+        "1 TABLET ONCE DAILY FOR 3 DAYS"
+      ],
+      "expectation": "OCR may be imperfect; uncertain text must remain reviewable.",
+      "sha256": "ec8d01d5de927f68dd339c0b4f4955cd802b7ddde30b6430e7b2f1bf92f41c70"
+    },
+    {
+      "file": "multiple_medicines.png",
+      "category": "multiple printed medicines",
+      "dimensions": [
+        1400,
+        760
+      ],
+      "mode": "RGB",
+      "expected_text_lines": [
+        "PRESCRIPTION - SYNTHETIC ONLY",
+        "TAB NAPA 500 MG",
+        "1+1+1 X 3 DAYS",
+        "CAP AMOXICILLIN 250 MG",
+        "1 CAPSULE THREE TIMES DAILY FOR 7 DAYS"
+      ],
+      "expectation": "Two medicine candidates should remain separate.",
+      "sha256": "cf8ddab2d63c50707d397313c07fe965e962f46f02bf942b3fd14146b1603f58"
+    },
+    {
+      "file": "near_empty.png",
+      "category": "near-empty image",
+      "dimensions": [
+        640,
+        400
+      ],
+      "mode": "RGB",
+      "expected_text_lines": [],
+      "expectation": "No medicine candidate should be fabricated.",
+      "sha256": "df54cf9b6150095735eac77c469609094819f751c0f393a20441f5c44247154f"
+    },
+    {
+      "file": "bengali_printed.png",
+      "category": "Bengali printed prescription",
+      "dimensions": [
+        1200,
+        570
+      ],
+      "mode": "RGB",
+      "expected_text_lines": [
+        "\u09b8\u09bf\u09a8\u09a5\u09c7\u099f\u09bf\u0995 - \u099a\u09bf\u0995\u09bf\u09ce\u09b8\u09be\u09b0 \u099c\u09a8\u09cd\u09af \u09a8\u09af\u09bc",
+        "\u099f\u09cd\u09af\u09be\u09ac \u09a8\u09be\u09aa\u09be \u09eb\u09e6\u09e6 \u09ae\u09bf.\u0997\u09cd\u09b0\u09be.",
+        "\u09e7+\u09e7+\u09e7 \u00d7 \u09e9 \u09a6\u09bf\u09a8"
+      ],
+      "expectation": "Bengali OCR may expose raw text for review; the current medicine parser remains English-focused.",
+      "sha256": "775d1c7e0f00a5cc02cf0591f57cc15a472bd3e33a9876709d7ea582b3e53856",
+      "font": {
+        "file": "Nirmala.ttc",
+        "sha256": "ad02cdfc06e144ac45f318e8e5a64cbe04c7479d4beb91d25f5a319a466b1767"
+      }
+    }
+  ]
+}

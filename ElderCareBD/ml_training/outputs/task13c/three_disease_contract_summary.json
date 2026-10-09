@@ -1,0 +1,38 @@
+{
+  "diabetes_diabd_v3": {
+    "classification_semantics": "internal score for contemporaneous recorded diabetes status; not future risk",
+    "exact_fields": [
+      "age",
+      "gender",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "bmi"
+    ],
+    "inputs": 6,
+    "main_limitations": "internal validation only; glucose context and binary gender contract; known diabetes must bypass screening",
+    "measurement_burden": "profile age/gender, resting BP, height/weight-derived BMI, and explicit random-session glucose in mmol/L",
+    "status": "research/demo artifact selected in Task 13B; not yet integrated"
+  },
+  "heart_v2": {
+    "classification_semantics": "Cleveland diagnostic disease-present class; not future cardiovascular risk",
+    "exact_fields": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps"
+    ],
+    "inputs": 4,
+    "main_limitations": "small historical non-Bangladeshi referral cohort; exact sex and chest-pain semantics cannot be inferred from existing generic fields",
+    "measurement_burden": "age, exact binary clinical-sex code, guided four-class chest-pain type, and explicitly resting systolic BP",
+    "status": "research/demo artifact selected in Task 13; not yet integrated"
+  },
+  "kidney_task13c": {
+    "classification_semantics": "none; source labels are unverified",
+    "exact_fields": [],
+    "inputs": 0,
+    "main_limitations": "unknown provenance/target construction, clinical incoherence, and chance-level internal discrimination",
+    "measurement_burden": "none because no contract is authorized",
+    "status": "no model selected; Outcome C"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "ckd_stage_status": "The five labels are not KDIGO GFR stages or CGA classes and must not be presented as clinical CKD stages.",
+  "clinical_or_independent_label_documentation_found": false,
+  "egfr_band_by_target_counts": {
+    "G1_>=90": {
+      "High_Risk": 226,
+      "Low_Risk": 537,
+      "Moderate_Risk": 235,
+      "No_Disease": 4253,
+      "Severe_Disease": 103
+    },
+    "G2_60-89": {
+      "High_Risk": 197,
+      "Low_Risk": 547,
+      "Moderate_Risk": 202,
+      "No_Disease": 4228,
+      "Severe_Disease": 106
+    },
+    "G3a_45-59": {
+      "High_Risk": 117,
+      "Low_Risk": 257,
+      "Moderate_Risk": 110,
+      "No_Disease": 2126,
+      "Severe_Disease": 49
+    },
+    "G3b_30-44": {
+      "High_Risk": 111,
+      "Low_Risk": 271,
+      "Moderate_Risk": 104,
+      "No_Disease": 2148,
+      "Severe_Disease": 54
+    },
+    "G4_15-29": {
+      "High_Risk": 100,
+      "Low_Risk": 267,
+      "Moderate_Risk": 95,
+      "No_Disease": 2186,
+      "Severe_Disease": 63
+    },
+    "G5_<15": {
+      "High_Risk": 70,
+      "Low_Risk": 175,
+      "Moderate_Risk": 75,
+      "No_Disease": 1491,
+      "Severe_Disease": 35
+    }
+  },
+  "egfr_band_target_association": {
+    "chi_square": 12.068655012507758,
+    "cramers_v": 0.012120495260193301,
+    "p_value": 0.9136926505717036
+  },
+  "fitness_conclusion": "The target cannot be justified as an independently observed CKD diagnosis, stage, severity, or prospective outcome. It is unsuitable for clinical or ElderCareBD research/demo disease screening.",
+  "internal_incoherence_counts": {
+    "age_below_18": 3150,
+    "diabetes_duration_exceeds_age": 2498,
+    "diabetes_no_but_duration_positive": 9963,
+    "diabetes_yes_but_duration_zero": 358,
+    "hypertension_duration_exceeds_age": 2503,
+    "hypertension_no_but_duration_positive": 9879,
+    "hypertension_yes_but_duration_zero": 330,
+    "no_disease_with_creatinine_above_10": 5637,
+    "no_disease_with_egfr_below_15": 1491,
+    "no_disease_with_upcr_above_3": 5493,
+    "severe_disease_with_egfr_at_least_90": 103
+  },
+  "mechanical_derivation_finding": "The labels do not behave as if mechanically derived from eGFR, creatinine, UPCR, cystatin C, or the other supplied predictors. This avoids evidence of simple circular rules but does not validate the target; it instead exposes a clinically incoherent, unexplained label process.",
+  "observed_class_fractions": {
+    "High_Risk": 0.03997468107897556,
+    "Low_Risk": 0.10000973804654786,
+    "Moderate_Risk": 0.03997468107897556,
+    "No_Disease": 0.8000779043723829,
+    "Severe_Disease": 0.01996299542311812
+  },
+  "observed_labels": [
+    "No_Disease",
+    "Low_Risk",
+    "Moderate_Risk",
+    "High_Risk",
+    "Severe_Disease"
+  ],
+  "renal_biomarker_means_by_target": {
+    "High_Risk": {
+      "Blood urea (mg/dl)": 101.6825658469779,
+      "Cystatin C level": 1.754981729598051,
+      "Estimated Glomerular Filtration Rate (eGFR)": 63.06380024360536,
+      "Serum creatinine (mg/dl)": 7.784031668696711,
+      "Urine protein-to-creatinine ratio": 2.2896711327649206
+    },
+    "Low_Risk": {
+      "Blood urea (mg/dl)": 104.31127174780984,
+      "Cystatin C level": 1.7485296981499514,
+      "Estimated Glomerular Filtration Rate (eGFR)": 63.07195715676728,
+      "Serum creatinine (mg/dl)": 7.823359298928919,
+      "Urine protein-to-creatinine ratio": 2.2825608568646545
+    },
+    "Moderate_Risk": {
+      "Blood urea (mg/dl)": 105.97652237124281,
+      "Cystatin C level": 1.7367235079171741,
+      "Estimated Glomerular Filtration Rate (eGFR)": 64.05427527405602,
+      "Serum creatinine (mg/dl)": 8.026285018270402,
+      "Urine protein-to-creatinine ratio": 2.288489646772229
+    },
+    "No_Disease": {
+      "Blood urea (mg/dl)": 104.14840283037346,
+      "Cystatin C level": 1.7515463729308667,
+      "Estimated Glomerular Filtration Rate (eGFR)": 62.02002251703992,
+      "Serum creatinine (mg/dl)": 7.755988315481986,
+      "Urine protein-to-creatinine ratio": 2.2780483203505355
+    },
+    "Severe_Disease": {
+      "Blood urea (mg/dl)": 101.89628053965221,
+      "Cystatin C level": 1.6849024390243903,
+      "Estimated Glomerular Filtration Rate (eGFR)": 61.17053658536585,
+      "Serum creatinine (mg/dl)": 8.117292682926829,
+      "Urine protein-to-creatinine ratio": 2.3282439024390245
+    }
+  },
+  "selected_clinical_correlations": {
+    "egfr_vs_age": 0.011986600572308862,
+    "egfr_vs_cystatin_c": -0.006005748587498876,
+    "egfr_vs_serum_creatinine": -0.00413947095038429,
+    "egfr_vs_upcr": 0.0008555798496360896
+  },
+  "synthetic_or_simulated_assessment": "Unverified but strongly suspected. Independently uniform-looking fields, near-balanced random categories, fixed-looking class proportions, weak clinical correlations, and many logical contradictions are collectively consistent with independently simulated predictors and labels. No generator or source record was found, so this is an evidence-based inference, not a claim of known generation methodology.",
+  "target_name": "Target",
+  "temporal_status": "No dates, repeated measurements, follow-up period, or event horizon are present, so neither CKD chronicity nor future-risk semantics can be shown.",
+  "what_the_labels_mean": "Unverified. The source page names the labels but supplies no diagnostic criteria, adjudication protocol, outcome horizon, or construction rules."
+}

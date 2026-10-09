@@ -1,0 +1,133 @@
+{
+  "artifacts": {
+    "diabetes": {
+      "bytes": 5097106,
+      "feature_order": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "filename": "diabetes_best_model.pkl",
+      "model": "Random Forest (balanced)",
+      "sha256": "E4290C48301F679323B9673BA34D34C592855279D38392ED24D0B1FD111D5AB6",
+      "status": "verified unchanged"
+    },
+    "heart": {
+      "bytes": 2481,
+      "feature_order": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+      ],
+      "filename": "heart_disease_best_model.pkl",
+      "model": "Logistic Regression (legacy ordinal preprocessing)",
+      "sha256": "8CCFED2469EE7C08D291E67C27B7F570674E026FD8E91A8C18CCCE4BA5F0D21C",
+      "status": "verified unchanged"
+    }
+  },
+  "comparison": {
+    "diabetes": "The legacy model requires all eight fields and omits zero-sentinel normalization from its saved artifact. The v2 model contains preprocessing and uses three directly collectable, semantically explicit fields.",
+    "heart": "The legacy model requires thirteen fields and treats nominal category codes as scaled numbers. The v2 model one-hot encodes declared categories and uses four inputs, with explicit Task 14 prerequisites."
+  },
+  "legacy_reported_metrics": [
+    {
+      "CV Accuracy Mean": "0.7473",
+      "CV F1 Mean": "0.6688",
+      "CV Precision Mean": "0.6234",
+      "CV ROC-AUC Mean": "0.8362",
+      "CV Recall Mean": "0.7274",
+      "Dataset": "Diabetes",
+      "Model": "Logistic Regression",
+      "Overall Accuracy": "0.7474",
+      "Overall F1": "0.6678",
+      "Overall Precision": "0.6171",
+      "Overall ROC-AUC": "0.8347",
+      "Overall Recall": "0.7276"
+    },
+    {
+      "CV Accuracy Mean": "0.763",
+      "CV F1 Mean": "0.6785",
+      "CV Precision Mean": "0.6458",
+      "CV ROC-AUC Mean": "0.832",
+      "CV Recall Mean": "0.7166",
+      "Dataset": "Diabetes",
+      "Model": "Random Forest",
+      "Overall Accuracy": "0.763",
+      "Overall F1": "0.6784",
+      "Overall Precision": "0.6443",
+      "Overall ROC-AUC": "0.8307",
+      "Overall Recall": "0.7164"
+    },
+    {
+      "CV Accuracy Mean": "0.7213",
+      "CV F1 Mean": "0.5939",
+      "CV Precision Mean": "0.6018",
+      "CV ROC-AUC Mean": "0.7813",
+      "CV Recall Mean": "0.589",
+      "Dataset": "Diabetes",
+      "Model": "Neural Network",
+      "Overall Accuracy": "0.7214",
+      "Overall F1": "0.5962",
+      "Overall Precision": "0.6031",
+      "Overall ROC-AUC": "0.7786",
+      "Overall Recall": "0.5896"
+    },
+    {
+      "CV Accuracy Mean": "0.8354",
+      "CV F1 Mean": "0.8224",
+      "CV Precision Mean": "0.8296",
+      "CV ROC-AUC Mean": "0.9104",
+      "CV Recall Mean": "0.818",
+      "Dataset": "Heart Disease",
+      "Model": "Logistic Regression",
+      "Overall Accuracy": "0.835",
+      "Overall F1": "0.8205",
+      "Overall Precision": "0.8235",
+      "Overall ROC-AUC": "0.9042",
+      "Overall Recall": "0.8175"
+    },
+    {
+      "CV Accuracy Mean": "0.8253",
+      "CV F1 Mean": "0.8051",
+      "CV Precision Mean": "0.8255",
+      "CV ROC-AUC Mean": "0.9007",
+      "CV Recall Mean": "0.7892",
+      "Dataset": "Heart Disease",
+      "Model": "Random Forest",
+      "Overall Accuracy": "0.8249",
+      "Overall F1": "0.806",
+      "Overall Precision": "0.8244",
+      "Overall ROC-AUC": "0.9",
+      "Overall Recall": "0.7883"
+    },
+    {
+      "CV Accuracy Mean": "0.7882",
+      "CV F1 Mean": "0.7715",
+      "CV Precision Mean": "0.7786",
+      "CV ROC-AUC Mean": "0.8769",
+      "CV Recall Mean": "0.7669",
+      "Dataset": "Heart Disease",
+      "Model": "Neural Network",
+      "Overall Accuracy": "0.7879",
+      "Overall F1": "0.7692",
+      "Overall Precision": "0.7721",
+      "Overall ROC-AUC": "0.8781",
+      "Overall Recall": "0.7664"
+    }
+  ]
+}

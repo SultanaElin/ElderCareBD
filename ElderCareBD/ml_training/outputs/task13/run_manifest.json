@@ -1,0 +1,75 @@
+{
+  "artifacts": {
+    "diabetes": {
+      "artifact_path": "models/diabetes_model_v2.pkl",
+      "artifact_sha256": "2CF6B92BEF3A452DD680A9B37E1FAE5B788BADCB55B4A4EE6A4CFB90F46DCA07",
+      "classification_threshold": 0.31,
+      "feature_order": [
+        "Age",
+        "Glucose",
+        "BMI"
+      ],
+      "metadata_path": "models/diabetes_model_v2.metadata.json"
+    },
+    "heart": {
+      "artifact_path": "models/heart_model_v2.pkl",
+      "artifact_sha256": "E0007FA3135DBF97B5E15D2C9B0BEAF385928DE54D814566F4877D712FE4A103",
+      "classification_threshold": 0.53,
+      "feature_order": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps"
+      ],
+      "metadata_path": "models/heart_model_v2.metadata.json"
+    }
+  },
+  "created_at_utc": "2026-08-23T13:42:30+00:00",
+  "cv_folds": 5,
+  "legacy_artifacts_verified_unchanged": {
+    "diabetes": {
+      "bytes": 5097106,
+      "feature_order": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+      ],
+      "filename": "diabetes_best_model.pkl",
+      "model": "Random Forest (balanced)",
+      "sha256": "E4290C48301F679323B9673BA34D34C592855279D38392ED24D0B1FD111D5AB6",
+      "status": "verified unchanged"
+    },
+    "heart": {
+      "bytes": 2481,
+      "feature_order": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+      ],
+      "filename": "heart_disease_best_model.pkl",
+      "model": "Logistic Regression (legacy ordinal preprocessing)",
+      "sha256": "8CCFED2469EE7C08D291E67C27B7F570674E026FD8E91A8C18CCCE4BA5F0D21C",
+      "status": "verified unchanged"
+    }
+  },
+  "model_version": "2.0.0",
+  "output_directory": "outputs/task13",
+  "seed": 42,
+  "status": "COMPLETE",
+  "task": "Task 13"
+}

@@ -1,0 +1,81 @@
+{
+  "analyses": {
+    "age_60_or_older": {
+      "class_counts": {
+        "0": 5985,
+        "1": 1426
+      },
+      "confusion_matrix": [
+        [
+          4252,
+          1733
+        ],
+        [
+          1001,
+          425
+        ]
+      ],
+      "metrics": {
+        "accuracy": 0.6310889218728917,
+        "balanced_accuracy": 0.5042396196194086,
+        "brier_score": 0.2437151224543411,
+        "f1": 0.23716517857142858,
+        "log_loss": 0.6805579068626743,
+        "pr_auc_average_precision": 0.20196758104413232,
+        "precision": 0.1969416126042632,
+        "recall": 0.2980364656381487,
+        "roc_auc": 0.5014920424014688,
+        "specificity": 0.7104427736006683
+      },
+      "original_five_class_counts": {
+        "High_Risk": 288,
+        "Low_Risk": 722,
+        "Moderate_Risk": 281,
+        "No_Disease": 5985,
+        "Severe_Disease": 135
+      },
+      "rows": 7411
+    },
+    "age_65_or_older": {
+      "class_counts": {
+        "0": 5047,
+        "1": 1200
+      },
+      "confusion_matrix": [
+        [
+          3660,
+          1387
+        ],
+        [
+          864,
+          336
+        ]
+      ],
+      "metrics": {
+        "accuracy": 0.6396670401792861,
+        "balanced_accuracy": 0.5025916385971865,
+        "brier_score": 0.2432407428925778,
+        "f1": 0.22990078686281218,
+        "log_loss": 0.6796072909050144,
+        "pr_auc_average_precision": 0.19649234376658545,
+        "precision": 0.1950087057457922,
+        "recall": 0.28,
+        "roc_auc": 0.49999207449970284,
+        "specificity": 0.7251832771943729
+      },
+      "original_five_class_counts": {
+        "High_Risk": 251,
+        "Low_Risk": 606,
+        "Moderate_Risk": 233,
+        "No_Disease": 5047,
+        "Severe_Disease": 110
+      },
+      "rows": 6247
+    }
+  },
+  "candidate": "logistic_regression_balanced",
+  "feature_set": "eldercare_non_lab_12",
+  "formulation": "binary_any_non_no_disease",
+  "interpretation": "Subgroups are numerically large, but invalid target construction prevents claims of elderly clinical validity regardless of precision.",
+  "model_status": "predeclared audit reference; not a selected/deployable model"
+}

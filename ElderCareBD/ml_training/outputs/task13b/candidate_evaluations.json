@@ -1,0 +1,4185 @@
+[
+  {
+    "candidate_key": "logistic_regression",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 4525,
+            "mean_score": 0.02467195959009765,
+            "observed_positive_fraction": 0.026077348066298342
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 284,
+            "mean_score": 0.1471292273143746,
+            "observed_positive_fraction": 0.15845070422535212
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 200,
+            "mean_score": 0.24919304789236638,
+            "observed_positive_fraction": 0.21
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 113,
+            "mean_score": 0.34503472624303116,
+            "observed_positive_fraction": 0.3893805309734513
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 50,
+            "mean_score": 0.44865878462325365,
+            "observed_positive_fraction": 0.4
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 40,
+            "mean_score": 0.5443122926923578,
+            "observed_positive_fraction": 0.55
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 37,
+            "mean_score": 0.6478628392564509,
+            "observed_positive_fraction": 0.5675675675675675
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 21,
+            "mean_score": 0.752532670221037,
+            "observed_positive_fraction": 0.7619047619047619
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 12,
+            "mean_score": 0.8667894895476174,
+            "observed_positive_fraction": 0.75
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 6,
+            "mean_score": 0.9390662873006915,
+            "observed_positive_fraction": 0.8333333333333334
+          }
+        ],
+        "expected_calibration_error": 0.005727765868046015,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.9395085066162571,
+            0.94234404536862,
+            0.9489603024574669,
+            0.9337748344370861,
+            0.9403973509933775
+          ],
+          "mean": 0.9409970079745615,
+          "std": 0.004898236093873593
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.5978906714200832,
+            0.6321199865183686,
+            0.6289180990899899,
+            0.5674626776898828,
+            0.5846963659073336
+          ],
+          "mean": 0.6022175601251316,
+          "std": 0.02506268122523411
+        },
+        "brier_score": {
+          "fold_values": [
+            0.04608541860532357,
+            0.0497809360530024,
+            0.042580762495335676,
+            0.04987178327711816,
+            0.047317586232471905
+          ],
+          "mean": 0.04712729733265034,
+          "std": 0.0026969131143698474
+        },
+        "f1": {
+          "fold_values": [
+            0.30434782608695654,
+            0.3838383838383838,
+            0.4,
+            0.2222222222222222,
+            0.27586206896551724
+          ],
+          "mean": 0.317254100222616,
+          "std": 0.0666202382981764
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.4398693834079307,
+            0.3883024944544158,
+            0.5374100739089994,
+            0.3639918258749284,
+            0.4148334035230798
+          ],
+          "mean": 0.42888143623387076,
+          "std": 0.05992304973920886
+        },
+        "precision": {
+          "fold_values": [
+            0.5833333333333334,
+            0.6333333333333333,
+            0.8571428571428571,
+            0.45454545454545453,
+            0.631578947368421
+          ],
+          "mean": 0.63198678514468,
+          "std": 0.1300383177831112
+        },
+        "recall": {
+          "fold_values": [
+            0.20588235294117646,
+            0.2753623188405797,
+            0.2608695652173913,
+            0.14705882352941177,
+            0.17647058823529413
+          ],
+          "mean": 0.2131287297527707,
+          "std": 0.04881345881288199
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8797979797979798,
+            0.8776981579988571,
+            0.8961914391641389,
+            0.8541456016177958,
+            0.8222209004936656
+          ],
+          "mean": 0.8660108158144875,
+          "std": 0.02567446153497246
+        },
+        "specificity": {
+          "fold_values": [
+            0.98989898989899,
+            0.9888776541961577,
+            0.9969666329625885,
+            0.9878665318503539,
+            0.9929221435793731
+          ],
+          "mean": 0.9913063904974926,
+          "std": 0.0032973069849094607
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.9395085066162571,
+          "balanced_accuracy": 0.5978906714200832,
+          "brier_score": 0.04608541860532357,
+          "f1": 0.30434782608695654,
+          "fold": 1,
+          "pr_auc_average_precision": 0.4398693834079307,
+          "precision": 0.5833333333333334,
+          "recall": 0.20588235294117646,
+          "roc_auc": 0.8797979797979798,
+          "specificity": 0.98989898989899
+        },
+        {
+          "accuracy": 0.94234404536862,
+          "balanced_accuracy": 0.6321199865183686,
+          "brier_score": 0.0497809360530024,
+          "f1": 0.3838383838383838,
+          "fold": 2,
+          "pr_auc_average_precision": 0.3883024944544158,
+          "precision": 0.6333333333333333,
+          "recall": 0.2753623188405797,
+          "roc_auc": 0.8776981579988571,
+          "specificity": 0.9888776541961577
+        },
+        {
+          "accuracy": 0.9489603024574669,
+          "balanced_accuracy": 0.6289180990899899,
+          "brier_score": 0.042580762495335676,
+          "f1": 0.4,
+          "fold": 3,
+          "pr_auc_average_precision": 0.5374100739089994,
+          "precision": 0.8571428571428571,
+          "recall": 0.2608695652173913,
+          "roc_auc": 0.8961914391641389,
+          "specificity": 0.9969666329625885
+        },
+        {
+          "accuracy": 0.9337748344370861,
+          "balanced_accuracy": 0.5674626776898828,
+          "brier_score": 0.04987178327711816,
+          "f1": 0.2222222222222222,
+          "fold": 4,
+          "pr_auc_average_precision": 0.3639918258749284,
+          "precision": 0.45454545454545453,
+          "recall": 0.14705882352941177,
+          "roc_auc": 0.8541456016177958,
+          "specificity": 0.9878665318503539
+        },
+        {
+          "accuracy": 0.9403973509933775,
+          "balanced_accuracy": 0.5846963659073336,
+          "brier_score": 0.047317586232471905,
+          "f1": 0.27586206896551724,
+          "fold": 5,
+          "pr_auc_average_precision": 0.4148334035230798,
+          "precision": 0.631578947368421,
+          "recall": 0.17647058823529413,
+          "roc_auc": 0.8222209004936656,
+          "specificity": 0.9929221435793731
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4903,
+          43
+        ],
+        [
+          269,
+          73
+        ]
+      ],
+      "oof_log_loss": 0.17316012438708767,
+      "oof_mean_score": 0.06472546615181035,
+      "oof_metrics": {
+        "accuracy": 0.9409984871406959,
+        "balanced_accuracy": 0.602378199170929,
+        "brier_score": 0.04712674234497177,
+        "f1": 0.31877729257641924,
+        "pr_auc_average_precision": 0.41651639132935053,
+        "precision": 0.6293103448275862,
+        "recall": 0.2134502923976608,
+        "roc_auc": 0.864797710004895,
+        "specificity": 0.9913061059441973
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "full_14",
+    "features": [
+      "age",
+      "gender",
+      "pulse_rate",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "height",
+      "weight",
+      "bmi",
+      "family_diabetes",
+      "hypertensive",
+      "family_hypertension",
+      "cardiovascular_disease",
+      "stroke"
+    ],
+    "model": "Logistic Regression"
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 638,
+            "mean_score": 0.07381837533425016,
+            "observed_positive_fraction": 0.003134796238244514
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 1646,
+            "mean_score": 0.1486273794492494,
+            "observed_positive_fraction": 0.01275820170109356
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 1084,
+            "mean_score": 0.24581958939127363,
+            "observed_positive_fraction": 0.016605166051660517
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 596,
+            "mean_score": 0.34367876527913427,
+            "observed_positive_fraction": 0.04194630872483222
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 306,
+            "mean_score": 0.44288153705403616,
+            "observed_positive_fraction": 0.08823529411764706
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 205,
+            "mean_score": 0.5502082805195364,
+            "observed_positive_fraction": 0.08780487804878048
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 150,
+            "mean_score": 0.6498910439689491,
+            "observed_positive_fraction": 0.14666666666666667
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 198,
+            "mean_score": 0.7525977340428792,
+            "observed_positive_fraction": 0.17676767676767677
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 231,
+            "mean_score": 0.8488936162758838,
+            "observed_positive_fraction": 0.23809523809523808
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 234,
+            "mean_score": 0.9496422590815982,
+            "observed_positive_fraction": 0.5085470085470085
+          }
+        ],
+        "expected_calibration_error": 0.25229972367793424,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.8119092627599244,
+            0.8449905482041588,
+            0.8657844990548205,
+            0.826868495742668,
+            0.8353831598864712
+          ],
+          "mean": 0.8369871931296086,
+          "std": 0.018039967140102392
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.783080808080808,
+            0.775530839231547,
+            0.827098078867543,
+            0.7773820852911437,
+            0.7682373758401237
+          ],
+          "mean": 0.7862658374622331,
+          "std": 0.02095997623305947
+        },
+        "brier_score": {
+          "fold_values": [
+            0.14586168211380574,
+            0.13691678399318974,
+            0.12323531800963161,
+            0.137962473376832,
+            0.13400446697933174
+          ],
+          "mean": 0.13559614489455818,
+          "std": 0.007321862227323792
+        },
+        "f1": {
+          "fold_values": [
+            0.3388704318936877,
+            0.36923076923076925,
+            0.432,
+            0.3487544483985765,
+            0.35074626865671643
+          ],
+          "mean": 0.36792038363595,
+          "std": 0.033508498440968176
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.4383561384911136,
+            0.38228385099836265,
+            0.5261064233605451,
+            0.36887930562645016,
+            0.39303459035265864
+          ],
+          "mean": 0.42173206176582595,
+          "std": 0.057172523671892475
+        },
+        "precision": {
+          "fold_values": [
+            0.21888412017167383,
+            0.2513089005235602,
+            0.2983425414364641,
+            0.2300469483568075,
+            0.235
+          ],
+          "mean": 0.24671650209770113,
+          "std": 0.027842880555400736
+        },
+        "recall": {
+          "fold_values": [
+            0.75,
+            0.6956521739130435,
+            0.782608695652174,
+            0.7205882352941176,
+            0.6911764705882353
+          ],
+          "mean": 0.728005115089514,
+          "std": 0.03441917470526424
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.880941770647653,
+            0.8751776791078677,
+            0.9003531601236794,
+            0.8549782906084578,
+            0.8220424671385237
+          ],
+          "mean": 0.8666986735252363,
+          "std": 0.026604240128529365
+        },
+        "specificity": {
+          "fold_values": [
+            0.8161616161616162,
+            0.8554095045500506,
+            0.871587462082912,
+            0.8341759352881699,
+            0.8452982810920121
+          ],
+          "mean": 0.8445265598349522,
+          "std": 0.01877781631577059
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.8119092627599244,
+          "balanced_accuracy": 0.783080808080808,
+          "brier_score": 0.14586168211380574,
+          "f1": 0.3388704318936877,
+          "fold": 1,
+          "pr_auc_average_precision": 0.4383561384911136,
+          "precision": 0.21888412017167383,
+          "recall": 0.75,
+          "roc_auc": 0.880941770647653,
+          "specificity": 0.8161616161616162
+        },
+        {
+          "accuracy": 0.8449905482041588,
+          "balanced_accuracy": 0.775530839231547,
+          "brier_score": 0.13691678399318974,
+          "f1": 0.36923076923076925,
+          "fold": 2,
+          "pr_auc_average_precision": 0.38228385099836265,
+          "precision": 0.2513089005235602,
+          "recall": 0.6956521739130435,
+          "roc_auc": 0.8751776791078677,
+          "specificity": 0.8554095045500506
+        },
+        {
+          "accuracy": 0.8657844990548205,
+          "balanced_accuracy": 0.827098078867543,
+          "brier_score": 0.12323531800963161,
+          "f1": 0.432,
+          "fold": 3,
+          "pr_auc_average_precision": 0.5261064233605451,
+          "precision": 0.2983425414364641,
+          "recall": 0.782608695652174,
+          "roc_auc": 0.9003531601236794,
+          "specificity": 0.871587462082912
+        },
+        {
+          "accuracy": 0.826868495742668,
+          "balanced_accuracy": 0.7773820852911437,
+          "brier_score": 0.137962473376832,
+          "f1": 0.3487544483985765,
+          "fold": 4,
+          "pr_auc_average_precision": 0.36887930562645016,
+          "precision": 0.2300469483568075,
+          "recall": 0.7205882352941176,
+          "roc_auc": 0.8549782906084578,
+          "specificity": 0.8341759352881699
+        },
+        {
+          "accuracy": 0.8353831598864712,
+          "balanced_accuracy": 0.7682373758401237,
+          "brier_score": 0.13400446697933174,
+          "f1": 0.35074626865671643,
+          "fold": 5,
+          "pr_auc_average_precision": 0.39303459035265864,
+          "precision": 0.235,
+          "recall": 0.6911764705882353,
+          "roc_auc": 0.8220424671385237,
+          "specificity": 0.8452982810920121
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4177,
+          769
+        ],
+        [
+          93,
+          249
+        ]
+      ],
+      "oof_log_loss": 0.4496398434032327,
+      "oof_mean_score": 0.316974458927556,
+      "oof_metrics": {
+        "accuracy": 0.8369894099848714,
+        "balanced_accuracy": 0.786295500173807,
+        "brier_score": 0.13559599840239345,
+        "f1": 0.36617647058823527,
+        "pr_auc_average_precision": 0.40619602545184713,
+        "precision": 0.24459724950884087,
+        "recall": 0.7280701754385965,
+        "roc_auc": 0.8648184013072173,
+        "specificity": 0.8445208249090174
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "full_14",
+    "features": [
+      "age",
+      "gender",
+      "pulse_rate",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "height",
+      "weight",
+      "bmi",
+      "family_diabetes",
+      "hypertensive",
+      "family_hypertension",
+      "cardiovascular_disease",
+      "stroke"
+    ],
+    "model": "Logistic Regression (balanced)"
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 3066,
+            "mean_score": 0.040180477641134436,
+            "observed_positive_fraction": 0.011089367253750815
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 931,
+            "mean_score": 0.14107180279199721,
+            "observed_positive_fraction": 0.03329752953813104
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 362,
+            "mean_score": 0.24221933385130076,
+            "observed_positive_fraction": 0.0718232044198895
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 255,
+            "mean_score": 0.34818043177334396,
+            "observed_positive_fraction": 0.16470588235294117
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 216,
+            "mean_score": 0.449206211658673,
+            "observed_positive_fraction": 0.18981481481481483
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 185,
+            "mean_score": 0.5512728126697342,
+            "observed_positive_fraction": 0.1891891891891892
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 110,
+            "mean_score": 0.6470670026175579,
+            "observed_positive_fraction": 0.3181818181818182
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 74,
+            "mean_score": 0.7493552793173914,
+            "observed_positive_fraction": 0.4594594594594595
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 69,
+            "mean_score": 0.8521862221019084,
+            "observed_positive_fraction": 0.7101449275362319
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 20,
+            "mean_score": 0.9295110882049931,
+            "observed_positive_fraction": 0.75
+          }
+        ],
+        "expected_calibration_error": 0.09304753137522037,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.9017013232514177,
+            0.9111531190926276,
+            0.9243856332703214,
+            0.9110690633869442,
+            0.912961210974456
+          ],
+          "mean": 0.9122540699951533,
+          "std": 0.007233970877086944
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.7351901366607249,
+            0.6895854398382204,
+            0.7236265588136165,
+            0.6991241896151787,
+            0.7343722119788259
+          ],
+          "mean": 0.7163797073813134,
+          "std": 0.01868563616041667
+        },
+        "brier_score": {
+          "fold_values": [
+            0.06580222215155884,
+            0.06664872234170278,
+            0.05860561674431055,
+            0.06476389894259733,
+            0.06221835591605855
+          ],
+          "mean": 0.06360776321924562,
+          "std": 0.002910383281003711
+        },
+        "f1": {
+          "fold_values": [
+            0.4157303370786517,
+            0.38961038961038963,
+            0.4594594594594595,
+            0.3974358974358974,
+            0.43902439024390244
+          ],
+          "mean": 0.4202520947656601,
+          "std": 0.025959798811809934
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.46803617430952005,
+            0.391383905918991,
+            0.513139589651406,
+            0.3759616097474099,
+            0.46526018941923725
+          ],
+          "mean": 0.44275629380931286,
+          "std": 0.05138084870028105
+        },
+        "precision": {
+          "fold_values": [
+            0.33636363636363636,
+            0.35294117647058826,
+            0.43037974683544306,
+            0.3522727272727273,
+            0.375
+          ],
+          "mean": 0.369391457388479,
+          "std": 0.032880166741044416
+        },
+        "recall": {
+          "fold_values": [
+            0.5441176470588235,
+            0.43478260869565216,
+            0.4927536231884058,
+            0.45588235294117646,
+            0.5294117647058824
+          ],
+          "mean": 0.4913895993179881,
+          "std": 0.041696303368629936
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8763220439691027,
+            0.8689204437215163,
+            0.9118125467094562,
+            0.8730149289240469,
+            0.8491494676738238
+          ],
+          "mean": 0.8758438861995892,
+          "std": 0.020310106888785033
+        },
+        "specificity": {
+          "fold_values": [
+            0.9262626262626262,
+            0.9443882709807887,
+            0.9544994944388271,
+            0.942366026289181,
+            0.9393326592517695
+          ],
+          "mean": 0.9413698154446385,
+          "std": 0.009108997208213319
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.9017013232514177,
+          "balanced_accuracy": 0.7351901366607249,
+          "brier_score": 0.06580222215155884,
+          "f1": 0.4157303370786517,
+          "fold": 1,
+          "pr_auc_average_precision": 0.46803617430952005,
+          "precision": 0.33636363636363636,
+          "recall": 0.5441176470588235,
+          "roc_auc": 0.8763220439691027,
+          "specificity": 0.9262626262626262
+        },
+        {
+          "accuracy": 0.9111531190926276,
+          "balanced_accuracy": 0.6895854398382204,
+          "brier_score": 0.06664872234170278,
+          "f1": 0.38961038961038963,
+          "fold": 2,
+          "pr_auc_average_precision": 0.391383905918991,
+          "precision": 0.35294117647058826,
+          "recall": 0.43478260869565216,
+          "roc_auc": 0.8689204437215163,
+          "specificity": 0.9443882709807887
+        },
+        {
+          "accuracy": 0.9243856332703214,
+          "balanced_accuracy": 0.7236265588136165,
+          "brier_score": 0.05860561674431055,
+          "f1": 0.4594594594594595,
+          "fold": 3,
+          "pr_auc_average_precision": 0.513139589651406,
+          "precision": 0.43037974683544306,
+          "recall": 0.4927536231884058,
+          "roc_auc": 0.9118125467094562,
+          "specificity": 0.9544994944388271
+        },
+        {
+          "accuracy": 0.9110690633869442,
+          "balanced_accuracy": 0.6991241896151787,
+          "brier_score": 0.06476389894259733,
+          "f1": 0.3974358974358974,
+          "fold": 4,
+          "pr_auc_average_precision": 0.3759616097474099,
+          "precision": 0.3522727272727273,
+          "recall": 0.45588235294117646,
+          "roc_auc": 0.8730149289240469,
+          "specificity": 0.942366026289181
+        },
+        {
+          "accuracy": 0.912961210974456,
+          "balanced_accuracy": 0.7343722119788259,
+          "brier_score": 0.06221835591605855,
+          "f1": 0.43902439024390244,
+          "fold": 5,
+          "pr_auc_average_precision": 0.46526018941923725,
+          "precision": 0.375,
+          "recall": 0.5294117647058824,
+          "roc_auc": 0.8491494676738238,
+          "specificity": 0.9393326592517695
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4656,
+          290
+        ],
+        [
+          174,
+          168
+        ]
+      ],
+      "oof_log_loss": 0.22380750180917652,
+      "oof_mean_score": 0.15772226662484212,
+      "oof_metrics": {
+        "accuracy": 0.9122541603630863,
+        "balanced_accuracy": 0.7162974155972219,
+        "brier_score": 0.0636078073326306,
+        "f1": 0.42,
+        "pr_auc_average_precision": 0.4302522652410812,
+        "precision": 0.36681222707423583,
+        "recall": 0.49122807017543857,
+        "roc_auc": 0.8748950655382222,
+        "specificity": 0.9413667610190053
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "full_14",
+    "features": [
+      "age",
+      "gender",
+      "pulse_rate",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "height",
+      "weight",
+      "bmi",
+      "family_diabetes",
+      "hypertensive",
+      "family_hypertension",
+      "cardiovascular_disease",
+      "stroke"
+    ],
+    "model": "Random Forest (balanced)"
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 4502,
+            "mean_score": 0.036263938626850914,
+            "observed_positive_fraction": 0.03487338960462017
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 494,
+            "mean_score": 0.1345468408071541,
+            "observed_positive_fraction": 0.145748987854251
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 130,
+            "mean_score": 0.24439246789355226,
+            "observed_positive_fraction": 0.3076923076923077
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 64,
+            "mean_score": 0.35269151860451453,
+            "observed_positive_fraction": 0.5
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 33,
+            "mean_score": 0.4427894822347672,
+            "observed_positive_fraction": 0.42424242424242425
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 21,
+            "mean_score": 0.5532395865897056,
+            "observed_positive_fraction": 0.5238095238095238
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 21,
+            "mean_score": 0.6469837883645335,
+            "observed_positive_fraction": 0.2857142857142857
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 12,
+            "mean_score": 0.7471577508255312,
+            "observed_positive_fraction": 0.5
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 9,
+            "mean_score": 0.8409397923355457,
+            "observed_positive_fraction": 0.4444444444444444
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 2,
+            "mean_score": 0.9081153566604817,
+            "observed_positive_fraction": 0.0
+          }
+        ],
+        "expected_calibration_error": 0.008815839630206417,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.9347826086956522,
+            0.9328922495274102,
+            0.9347826086956522,
+            0.9318826868495743,
+            0.9318826868495743
+          ],
+          "mean": 0.9332445681235727,
+          "std": 0.0013087938878877908
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.54058229352347,
+            0.5461745871250421,
+            0.5269632625547691,
+            0.545909415333373,
+            0.5185198953190984
+          ],
+          "mean": 0.5356298907711505,
+          "std": 0.01103854998133826
+        },
+        "brier_score": {
+          "fold_values": [
+            0.05342815591737607,
+            0.05309346367120142,
+            0.051492761944274816,
+            0.05486478215458563,
+            0.055428913370149754
+          ],
+          "mean": 0.05366161541151754,
+          "std": 0.0013894011216355397
+        },
+        "f1": {
+          "fold_values": [
+            0.14814814814814814,
+            0.16470588235294117,
+            0.1038961038961039,
+            0.16279069767441862,
+            0.07692307692307693
+          ],
+          "mean": 0.13129278179893772,
+          "std": 0.03492649463171687
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.2804044786254362,
+            0.3153317393355098,
+            0.34139371462194806,
+            0.2618410690590199,
+            0.24987242570990342
+          ],
+          "mean": 0.2897686854703635,
+          "std": 0.03399401426410881
+        },
+        "precision": {
+          "fold_values": [
+            0.46153846153846156,
+            0.4375,
+            0.5,
+            0.3888888888888889,
+            0.3
+          ],
+          "mean": 0.4175854700854701,
+          "std": 0.06894990246259868
+        },
+        "recall": {
+          "fold_values": [
+            0.08823529411764706,
+            0.10144927536231885,
+            0.057971014492753624,
+            0.10294117647058823,
+            0.04411764705882353
+          ],
+          "mean": 0.07894288150042626,
+          "std": 0.023754666986048542
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8134729649435533,
+            0.8356706378863147,
+            0.866121539836755,
+            0.8006155950752394,
+            0.7818800927853448
+          ],
+          "mean": 0.8195521661054415,
+          "std": 0.029131588421028108
+        },
+        "specificity": {
+          "fold_values": [
+            0.9929292929292929,
+            0.9908998988877654,
+            0.9959555106167847,
+            0.9888776541961577,
+            0.9929221435793731
+          ],
+          "mean": 0.9923169000418748,
+          "std": 0.0023586918392244187
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.9347826086956522,
+          "balanced_accuracy": 0.54058229352347,
+          "brier_score": 0.05342815591737607,
+          "f1": 0.14814814814814814,
+          "fold": 1,
+          "pr_auc_average_precision": 0.2804044786254362,
+          "precision": 0.46153846153846156,
+          "recall": 0.08823529411764706,
+          "roc_auc": 0.8134729649435533,
+          "specificity": 0.9929292929292929
+        },
+        {
+          "accuracy": 0.9328922495274102,
+          "balanced_accuracy": 0.5461745871250421,
+          "brier_score": 0.05309346367120142,
+          "f1": 0.16470588235294117,
+          "fold": 2,
+          "pr_auc_average_precision": 0.3153317393355098,
+          "precision": 0.4375,
+          "recall": 0.10144927536231885,
+          "roc_auc": 0.8356706378863147,
+          "specificity": 0.9908998988877654
+        },
+        {
+          "accuracy": 0.9347826086956522,
+          "balanced_accuracy": 0.5269632625547691,
+          "brier_score": 0.051492761944274816,
+          "f1": 0.1038961038961039,
+          "fold": 3,
+          "pr_auc_average_precision": 0.34139371462194806,
+          "precision": 0.5,
+          "recall": 0.057971014492753624,
+          "roc_auc": 0.866121539836755,
+          "specificity": 0.9959555106167847
+        },
+        {
+          "accuracy": 0.9318826868495743,
+          "balanced_accuracy": 0.545909415333373,
+          "brier_score": 0.05486478215458563,
+          "f1": 0.16279069767441862,
+          "fold": 4,
+          "pr_auc_average_precision": 0.2618410690590199,
+          "precision": 0.3888888888888889,
+          "recall": 0.10294117647058823,
+          "roc_auc": 0.8006155950752394,
+          "specificity": 0.9888776541961577
+        },
+        {
+          "accuracy": 0.9318826868495743,
+          "balanced_accuracy": 0.5185198953190984,
+          "brier_score": 0.055428913370149754,
+          "f1": 0.07692307692307693,
+          "fold": 5,
+          "pr_auc_average_precision": 0.24987242570990342,
+          "precision": 0.3,
+          "recall": 0.04411764705882353,
+          "roc_auc": 0.7818800927853448,
+          "specificity": 0.9929221435793731
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4908,
+          38
+        ],
+        [
+          315,
+          27
+        ]
+      ],
+      "oof_log_loss": 0.19714358531760304,
+      "oof_mean_score": 0.06471955270720522,
+      "oof_metrics": {
+        "accuracy": 0.9332450832072617,
+        "balanced_accuracy": 0.5356321961393576,
+        "brier_score": 0.053661053674622365,
+        "f1": 0.13267813267813267,
+        "pr_auc_average_precision": 0.2761027231790687,
+        "precision": 0.4153846153846154,
+        "recall": 0.07894736842105263,
+        "roc_auc": 0.8193915338285058,
+        "specificity": 0.9923170238576627
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "eldercare_reduced_8",
+    "features": [
+      "age",
+      "gender",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "bmi",
+      "family_diabetes",
+      "family_hypertension"
+    ],
+    "model": "Logistic Regression"
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 349,
+            "mean_score": 0.07457496965085947,
+            "observed_positive_fraction": 0.008595988538681949
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 1150,
+            "mean_score": 0.15187330544177513,
+            "observed_positive_fraction": 0.01391304347826087
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 1010,
+            "mean_score": 0.24713762414763368,
+            "observed_positive_fraction": 0.01485148514851485
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 805,
+            "mean_score": 0.34795636676824254,
+            "observed_positive_fraction": 0.03354037267080745
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 615,
+            "mean_score": 0.44908441821779604,
+            "observed_positive_fraction": 0.06016260162601626
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 495,
+            "mean_score": 0.552642475956035,
+            "observed_positive_fraction": 0.10101010101010101
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 329,
+            "mean_score": 0.6477064136361501,
+            "observed_positive_fraction": 0.1094224924012158
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 212,
+            "mean_score": 0.7469731308240055,
+            "observed_positive_fraction": 0.18867924528301888
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 170,
+            "mean_score": 0.8477916190002015,
+            "observed_positive_fraction": 0.3
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 153,
+            "mean_score": 0.9532962228584287,
+            "observed_positive_fraction": 0.43790849673202614
+          }
+        ],
+        "expected_calibration_error": 0.30249099758968884,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.7551984877126654,
+            0.7684310018903592,
+            0.7882797731568998,
+            0.7861873226111636,
+            0.7549668874172185
+          ],
+          "mean": 0.7706126945576612,
+          "std": 0.014434982105062836
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.7185383244206773,
+            0.7345803842264914,
+            0.7923828783282777,
+            0.7487955748527926,
+            0.7252646761434605
+          ],
+          "mean": 0.74391236759434,
+          "std": 0.026275085160439266
+        },
+        "brier_score": {
+          "fold_values": [
+            0.17295862980793972,
+            0.17021640971565297,
+            0.15682812192972503,
+            0.162408084694105,
+            0.17201918194067575
+          ],
+          "mean": 0.1668860856176197,
+          "std": 0.006253489509403662
+        },
+        "f1": {
+          "fold_values": [
+            0.2621082621082621,
+            0.28152492668621704,
+            0.32934131736526945,
+            0.2981366459627329,
+            0.26628895184135976
+          ],
+          "mean": 0.28748002079276824,
+          "std": 0.0244711360529505
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.28309035706452407,
+            0.3178115764881802,
+            0.3476676158781133,
+            0.2613093236365913,
+            0.2524827562971033
+          ],
+          "mean": 0.2924723258729024,
+          "std": 0.03562840827896351
+        },
+        "precision": {
+          "fold_values": [
+            0.1625441696113074,
+            0.17647058823529413,
+            0.20754716981132076,
+            0.1889763779527559,
+            0.1649122807017544
+          ],
+          "mean": 0.18009011726248653,
+          "std": 0.01663840951380735
+        },
+        "recall": {
+          "fold_values": [
+            0.6764705882352942,
+            0.6956521739130435,
+            0.7971014492753623,
+            0.7058823529411765,
+            0.6911764705882353
+          ],
+          "mean": 0.7132566069906223,
+          "std": 0.04297673059677065
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8125074272133095,
+            0.8330036195249191,
+            0.8678653595345907,
+            0.7974186641289479,
+            0.7845714625587342
+          ],
+          "mean": 0.8190733065921002,
+          "std": 0.029247665215109225
+        },
+        "specificity": {
+          "fold_values": [
+            0.7606060606060606,
+            0.7735085945399394,
+            0.7876643073811931,
+            0.7917087967644085,
+            0.7593528816986855
+          ],
+          "mean": 0.7745681281980574,
+          "std": 0.013363218902278848
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.7551984877126654,
+          "balanced_accuracy": 0.7185383244206773,
+          "brier_score": 0.17295862980793972,
+          "f1": 0.2621082621082621,
+          "fold": 1,
+          "pr_auc_average_precision": 0.28309035706452407,
+          "precision": 0.1625441696113074,
+          "recall": 0.6764705882352942,
+          "roc_auc": 0.8125074272133095,
+          "specificity": 0.7606060606060606
+        },
+        {
+          "accuracy": 0.7684310018903592,
+          "balanced_accuracy": 0.7345803842264914,
+          "brier_score": 0.17021640971565297,
+          "f1": 0.28152492668621704,
+          "fold": 2,
+          "pr_auc_average_precision": 0.3178115764881802,
+          "precision": 0.17647058823529413,
+          "recall": 0.6956521739130435,
+          "roc_auc": 0.8330036195249191,
+          "specificity": 0.7735085945399394
+        },
+        {
+          "accuracy": 0.7882797731568998,
+          "balanced_accuracy": 0.7923828783282777,
+          "brier_score": 0.15682812192972503,
+          "f1": 0.32934131736526945,
+          "fold": 3,
+          "pr_auc_average_precision": 0.3476676158781133,
+          "precision": 0.20754716981132076,
+          "recall": 0.7971014492753623,
+          "roc_auc": 0.8678653595345907,
+          "specificity": 0.7876643073811931
+        },
+        {
+          "accuracy": 0.7861873226111636,
+          "balanced_accuracy": 0.7487955748527926,
+          "brier_score": 0.162408084694105,
+          "f1": 0.2981366459627329,
+          "fold": 4,
+          "pr_auc_average_precision": 0.2613093236365913,
+          "precision": 0.1889763779527559,
+          "recall": 0.7058823529411765,
+          "roc_auc": 0.7974186641289479,
+          "specificity": 0.7917087967644085
+        },
+        {
+          "accuracy": 0.7549668874172185,
+          "balanced_accuracy": 0.7252646761434605,
+          "brier_score": 0.17201918194067575,
+          "f1": 0.26628895184135976,
+          "fold": 5,
+          "pr_auc_average_precision": 0.2524827562971033,
+          "precision": 0.1649122807017544,
+          "recall": 0.6911764705882353,
+          "roc_auc": 0.7845714625587342,
+          "specificity": 0.7593528816986855
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          3831,
+          1115
+        ],
+        [
+          98,
+          244
+        ]
+      ],
+      "oof_log_loss": 0.5248723280520162,
+      "oof_mean_score": 0.3671657328393107,
+      "oof_metrics": {
+        "accuracy": 0.7706127080181543,
+        "balanced_accuracy": 0.7440077988474354,
+        "brier_score": 0.1668859617342234,
+        "f1": 0.28689006466784245,
+        "pr_auc_average_precision": 0.278076179261087,
+        "precision": 0.17954378219278883,
+        "recall": 0.7134502923976608,
+        "roc_auc": 0.8183664275934478,
+        "specificity": 0.7745653052972099
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "eldercare_reduced_8",
+    "features": [
+      "age",
+      "gender",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "bmi",
+      "family_diabetes",
+      "family_hypertension"
+    ],
+    "model": "Logistic Regression (balanced)"
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 2697,
+            "mean_score": 0.04191732004754768,
+            "observed_positive_fraction": 0.012235817575083427
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 1042,
+            "mean_score": 0.14274784305867486,
+            "observed_positive_fraction": 0.03550863723608445
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 536,
+            "mean_score": 0.24519857254261607,
+            "observed_positive_fraction": 0.08955223880597014
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 338,
+            "mean_score": 0.343926728433466,
+            "observed_positive_fraction": 0.12721893491124261
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 229,
+            "mean_score": 0.4465650786181755,
+            "observed_positive_fraction": 0.17467248908296942
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 178,
+            "mean_score": 0.5464757394638599,
+            "observed_positive_fraction": 0.25842696629213485
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 119,
+            "mean_score": 0.646746774128645,
+            "observed_positive_fraction": 0.2689075630252101
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 84,
+            "mean_score": 0.7493655050900024,
+            "observed_positive_fraction": 0.38095238095238093
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 56,
+            "mean_score": 0.8376942973852012,
+            "observed_positive_fraction": 0.5178571428571429
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 9,
+            "mean_score": 0.9210386661410455,
+            "observed_positive_fraction": 0.2222222222222222
+          }
+        ],
+        "expected_calibration_error": 0.10629988947703628,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.9054820415879017,
+            0.9092627599243857,
+            0.9083175803402647,
+            0.8978240302743614,
+            0.9006622516556292
+          ],
+          "mean": 0.9043097327565086,
+          "std": 0.004412212221657348
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.6755793226381461,
+            0.6683518705763397,
+            0.7217728345129761,
+            0.6372672931660025,
+            0.6730208767025516
+          ],
+          "mean": 0.6751984395192032,
+          "std": 0.02705442104634307
+        },
+        "brier_score": {
+          "fold_values": [
+            0.07584323781798745,
+            0.07154054859864176,
+            0.07009598203781219,
+            0.07402585120318435,
+            0.07564370076420593
+          ],
+          "mean": 0.07342986408436633,
+          "std": 0.002270018888638035
+        },
+        "f1": {
+          "fold_values": [
+            0.358974358974359,
+            0.36,
+            0.41916167664670656,
+            0.2987012987012987,
+            0.34782608695652173
+          ],
+          "mean": 0.3569326842557772,
+          "std": 0.03836625791887119
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.26230732846866495,
+            0.3076839067958759,
+            0.37057001485423063,
+            0.26380438606989853,
+            0.3024383647411206
+          ],
+          "mean": 0.3013608001859581,
+          "std": 0.039412475466533016
+        },
+        "precision": {
+          "fold_values": [
+            0.3181818181818182,
+            0.3333333333333333,
+            0.35714285714285715,
+            0.26744186046511625,
+            0.3010752688172043
+          ],
+          "mean": 0.31543502758806585,
+          "std": 0.030255525167272267
+        },
+        "recall": {
+          "fold_values": [
+            0.4117647058823529,
+            0.391304347826087,
+            0.5072463768115942,
+            0.3382352941176471,
+            0.4117647058823529
+          ],
+          "mean": 0.41206308610400677,
+          "std": 0.05466535461498594
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8233065953654188,
+            0.8469102152664821,
+            0.8769068448586627,
+            0.8242134062927496,
+            0.8052399928626659
+          ],
+          "mean": 0.8353154109291958,
+          "std": 0.024642580197691142
+        },
+        "specificity": {
+          "fold_values": [
+            0.9393939393939394,
+            0.9453993933265925,
+            0.9362992922143579,
+            0.9362992922143579,
+            0.9342770475227502
+          ],
+          "mean": 0.9383337929343997,
+          "std": 0.0038931269979919753
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.9054820415879017,
+          "balanced_accuracy": 0.6755793226381461,
+          "brier_score": 0.07584323781798745,
+          "f1": 0.358974358974359,
+          "fold": 1,
+          "pr_auc_average_precision": 0.26230732846866495,
+          "precision": 0.3181818181818182,
+          "recall": 0.4117647058823529,
+          "roc_auc": 0.8233065953654188,
+          "specificity": 0.9393939393939394
+        },
+        {
+          "accuracy": 0.9092627599243857,
+          "balanced_accuracy": 0.6683518705763397,
+          "brier_score": 0.07154054859864176,
+          "f1": 0.36,
+          "fold": 2,
+          "pr_auc_average_precision": 0.3076839067958759,
+          "precision": 0.3333333333333333,
+          "recall": 0.391304347826087,
+          "roc_auc": 0.8469102152664821,
+          "specificity": 0.9453993933265925
+        },
+        {
+          "accuracy": 0.9083175803402647,
+          "balanced_accuracy": 0.7217728345129761,
+          "brier_score": 0.07009598203781219,
+          "f1": 0.41916167664670656,
+          "fold": 3,
+          "pr_auc_average_precision": 0.37057001485423063,
+          "precision": 0.35714285714285715,
+          "recall": 0.5072463768115942,
+          "roc_auc": 0.8769068448586627,
+          "specificity": 0.9362992922143579
+        },
+        {
+          "accuracy": 0.8978240302743614,
+          "balanced_accuracy": 0.6372672931660025,
+          "brier_score": 0.07402585120318435,
+          "f1": 0.2987012987012987,
+          "fold": 4,
+          "pr_auc_average_precision": 0.26380438606989853,
+          "precision": 0.26744186046511625,
+          "recall": 0.3382352941176471,
+          "roc_auc": 0.8242134062927496,
+          "specificity": 0.9362992922143579
+        },
+        {
+          "accuracy": 0.9006622516556292,
+          "balanced_accuracy": 0.6730208767025516,
+          "brier_score": 0.07564370076420593,
+          "f1": 0.34782608695652173,
+          "fold": 5,
+          "pr_auc_average_precision": 0.3024383647411206,
+          "precision": 0.3010752688172043,
+          "recall": 0.4117647058823529,
+          "roc_auc": 0.8052399928626659,
+          "specificity": 0.9342770475227502
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4641,
+          305
+        ],
+        [
+          201,
+          141
+        ]
+      ],
+      "oof_log_loss": 0.2553289249191708,
+      "oof_mean_score": 0.1709746247266581,
+      "oof_metrics": {
+        "accuracy": 0.9043116490166414,
+        "balanced_accuracy": 0.6753073545164975,
+        "brier_score": 0.07342933272585675,
+        "f1": 0.35786802030456855,
+        "pr_auc_average_precision": 0.28875992030381287,
+        "precision": 0.31614349775784756,
+        "recall": 0.41228070175438597,
+        "roc_auc": 0.8355313408200377,
+        "specificity": 0.9383340072786089
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "eldercare_reduced_8",
+    "features": [
+      "age",
+      "gender",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "bmi",
+      "family_diabetes",
+      "family_hypertension"
+    ],
+    "model": "Random Forest (balanced)"
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 4510,
+            "mean_score": 0.03646897603442773,
+            "observed_positive_fraction": 0.035698447893569844
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 486,
+            "mean_score": 0.13524225045579527,
+            "observed_positive_fraction": 0.13991769547325103
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 136,
+            "mean_score": 0.24521354302394435,
+            "observed_positive_fraction": 0.3235294117647059
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 58,
+            "mean_score": 0.353322516320962,
+            "observed_positive_fraction": 0.4827586206896552
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 31,
+            "mean_score": 0.43822295913517595,
+            "observed_positive_fraction": 0.4838709677419355
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 25,
+            "mean_score": 0.5600438854837793,
+            "observed_positive_fraction": 0.4
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 19,
+            "mean_score": 0.6484119541874368,
+            "observed_positive_fraction": 0.3157894736842105
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 12,
+            "mean_score": 0.7444321710427543,
+            "observed_positive_fraction": 0.4166666666666667
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 9,
+            "mean_score": 0.8423354886107411,
+            "observed_positive_fraction": 0.5555555555555556
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 2,
+            "mean_score": 0.9073339710055975,
+            "observed_positive_fraction": 0.0
+          }
+        ],
+        "expected_calibration_error": 0.008315144917051171,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.9347826086956522,
+            0.9319470699432892,
+            0.9338374291115312,
+            0.9309366130558183,
+            0.9309366130558183
+          ],
+          "mean": 0.9324880667724219,
+          "std": 0.001561563075788218
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.54058229352347,
+            0.5456690259521402,
+            0.519716885743175,
+            0.5454038541604711,
+            0.5180143341461964
+          ],
+          "mean": 0.5338772787050906,
+          "std": 0.012401727359493034
+        },
+        "brier_score": {
+          "fold_values": [
+            0.05355294292124045,
+            0.05318953069792693,
+            0.05158569862603797,
+            0.055137521771258115,
+            0.055507560787639625
+          ],
+          "mean": 0.05379465096082061,
+          "std": 0.0014171397824238865
+        },
+        "f1": {
+          "fold_values": [
+            0.14814814814814814,
+            0.16279069767441862,
+            0.07894736842105263,
+            0.16091954022988506,
+            0.0759493670886076
+          ],
+          "mean": 0.1253510243124224,
+          "std": 0.039447130029316775
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.28609320250894643,
+            0.31300134356380904,
+            0.34073594131977175,
+            0.2576740986258286,
+            0.2506480538010525
+          ],
+          "mean": 0.28963052796388167,
+          "std": 0.033797389352877405
+        },
+        "precision": {
+          "fold_values": [
+            0.46153846153846156,
+            0.4117647058823529,
+            0.42857142857142855,
+            0.3684210526315789,
+            0.2727272727272727
+          ],
+          "mean": 0.38860458427021893,
+          "std": 0.06525031281104182
+        },
+        "recall": {
+          "fold_values": [
+            0.08823529411764706,
+            0.10144927536231885,
+            0.043478260869565216,
+            0.10294117647058823,
+            0.04411764705882353
+          ],
+          "mean": 0.07604433077578858,
+          "std": 0.02682287511538322
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.810323826500297,
+            0.8338682024003164,
+            0.8750751014785834,
+            0.7979985725331589,
+            0.7843038125260214
+          ],
+          "mean": 0.8203139030876754,
+          "std": 0.03186537339904426
+        },
+        "specificity": {
+          "fold_values": [
+            0.9929292929292929,
+            0.9898887765419616,
+            0.9959555106167847,
+            0.9878665318503539,
+            0.9919110212335692
+          ],
+          "mean": 0.9917102266343925,
+          "std": 0.00274374004693004
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.9347826086956522,
+          "balanced_accuracy": 0.54058229352347,
+          "brier_score": 0.05355294292124045,
+          "f1": 0.14814814814814814,
+          "fold": 1,
+          "pr_auc_average_precision": 0.28609320250894643,
+          "precision": 0.46153846153846156,
+          "recall": 0.08823529411764706,
+          "roc_auc": 0.810323826500297,
+          "specificity": 0.9929292929292929
+        },
+        {
+          "accuracy": 0.9319470699432892,
+          "balanced_accuracy": 0.5456690259521402,
+          "brier_score": 0.05318953069792693,
+          "f1": 0.16279069767441862,
+          "fold": 2,
+          "pr_auc_average_precision": 0.31300134356380904,
+          "precision": 0.4117647058823529,
+          "recall": 0.10144927536231885,
+          "roc_auc": 0.8338682024003164,
+          "specificity": 0.9898887765419616
+        },
+        {
+          "accuracy": 0.9338374291115312,
+          "balanced_accuracy": 0.519716885743175,
+          "brier_score": 0.05158569862603797,
+          "f1": 0.07894736842105263,
+          "fold": 3,
+          "pr_auc_average_precision": 0.34073594131977175,
+          "precision": 0.42857142857142855,
+          "recall": 0.043478260869565216,
+          "roc_auc": 0.8750751014785834,
+          "specificity": 0.9959555106167847
+        },
+        {
+          "accuracy": 0.9309366130558183,
+          "balanced_accuracy": 0.5454038541604711,
+          "brier_score": 0.055137521771258115,
+          "f1": 0.16091954022988506,
+          "fold": 4,
+          "pr_auc_average_precision": 0.2576740986258286,
+          "precision": 0.3684210526315789,
+          "recall": 0.10294117647058823,
+          "roc_auc": 0.7979985725331589,
+          "specificity": 0.9878665318503539
+        },
+        {
+          "accuracy": 0.9309366130558183,
+          "balanced_accuracy": 0.5180143341461964,
+          "brier_score": 0.055507560787639625,
+          "f1": 0.0759493670886076,
+          "fold": 5,
+          "pr_auc_average_precision": 0.2506480538010525,
+          "precision": 0.2727272727272727,
+          "recall": 0.04411764705882353,
+          "roc_auc": 0.7843038125260214,
+          "specificity": 0.9919110212335692
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4905,
+          41
+        ],
+        [
+          316,
+          26
+        ]
+      ],
+      "oof_log_loss": 0.19742179446746305,
+      "oof_mean_score": 0.06472754781137006,
+      "oof_metrics": {
+        "accuracy": 0.9324886535552194,
+        "balanced_accuracy": 0.5338669324612245,
+        "brier_score": 0.05379407309004957,
+        "f1": 0.1271393643031785,
+        "pr_auc_average_precision": 0.27368005801598316,
+        "precision": 0.3880597014925373,
+        "recall": 0.07602339181286549,
+        "roc_auc": 0.8197935362736266,
+        "specificity": 0.9917104731095835
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "current_ui_reduced_6",
+    "features": [
+      "age",
+      "gender",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "bmi"
+    ],
+    "model": "Logistic Regression"
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 332,
+            "mean_score": 0.07557046290805088,
+            "observed_positive_fraction": 0.006024096385542169
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 1154,
+            "mean_score": 0.1514088743868021,
+            "observed_positive_fraction": 0.012131715771230503
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 1012,
+            "mean_score": 0.2469659778929733,
+            "observed_positive_fraction": 0.017786561264822136
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 802,
+            "mean_score": 0.3474942361248094,
+            "observed_positive_fraction": 0.03117206982543641
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 623,
+            "mean_score": 0.44819504097129936,
+            "observed_positive_fraction": 0.06902086677367576
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 493,
+            "mean_score": 0.5520510891573124,
+            "observed_positive_fraction": 0.09330628803245436
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 334,
+            "mean_score": 0.6469210017965629,
+            "observed_positive_fraction": 0.11377245508982035
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 214,
+            "mean_score": 0.747800548603822,
+            "observed_positive_fraction": 0.17757009345794392
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 170,
+            "mean_score": 0.8475882781501227,
+            "observed_positive_fraction": 0.29411764705882354
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 154,
+            "mean_score": 0.9528880661808633,
+            "observed_positive_fraction": 0.44155844155844154
+          }
+        ],
+        "expected_calibration_error": 0.30347155459265257,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.7542533081285444,
+            0.7674858223062382,
+            0.7835538752362949,
+            0.7852412488174078,
+            0.7492904446546831
+          ],
+          "mean": 0.7679649398286337,
+          "std": 0.014686462657160806
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.7180332739156269,
+            0.7340748230535894,
+            0.7763734411863835,
+            0.7414426336763219,
+            0.7153839291024802
+          ],
+          "mean": 0.7370616201868803,
+          "std": 0.021934145796800437
+        },
+        "brier_score": {
+          "fold_values": [
+            0.173488839190189,
+            0.17105395581991814,
+            0.15736265229402924,
+            0.1623003973185779,
+            0.17339235177817972
+          ],
+          "mean": 0.16751963928017882,
+          "std": 0.006527118266792234
+        },
+        "f1": {
+          "fold_values": [
+            0.26136363636363635,
+            0.2807017543859649,
+            0.3164179104477612,
+            0.29283489096573206,
+            0.25770308123249297
+          ],
+          "mean": 0.2818042546791175,
+          "std": 0.021539178480515928
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.2866787776228788,
+            0.31851330876063516,
+            0.3463111622079101,
+            0.25695851633851674,
+            0.25317702462572356
+          ],
+          "mean": 0.2923277579111329,
+          "std": 0.035820567157055436
+        },
+        "precision": {
+          "fold_values": [
+            0.1619718309859155,
+            0.17582417582417584,
+            0.19924812030075187,
+            0.1857707509881423,
+            0.15916955017301038
+          ],
+          "mean": 0.1763968856543992,
+          "std": 0.014934788667299683
+        },
+        "recall": {
+          "fold_values": [
+            0.6764705882352942,
+            0.6956521739130435,
+            0.7681159420289855,
+            0.6911764705882353,
+            0.6764705882352942
+          ],
+          "mean": 0.7015771526001705,
+          "std": 0.03415075169252894
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8103535353535353,
+            0.8325053853255374,
+            0.8760422619832652,
+            0.7956640694700529,
+            0.7861476238624875
+          ],
+          "mean": 0.8201425751989756,
+          "std": 0.03202590612923798
+        },
+        "specificity": {
+          "fold_values": [
+            0.7595959595959596,
+            0.7724974721941354,
+            0.7846309403437816,
+            0.7917087967644085,
+            0.7542972699696663
+          ],
+          "mean": 0.7725460877735902,
+          "std": 0.014240650350615934
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.7542533081285444,
+          "balanced_accuracy": 0.7180332739156269,
+          "brier_score": 0.173488839190189,
+          "f1": 0.26136363636363635,
+          "fold": 1,
+          "pr_auc_average_precision": 0.2866787776228788,
+          "precision": 0.1619718309859155,
+          "recall": 0.6764705882352942,
+          "roc_auc": 0.8103535353535353,
+          "specificity": 0.7595959595959596
+        },
+        {
+          "accuracy": 0.7674858223062382,
+          "balanced_accuracy": 0.7340748230535894,
+          "brier_score": 0.17105395581991814,
+          "f1": 0.2807017543859649,
+          "fold": 2,
+          "pr_auc_average_precision": 0.31851330876063516,
+          "precision": 0.17582417582417584,
+          "recall": 0.6956521739130435,
+          "roc_auc": 0.8325053853255374,
+          "specificity": 0.7724974721941354
+        },
+        {
+          "accuracy": 0.7835538752362949,
+          "balanced_accuracy": 0.7763734411863835,
+          "brier_score": 0.15736265229402924,
+          "f1": 0.3164179104477612,
+          "fold": 3,
+          "pr_auc_average_precision": 0.3463111622079101,
+          "precision": 0.19924812030075187,
+          "recall": 0.7681159420289855,
+          "roc_auc": 0.8760422619832652,
+          "specificity": 0.7846309403437816
+        },
+        {
+          "accuracy": 0.7852412488174078,
+          "balanced_accuracy": 0.7414426336763219,
+          "brier_score": 0.1623003973185779,
+          "f1": 0.29283489096573206,
+          "fold": 4,
+          "pr_auc_average_precision": 0.25695851633851674,
+          "precision": 0.1857707509881423,
+          "recall": 0.6911764705882353,
+          "roc_auc": 0.7956640694700529,
+          "specificity": 0.7917087967644085
+        },
+        {
+          "accuracy": 0.7492904446546831,
+          "balanced_accuracy": 0.7153839291024802,
+          "brier_score": 0.17339235177817972,
+          "f1": 0.25770308123249297,
+          "fold": 5,
+          "pr_auc_average_precision": 0.25317702462572356,
+          "precision": 0.15916955017301038,
+          "recall": 0.6764705882352942,
+          "roc_auc": 0.7861476238624875,
+          "specificity": 0.7542972699696663
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          3821,
+          1125
+        ],
+        [
+          102,
+          240
+        ]
+      ],
+      "oof_log_loss": 0.5265144862910253,
+      "oof_mean_score": 0.3681462898422744,
+      "oof_metrics": {
+        "accuracy": 0.767965204236006,
+        "balanced_accuracy": 0.7371489277175955,
+        "brier_score": 0.16751951570405618,
+        "f1": 0.281195079086116,
+        "pr_auc_average_precision": 0.27599042734166584,
+        "precision": 0.17582417582417584,
+        "recall": 0.7017543859649122,
+        "roc_auc": 0.8193022656384862,
+        "specificity": 0.772543469470279
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "current_ui_reduced_6",
+    "features": [
+      "age",
+      "gender",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "bmi"
+    ],
+    "model": "Logistic Regression (balanced)"
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 2907,
+            "mean_score": 0.038046149326244276,
+            "observed_positive_fraction": 0.013071895424836602
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 950,
+            "mean_score": 0.14213390219611788,
+            "observed_positive_fraction": 0.04421052631578947
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 508,
+            "mean_score": 0.24754458063943569,
+            "observed_positive_fraction": 0.09448818897637795
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 291,
+            "mean_score": 0.34690259403626283,
+            "observed_positive_fraction": 0.13745704467353953
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 223,
+            "mean_score": 0.4465734463126323,
+            "observed_positive_fraction": 0.17937219730941703
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 144,
+            "mean_score": 0.5447165031984919,
+            "observed_positive_fraction": 0.2708333333333333
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 120,
+            "mean_score": 0.6420422607894258,
+            "observed_positive_fraction": 0.2833333333333333
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 86,
+            "mean_score": 0.747915116948377,
+            "observed_positive_fraction": 0.4186046511627907
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 51,
+            "mean_score": 0.8409745075938989,
+            "observed_positive_fraction": 0.43137254901960786
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 8,
+            "mean_score": 0.9253896893640357,
+            "observed_positive_fraction": 0.375
+          }
+        ],
+        "expected_calibration_error": 0.09455603418114267,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.9092627599243857,
+            0.9149338374291115,
+            0.9139886578449905,
+            0.9044465468306528,
+            0.9006622516556292
+          ],
+          "mean": 0.908658810736954,
+          "std": 0.005474232533621116
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.670751633986928,
+            0.6646444219750589,
+            0.7113245702730031,
+            0.6476536013798846,
+            0.645631356688277
+          ],
+          "mean": 0.6680011168606302,
+          "std": 0.023707306540384155
+        },
+        "brier_score": {
+          "fold_values": [
+            0.07301839600694798,
+            0.0683661832853388,
+            0.06744599523599219,
+            0.07229734103921592,
+            0.07381237704736004
+          ],
+          "mean": 0.07098805852297099,
+          "std": 0.002578127546265534
+        },
+        "f1": {
+          "fold_values": [
+            0.36,
+            0.36619718309859156,
+            0.42038216560509556,
+            0.3221476510067114,
+            0.3137254901960784
+          ],
+          "mean": 0.3564904979812954,
+          "std": 0.03793931618077782
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.2613442070640346,
+            0.3086190025789219,
+            0.3759311795124559,
+            0.2608885092779872,
+            0.2915039886974595
+          ],
+          "mean": 0.2996573774261718,
+          "std": 0.04227388205151499
+        },
+        "precision": {
+          "fold_values": [
+            0.32926829268292684,
+            0.3561643835616438,
+            0.375,
+            0.2962962962962963,
+            0.2823529411764706
+          ],
+          "mean": 0.32781638274346747,
+          "std": 0.03490687983485052
+        },
+        "recall": {
+          "fold_values": [
+            0.39705882352941174,
+            0.37681159420289856,
+            0.4782608695652174,
+            0.35294117647058826,
+            0.35294117647058826
+          ],
+          "mean": 0.3916027280477409,
+          "std": 0.046362940481142485
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8218954248366013,
+            0.8465438665904661,
+            0.8705470318430268,
+            0.8252170939154225,
+            0.8030393148159163
+          ],
+          "mean": 0.8334485464002865,
+          "std": 0.02312460951651406
+        },
+        "specificity": {
+          "fold_values": [
+            0.9444444444444444,
+            0.9524772497472194,
+            0.9443882709807887,
+            0.942366026289181,
+            0.9383215369059656
+          ],
+          "mean": 0.9443995056735197,
+          "std": 0.004611482143032459
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.9092627599243857,
+          "balanced_accuracy": 0.670751633986928,
+          "brier_score": 0.07301839600694798,
+          "f1": 0.36,
+          "fold": 1,
+          "pr_auc_average_precision": 0.2613442070640346,
+          "precision": 0.32926829268292684,
+          "recall": 0.39705882352941174,
+          "roc_auc": 0.8218954248366013,
+          "specificity": 0.9444444444444444
+        },
+        {
+          "accuracy": 0.9149338374291115,
+          "balanced_accuracy": 0.6646444219750589,
+          "brier_score": 0.0683661832853388,
+          "f1": 0.36619718309859156,
+          "fold": 2,
+          "pr_auc_average_precision": 0.3086190025789219,
+          "precision": 0.3561643835616438,
+          "recall": 0.37681159420289856,
+          "roc_auc": 0.8465438665904661,
+          "specificity": 0.9524772497472194
+        },
+        {
+          "accuracy": 0.9139886578449905,
+          "balanced_accuracy": 0.7113245702730031,
+          "brier_score": 0.06744599523599219,
+          "f1": 0.42038216560509556,
+          "fold": 3,
+          "pr_auc_average_precision": 0.3759311795124559,
+          "precision": 0.375,
+          "recall": 0.4782608695652174,
+          "roc_auc": 0.8705470318430268,
+          "specificity": 0.9443882709807887
+        },
+        {
+          "accuracy": 0.9044465468306528,
+          "balanced_accuracy": 0.6476536013798846,
+          "brier_score": 0.07229734103921592,
+          "f1": 0.3221476510067114,
+          "fold": 4,
+          "pr_auc_average_precision": 0.2608885092779872,
+          "precision": 0.2962962962962963,
+          "recall": 0.35294117647058826,
+          "roc_auc": 0.8252170939154225,
+          "specificity": 0.942366026289181
+        },
+        {
+          "accuracy": 0.9006622516556292,
+          "balanced_accuracy": 0.645631356688277,
+          "brier_score": 0.07381237704736004,
+          "f1": 0.3137254901960784,
+          "fold": 5,
+          "pr_auc_average_precision": 0.2915039886974595,
+          "precision": 0.2823529411764706,
+          "recall": 0.35294117647058826,
+          "roc_auc": 0.8030393148159163,
+          "specificity": 0.9383215369059656
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4671,
+          275
+        ],
+        [
+          208,
+          134
+        ]
+      ],
+      "oof_log_loss": 0.24632718087463795,
+      "oof_mean_score": 0.15923076943076445,
+      "oof_metrics": {
+        "accuracy": 0.908661119515885,
+        "balanced_accuracy": 0.6681061901282388,
+        "brier_score": 0.07098727682837178,
+        "f1": 0.35685752330226367,
+        "pr_auc_average_precision": 0.2833315376495554,
+        "precision": 0.3276283618581907,
+        "recall": 0.391812865497076,
+        "roc_auc": 0.8329670972822268,
+        "specificity": 0.9443995147594015
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "current_ui_reduced_6",
+    "features": [
+      "age",
+      "gender",
+      "systolic_bp",
+      "diastolic_bp",
+      "glucose",
+      "bmi"
+    ],
+    "model": "Random Forest (balanced)"
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 4621,
+            "mean_score": 0.04144191167609166,
+            "observed_positive_fraction": 0.0396018177883575
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 442,
+            "mean_score": 0.13167133603657707,
+            "observed_positive_fraction": 0.15610859728506787
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 88,
+            "mean_score": 0.2427953914725953,
+            "observed_positive_fraction": 0.3409090909090909
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 49,
+            "mean_score": 0.34417395541077783,
+            "observed_positive_fraction": 0.46938775510204084
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 20,
+            "mean_score": 0.44582067021054606,
+            "observed_positive_fraction": 0.45
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 28,
+            "mean_score": 0.5492776654768962,
+            "observed_positive_fraction": 0.4642857142857143
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 12,
+            "mean_score": 0.6547554591553992,
+            "observed_positive_fraction": 0.3333333333333333
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 18,
+            "mean_score": 0.7523679559519217,
+            "observed_positive_fraction": 0.3888888888888889
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 10,
+            "mean_score": 0.8524930928160078,
+            "observed_positive_fraction": 0.4
+          }
+        ],
+        "expected_calibration_error": 0.009731808989530561,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.9366729678638941,
+            0.9310018903591682,
+            0.9328922495274102,
+            0.9337748344370861,
+            0.9309366130558183
+          ],
+          "mean": 0.9330557110486755,
+          "std": 0.002113630086458754
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.5552881758764111,
+            0.538422649140546,
+            0.5124705089315807,
+            0.5606152976863141,
+            0.5180143341461964
+          ],
+          "mean": 0.5369621931562097,
+          "std": 0.019268149290877074
+        },
+        "brier_score": {
+          "fold_values": [
+            0.05383560428592318,
+            0.05448050190384665,
+            0.05393966166180002,
+            0.05637961285083662,
+            0.056728220448714686
+          ],
+          "mean": 0.055072720230224234,
+          "std": 0.0012339894181437638
+        },
+        "f1": {
+          "fold_values": [
+            0.1927710843373494,
+            0.1411764705882353,
+            0.05333333333333334,
+            0.20454545454545456,
+            0.0759493670886076
+          ],
+          "mean": 0.13355514197859603,
+          "std": 0.06059406050190851
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.2765082011625657,
+            0.28794890857777017,
+            0.30117209694644803,
+            0.23290722050481252,
+            0.23020391837086338
+          ],
+          "mean": 0.26574806911249194,
+          "std": 0.029001473934595495
+        },
+        "precision": {
+          "fold_values": [
+            0.5333333333333333,
+            0.375,
+            0.3333333333333333,
+            0.45,
+            0.2727272727272727
+          ],
+          "mean": 0.3928787878787879,
+          "std": 0.09087575146240472
+        },
+        "recall": {
+          "fold_values": [
+            0.11764705882352941,
+            0.08695652173913043,
+            0.028985507246376812,
+            0.1323529411764706,
+            0.04411764705882353
+          ],
+          "mean": 0.08201193520886615,
+          "std": 0.04019031472799764
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.79640522875817,
+            0.809249571372049,
+            0.8346302076464296,
+            0.7546095283411646,
+            0.7711592220305715
+          ],
+          "mean": 0.7932107516296769,
+          "std": 0.028140164024419927
+        },
+        "specificity": {
+          "fold_values": [
+            0.9929292929292929,
+            0.9898887765419616,
+            0.9959555106167847,
+            0.9888776541961577,
+            0.9919110212335692
+          ],
+          "mean": 0.9919124511035532,
+          "std": 0.0024773191385448695
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.9366729678638941,
+          "balanced_accuracy": 0.5552881758764111,
+          "brier_score": 0.05383560428592318,
+          "f1": 0.1927710843373494,
+          "fold": 1,
+          "pr_auc_average_precision": 0.2765082011625657,
+          "precision": 0.5333333333333333,
+          "recall": 0.11764705882352941,
+          "roc_auc": 0.79640522875817,
+          "specificity": 0.9929292929292929
+        },
+        {
+          "accuracy": 0.9310018903591682,
+          "balanced_accuracy": 0.538422649140546,
+          "brier_score": 0.05448050190384665,
+          "f1": 0.1411764705882353,
+          "fold": 2,
+          "pr_auc_average_precision": 0.28794890857777017,
+          "precision": 0.375,
+          "recall": 0.08695652173913043,
+          "roc_auc": 0.809249571372049,
+          "specificity": 0.9898887765419616
+        },
+        {
+          "accuracy": 0.9328922495274102,
+          "balanced_accuracy": 0.5124705089315807,
+          "brier_score": 0.05393966166180002,
+          "f1": 0.05333333333333334,
+          "fold": 3,
+          "pr_auc_average_precision": 0.30117209694644803,
+          "precision": 0.3333333333333333,
+          "recall": 0.028985507246376812,
+          "roc_auc": 0.8346302076464296,
+          "specificity": 0.9959555106167847
+        },
+        {
+          "accuracy": 0.9337748344370861,
+          "balanced_accuracy": 0.5606152976863141,
+          "brier_score": 0.05637961285083662,
+          "f1": 0.20454545454545456,
+          "fold": 4,
+          "pr_auc_average_precision": 0.23290722050481252,
+          "precision": 0.45,
+          "recall": 0.1323529411764706,
+          "roc_auc": 0.7546095283411646,
+          "specificity": 0.9888776541961577
+        },
+        {
+          "accuracy": 0.9309366130558183,
+          "balanced_accuracy": 0.5180143341461964,
+          "brier_score": 0.056728220448714686,
+          "f1": 0.0759493670886076,
+          "fold": 5,
+          "pr_auc_average_precision": 0.23020391837086338,
+          "precision": 0.2727272727272727,
+          "recall": 0.04411764705882353,
+          "roc_auc": 0.7711592220305715,
+          "specificity": 0.9919110212335692
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4906,
+          40
+        ],
+        [
+          314,
+          28
+        ]
+      ],
+      "oof_log_loss": 0.20485318956281368,
+      "oof_mean_score": 0.06470369333033786,
+      "oof_metrics": {
+        "accuracy": 0.9330559757942511,
+        "balanced_accuracy": 0.5368920008607582,
+        "brier_score": 0.055072160019778105,
+        "f1": 0.13658536585365855,
+        "pr_auc_average_precision": 0.2553954817528097,
+        "precision": 0.4117647058823529,
+        "recall": 0.08187134502923976,
+        "roc_auc": 0.7932566454551259,
+        "specificity": 0.9919126566922766
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "compact_4",
+    "features": [
+      "age",
+      "gender",
+      "glucose",
+      "bmi"
+    ],
+    "model": "Logistic Regression"
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 97,
+            "mean_score": 0.08404715541124957,
+            "observed_positive_fraction": 0.0
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 802,
+            "mean_score": 0.15775746608605942,
+            "observed_positive_fraction": 0.012468827930174564
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 1206,
+            "mean_score": 0.2493161029800476,
+            "observed_positive_fraction": 0.01658374792703151
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 1067,
+            "mean_score": 0.3486253051396785,
+            "observed_positive_fraction": 0.03467666354264293
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 783,
+            "mean_score": 0.4477435735777839,
+            "observed_positive_fraction": 0.06002554278416347
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 518,
+            "mean_score": 0.5483522218185705,
+            "observed_positive_fraction": 0.09073359073359073
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 338,
+            "mean_score": 0.6490622250444162,
+            "observed_positive_fraction": 0.13609467455621302
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 209,
+            "mean_score": 0.7451238058806722,
+            "observed_positive_fraction": 0.18181818181818182
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 122,
+            "mean_score": 0.8491249144997437,
+            "observed_positive_fraction": 0.2786885245901639
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 146,
+            "mean_score": 0.9543253026391444,
+            "observed_positive_fraction": 0.4315068493150685
+          }
+        ],
+        "expected_calibration_error": 0.3248866854984241,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.7580340264650284,
+            0.7674858223062382,
+            0.776937618147448,
+            0.7757805108798487,
+            0.7691579943235572
+          ],
+          "mean": 0.7694791944244241,
+          "std": 0.006788272903010109
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.733749257278669,
+            0.7003707448601281,
+            0.7526120660599933,
+            0.6953027419258906,
+            0.7260007137334206
+          ],
+          "mean": 0.7216071047716204,
+          "std": 0.02131171404987121
+        },
+        "brier_score": {
+          "fold_values": [
+            0.180382728364841,
+            0.17617026485144088,
+            0.1712956835999672,
+            0.17672631257499824,
+            0.18080385366857127
+          ],
+          "mean": 0.17707576861196372,
+          "std": 0.003440524388067908
+        },
+        "f1": {
+          "fold_values": [
+            0.2727272727272727,
+            0.25903614457831325,
+            0.2976190476190476,
+            0.25705329153605017,
+            0.27380952380952384
+          ],
+          "mean": 0.2720490560540415,
+          "std": 0.01450236195771305
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.2756071399706148,
+            0.2857927017864758,
+            0.30168390511342985,
+            0.23980092403845643,
+            0.2274515516181266
+          ],
+          "mean": 0.26606724450542074,
+          "std": 0.028034768097270762
+        },
+        "precision": {
+          "fold_values": [
+            0.16901408450704225,
+            0.1634980988593156,
+            0.18726591760299627,
+            0.16334661354581673,
+            0.17164179104477612
+          ],
+          "mean": 0.1709533011119894,
+          "std": 0.008761024741076344
+        },
+        "recall": {
+          "fold_values": [
+            0.7058823529411765,
+            0.6231884057971014,
+            0.7246376811594203,
+            0.6029411764705882,
+            0.6764705882352942
+          ],
+          "mean": 0.666624040920716,
+          "std": 0.04678870298186305
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.7932412358882948,
+            0.8073445582567664,
+            0.8352896352632582,
+            0.7564087313388449,
+            0.7693600190328912
+          ],
+          "mean": 0.7923288359560111,
+          "std": 0.027891773459295686
+        },
+        "specificity": {
+          "fold_values": [
+            0.7616161616161616,
+            0.7775530839231547,
+            0.7805864509605662,
+            0.7876643073811931,
+            0.775530839231547
+          ],
+          "mean": 0.7765901686225245,
+          "std": 0.008542565097591832
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.7580340264650284,
+          "balanced_accuracy": 0.733749257278669,
+          "brier_score": 0.180382728364841,
+          "f1": 0.2727272727272727,
+          "fold": 1,
+          "pr_auc_average_precision": 0.2756071399706148,
+          "precision": 0.16901408450704225,
+          "recall": 0.7058823529411765,
+          "roc_auc": 0.7932412358882948,
+          "specificity": 0.7616161616161616
+        },
+        {
+          "accuracy": 0.7674858223062382,
+          "balanced_accuracy": 0.7003707448601281,
+          "brier_score": 0.17617026485144088,
+          "f1": 0.25903614457831325,
+          "fold": 2,
+          "pr_auc_average_precision": 0.2857927017864758,
+          "precision": 0.1634980988593156,
+          "recall": 0.6231884057971014,
+          "roc_auc": 0.8073445582567664,
+          "specificity": 0.7775530839231547
+        },
+        {
+          "accuracy": 0.776937618147448,
+          "balanced_accuracy": 0.7526120660599933,
+          "brier_score": 0.1712956835999672,
+          "f1": 0.2976190476190476,
+          "fold": 3,
+          "pr_auc_average_precision": 0.30168390511342985,
+          "precision": 0.18726591760299627,
+          "recall": 0.7246376811594203,
+          "roc_auc": 0.8352896352632582,
+          "specificity": 0.7805864509605662
+        },
+        {
+          "accuracy": 0.7757805108798487,
+          "balanced_accuracy": 0.6953027419258906,
+          "brier_score": 0.17672631257499824,
+          "f1": 0.25705329153605017,
+          "fold": 4,
+          "pr_auc_average_precision": 0.23980092403845643,
+          "precision": 0.16334661354581673,
+          "recall": 0.6029411764705882,
+          "roc_auc": 0.7564087313388449,
+          "specificity": 0.7876643073811931
+        },
+        {
+          "accuracy": 0.7691579943235572,
+          "balanced_accuracy": 0.7260007137334206,
+          "brier_score": 0.18080385366857127,
+          "f1": 0.27380952380952384,
+          "fold": 5,
+          "pr_auc_average_precision": 0.2274515516181266,
+          "precision": 0.17164179104477612,
+          "recall": 0.6764705882352942,
+          "roc_auc": 0.7693600190328912,
+          "specificity": 0.775530839231547
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          3841,
+          1105
+        ],
+        [
+          114,
+          228
+        ]
+      ],
+      "oof_log_loss": 0.5540654594516947,
+      "oof_mean_score": 0.38956142074804584,
+      "oof_metrics": {
+        "accuracy": 0.7694780635400907,
+        "balanced_accuracy": 0.7216269038954037,
+        "brier_score": 0.17707512968817032,
+        "f1": 0.27223880597014927,
+        "pr_auc_average_precision": 0.256283212053009,
+        "precision": 0.17104276069017255,
+        "recall": 0.6666666666666666,
+        "roc_auc": 0.7924349051628938,
+        "specificity": 0.7765871411241407
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "compact_4",
+    "features": [
+      "age",
+      "gender",
+      "glucose",
+      "bmi"
+    ],
+    "model": "Logistic Regression (balanced)"
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 2962,
+            "mean_score": 0.030062937701434513,
+            "observed_positive_fraction": 0.017555705604321403
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 820,
+            "mean_score": 0.1451849421778535,
+            "observed_positive_fraction": 0.0524390243902439
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 455,
+            "mean_score": 0.24534611027978268,
+            "observed_positive_fraction": 0.08351648351648351
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 307,
+            "mean_score": 0.3456042990737644,
+            "observed_positive_fraction": 0.11400651465798045
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 216,
+            "mean_score": 0.4476864300225618,
+            "observed_positive_fraction": 0.1388888888888889
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 144,
+            "mean_score": 0.5504886315696041,
+            "observed_positive_fraction": 0.1736111111111111
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 153,
+            "mean_score": 0.6465644074914539,
+            "observed_positive_fraction": 0.21568627450980393
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 123,
+            "mean_score": 0.7506988990028229,
+            "observed_positive_fraction": 0.36585365853658536
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 76,
+            "mean_score": 0.8446668529913781,
+            "observed_positive_fraction": 0.39473684210526316
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 32,
+            "mean_score": 0.9345607578859296,
+            "observed_positive_fraction": 0.34375
+          }
+        ],
+        "expected_calibration_error": 0.10309429838966834,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.8903591682419659,
+            0.8979206049149339,
+            0.8827977315689981,
+            0.89120151371807,
+            0.8874172185430463
+          ],
+          "mean": 0.8899392473974028,
+          "std": 0.004956482532445774
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.660650623885918,
+            0.669025952140209,
+            0.7418267610380855,
+            0.6611178849699637,
+            0.6248587402605127
+          ],
+          "mean": 0.6714959924589377,
+          "std": 0.03834808609374563
+        },
+        "brier_score": {
+          "fold_values": [
+            0.0789494560866622,
+            0.0765249341379402,
+            0.08513093889244745,
+            0.08228124026281171,
+            0.08652744968645548
+          ],
+          "mean": 0.0818828038132634,
+          "std": 0.0037307684121965856
+        },
+        "f1": {
+          "fold_values": [
+            0.3176470588235294,
+            0.34146341463414637,
+            0.39215686274509803,
+            0.31952662721893493,
+            0.26993865030674846
+          ],
+          "mean": 0.32814652274569145,
+          "std": 0.03961656469665603
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.26079791573106265,
+            0.3137690677439612,
+            0.2869742220913394,
+            0.24450110124961216,
+            0.24061611911025302
+          ],
+          "mean": 0.26933168518524564,
+          "std": 0.027567759908420086
+        },
+        "precision": {
+          "fold_values": [
+            0.2647058823529412,
+            0.29473684210526313,
+            0.2962962962962963,
+            0.26732673267326734,
+            0.23157894736842105
+          ],
+          "mean": 0.2709289401592378,
+          "std": 0.02370840877125977
+        },
+        "recall": {
+          "fold_values": [
+            0.39705882352941174,
+            0.4057971014492754,
+            0.5797101449275363,
+            0.39705882352941174,
+            0.3235294117647059
+          ],
+          "mean": 0.4206308610400682,
+          "std": 0.08493083343748657
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.8106654783125371,
+            0.8182764027490804,
+            0.838953122023417,
+            0.780854100993279,
+            0.7922738357223575
+          ],
+          "mean": 0.8082045879601344,
+          "std": 0.020272186787299435
+        },
+        "specificity": {
+          "fold_values": [
+            0.9242424242424242,
+            0.9322548028311426,
+            0.9039433771486349,
+            0.9251769464105156,
+            0.9261880687563195
+          ],
+          "mean": 0.9223611238778073,
+          "std": 0.009625091506187315
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.8903591682419659,
+          "balanced_accuracy": 0.660650623885918,
+          "brier_score": 0.0789494560866622,
+          "f1": 0.3176470588235294,
+          "fold": 1,
+          "pr_auc_average_precision": 0.26079791573106265,
+          "precision": 0.2647058823529412,
+          "recall": 0.39705882352941174,
+          "roc_auc": 0.8106654783125371,
+          "specificity": 0.9242424242424242
+        },
+        {
+          "accuracy": 0.8979206049149339,
+          "balanced_accuracy": 0.669025952140209,
+          "brier_score": 0.0765249341379402,
+          "f1": 0.34146341463414637,
+          "fold": 2,
+          "pr_auc_average_precision": 0.3137690677439612,
+          "precision": 0.29473684210526313,
+          "recall": 0.4057971014492754,
+          "roc_auc": 0.8182764027490804,
+          "specificity": 0.9322548028311426
+        },
+        {
+          "accuracy": 0.8827977315689981,
+          "balanced_accuracy": 0.7418267610380855,
+          "brier_score": 0.08513093889244745,
+          "f1": 0.39215686274509803,
+          "fold": 3,
+          "pr_auc_average_precision": 0.2869742220913394,
+          "precision": 0.2962962962962963,
+          "recall": 0.5797101449275363,
+          "roc_auc": 0.838953122023417,
+          "specificity": 0.9039433771486349
+        },
+        {
+          "accuracy": 0.89120151371807,
+          "balanced_accuracy": 0.6611178849699637,
+          "brier_score": 0.08228124026281171,
+          "f1": 0.31952662721893493,
+          "fold": 4,
+          "pr_auc_average_precision": 0.24450110124961216,
+          "precision": 0.26732673267326734,
+          "recall": 0.39705882352941174,
+          "roc_auc": 0.780854100993279,
+          "specificity": 0.9251769464105156
+        },
+        {
+          "accuracy": 0.8874172185430463,
+          "balanced_accuracy": 0.6248587402605127,
+          "brier_score": 0.08652744968645548,
+          "f1": 0.26993865030674846,
+          "fold": 5,
+          "pr_auc_average_precision": 0.24061611911025302,
+          "precision": 0.23157894736842105,
+          "recall": 0.3235294117647059,
+          "roc_auc": 0.7922738357223575,
+          "specificity": 0.9261880687563195
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4562,
+          384
+        ],
+        [
+          198,
+          144
+        ]
+      ],
+      "oof_log_loss": 0.2911804629858256,
+      "oof_mean_score": 0.1677690336392901,
+      "oof_metrics": {
+        "accuracy": 0.8899394856278366,
+        "balanced_accuracy": 0.6717070679124013,
+        "brier_score": 0.08188185012901177,
+        "f1": 0.3310344827586207,
+        "pr_auc_average_precision": 0.25629991347316794,
+        "precision": 0.2727272727272727,
+        "recall": 0.42105263157894735,
+        "roc_auc": 0.8068777297739564,
+        "specificity": 0.9223615042458553
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "compact_4",
+    "features": [
+      "age",
+      "gender",
+      "glucose",
+      "bmi"
+    ],
+    "model": "Random Forest (balanced)"
+  },
+  {
+    "candidate_key": "logistic_regression",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 4611,
+            "mean_score": 0.05377711639704316,
+            "observed_positive_fraction": 0.05248319236608111
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 629,
+            "mean_score": 0.1274731585940822,
+            "observed_positive_fraction": 0.1478537360890302
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 37,
+            "mean_score": 0.239057324300407,
+            "observed_positive_fraction": 0.08108108108108109
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 5,
+            "mean_score": 0.348908144724994,
+            "observed_positive_fraction": 0.6
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 2,
+            "mean_score": 0.4374610535037216,
+            "observed_positive_fraction": 0.0
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 3,
+            "mean_score": 0.5589750077880384,
+            "observed_positive_fraction": 0.3333333333333333
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 1,
+            "mean_score": 0.6582005780969505,
+            "observed_positive_fraction": 0.0
+          }
+        ],
+        "expected_calibration_error": 0.005313217650349267,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.9347826086956522,
+            0.9347826086956522,
+            0.9347826086956522,
+            0.935666982024598,
+            0.934720908230842
+          ],
+          "mean": 0.9349471432684793,
+          "std": 0.0003607117974315255
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.4994949494949495,
+            0.5067408156386923,
+            0.5,
+            0.5,
+            0.4994944388270981
+          ],
+          "mean": 0.501146040792148,
+          "std": 0.002806500172838083
+        },
+        "brier_score": {
+          "fold_values": [
+            0.05881371171245699,
+            0.05959348142239691,
+            0.0598170976767365,
+            0.057900905516222186,
+            0.06036033286695675
+          ],
+          "mean": 0.05929710583895387,
+          "std": 0.0008569395467155599
+        },
+        "f1": {
+          "fold_values": [
+            0.0,
+            0.028169014084507043,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.005633802816901409,
+          "std": 0.011267605633802818
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.13146976262135143,
+            0.1313461333553288,
+            0.13178754459316608,
+            0.16096902983315786,
+            0.09965231544740767
+          ],
+          "mean": 0.13104495717008238,
+          "std": 0.019399848875288426
+        },
+        "precision": {
+          "fold_values": [
+            0.0,
+            0.5,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.1,
+          "std": 0.20000000000000004
+        },
+        "recall": {
+          "fold_values": [
+            0.0,
+            0.014492753623188406,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean": 0.002898550724637681,
+          "std": 0.005797101449275362
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.6964423648247178,
+            0.6850060813880219,
+            0.6554710511276212,
+            0.6996743591268662,
+            0.5951793255219175
+          ],
+          "mean": 0.666354636397829,
+          "std": 0.03885287384858124
+        },
+        "specificity": {
+          "fold_values": [
+            0.998989898989899,
+            0.9989888776541962,
+            1.0,
+            1.0,
+            0.9989888776541962
+          ],
+          "mean": 0.9993935308596583,
+          "std": 0.0004951801199645472
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.9347826086956522,
+          "balanced_accuracy": 0.4994949494949495,
+          "brier_score": 0.05881371171245699,
+          "f1": 0.0,
+          "fold": 1,
+          "pr_auc_average_precision": 0.13146976262135143,
+          "precision": 0.0,
+          "recall": 0.0,
+          "roc_auc": 0.6964423648247178,
+          "specificity": 0.998989898989899
+        },
+        {
+          "accuracy": 0.9347826086956522,
+          "balanced_accuracy": 0.5067408156386923,
+          "brier_score": 0.05959348142239691,
+          "f1": 0.028169014084507043,
+          "fold": 2,
+          "pr_auc_average_precision": 0.1313461333553288,
+          "precision": 0.5,
+          "recall": 0.014492753623188406,
+          "roc_auc": 0.6850060813880219,
+          "specificity": 0.9989888776541962
+        },
+        {
+          "accuracy": 0.9347826086956522,
+          "balanced_accuracy": 0.5,
+          "brier_score": 0.0598170976767365,
+          "f1": 0.0,
+          "fold": 3,
+          "pr_auc_average_precision": 0.13178754459316608,
+          "precision": 0.0,
+          "recall": 0.0,
+          "roc_auc": 0.6554710511276212,
+          "specificity": 1.0
+        },
+        {
+          "accuracy": 0.935666982024598,
+          "balanced_accuracy": 0.5,
+          "brier_score": 0.057900905516222186,
+          "f1": 0.0,
+          "fold": 4,
+          "pr_auc_average_precision": 0.16096902983315786,
+          "precision": 0.0,
+          "recall": 0.0,
+          "roc_auc": 0.6996743591268662,
+          "specificity": 1.0
+        },
+        {
+          "accuracy": 0.934720908230842,
+          "balanced_accuracy": 0.4994944388270981,
+          "brier_score": 0.06036033286695675,
+          "f1": 0.0,
+          "fold": 5,
+          "pr_auc_average_precision": 0.09965231544740767,
+          "precision": 0.0,
+          "recall": 0.0,
+          "roc_auc": 0.5951793255219175,
+          "specificity": 0.9989888776541962
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4943,
+          3
+        ],
+        [
+          341,
+          1
+        ]
+      ],
+      "oof_log_loss": 0.22996166057994347,
+      "oof_mean_score": 0.06466463878473001,
+      "oof_metrics": {
+        "accuracy": 0.9349470499243571,
+        "balanced_accuracy": 0.501158712930054,
+        "brier_score": 0.05929716880667224,
+        "f1": 0.005780346820809248,
+        "pr_auc_average_precision": 0.12198841873941232,
+        "precision": 0.25,
+        "recall": 0.0029239766081871343,
+        "roc_auc": 0.666076373370412,
+        "specificity": 0.9993934492519208
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "minimal_no_glucose_4",
+    "features": [
+      "age",
+      "gender",
+      "bmi",
+      "family_diabetes"
+    ],
+    "model": "Logistic Regression"
+  },
+  {
+    "candidate_key": "logistic_regression_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 36,
+            "mean_score": 0.17770264858914342,
+            "observed_positive_fraction": 0.05555555555555555
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 514,
+            "mean_score": 0.26266068024324896,
+            "observed_positive_fraction": 0.021400778210116732
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 1312,
+            "mean_score": 0.3547729227058067,
+            "observed_positive_fraction": 0.040396341463414635
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 1407,
+            "mean_score": 0.45019973941313607,
+            "observed_positive_fraction": 0.04193319118692253
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 1149,
+            "mean_score": 0.5467137214364354,
+            "observed_positive_fraction": 0.08529155787641428
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 630,
+            "mean_score": 0.6430376516067442,
+            "observed_positive_fraction": 0.1253968253968254
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 194,
+            "mean_score": 0.7406829402687564,
+            "observed_positive_fraction": 0.17525773195876287
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 37,
+            "mean_score": 0.8387803271903593,
+            "observed_positive_fraction": 0.10810810810810811
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 9,
+            "mean_score": 0.9380864544030446,
+            "observed_positive_fraction": 0.2222222222222222
+          }
+        ],
+        "expected_calibration_error": 0.3999160211779618,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.6228733459357277,
+            0.6285444234404537,
+            0.6531190926275993,
+            0.6433301797540208,
+            0.630085146641438
+          ],
+          "mean": 0.6355904376798478,
+          "std": 0.011034820525588648
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.6546791443850267,
+            0.6530165149983148,
+            0.6324570273003034,
+            0.6519136977338964,
+            0.5832094212811515
+          ],
+          "mean": 0.6350551611397386,
+          "std": 0.027153829372200167
+        },
+        "brier_score": {
+          "fold_values": [
+            0.2348276870081161,
+            0.22729326775793007,
+            0.22475705809633953,
+            0.22529605847432113,
+            0.2309584786645327
+          ],
+          "mean": 0.2286265100002479,
+          "std": 0.003787737435832324
+        },
+        "f1": {
+          "fold_values": [
+            0.19066937119675456,
+            0.19301848049281314,
+            0.18625277161862527,
+            0.19271948608137046,
+            0.15550755939524838
+          ],
+          "mean": 0.18363353375696237,
+          "std": 0.014269306949723351
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.13209386048090804,
+            0.12915987405465276,
+            0.13205336087071062,
+            0.16184771519492364,
+            0.09929187890118488
+          ],
+          "mean": 0.13088933790047597,
+          "std": 0.01981220537564291
+        },
+        "precision": {
+          "fold_values": [
+            0.11058823529411765,
+            0.11244019138755981,
+            0.1099476439790576,
+            0.11278195488721804,
+            0.09113924050632911
+          ],
+          "mean": 0.10737945321085644,
+          "std": 0.008190659194768824
+        },
+        "recall": {
+          "fold_values": [
+            0.6911764705882353,
+            0.6811594202898551,
+            0.6086956521739131,
+            0.6617647058823529,
+            0.5294117647058824
+          ],
+          "mean": 0.6344416027280477,
+          "std": 0.05973620764616766
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.6957739156268568,
+            0.6844492314004776,
+            0.6569217918846442,
+            0.6997189674656515,
+            0.5969190507345505
+          ],
+          "mean": 0.666756591422436,
+          "std": 0.037988309304500555
+        },
+        "specificity": {
+          "fold_values": [
+            0.6181818181818182,
+            0.6248736097067745,
+            0.6562184024266936,
+            0.6420626895854399,
+            0.6370070778564206
+          ],
+          "mean": 0.6356687195514293,
+          "std": 0.0133213335525462
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.6228733459357277,
+          "balanced_accuracy": 0.6546791443850267,
+          "brier_score": 0.2348276870081161,
+          "f1": 0.19066937119675456,
+          "fold": 1,
+          "pr_auc_average_precision": 0.13209386048090804,
+          "precision": 0.11058823529411765,
+          "recall": 0.6911764705882353,
+          "roc_auc": 0.6957739156268568,
+          "specificity": 0.6181818181818182
+        },
+        {
+          "accuracy": 0.6285444234404537,
+          "balanced_accuracy": 0.6530165149983148,
+          "brier_score": 0.22729326775793007,
+          "f1": 0.19301848049281314,
+          "fold": 2,
+          "pr_auc_average_precision": 0.12915987405465276,
+          "precision": 0.11244019138755981,
+          "recall": 0.6811594202898551,
+          "roc_auc": 0.6844492314004776,
+          "specificity": 0.6248736097067745
+        },
+        {
+          "accuracy": 0.6531190926275993,
+          "balanced_accuracy": 0.6324570273003034,
+          "brier_score": 0.22475705809633953,
+          "f1": 0.18625277161862527,
+          "fold": 3,
+          "pr_auc_average_precision": 0.13205336087071062,
+          "precision": 0.1099476439790576,
+          "recall": 0.6086956521739131,
+          "roc_auc": 0.6569217918846442,
+          "specificity": 0.6562184024266936
+        },
+        {
+          "accuracy": 0.6433301797540208,
+          "balanced_accuracy": 0.6519136977338964,
+          "brier_score": 0.22529605847432113,
+          "f1": 0.19271948608137046,
+          "fold": 4,
+          "pr_auc_average_precision": 0.16184771519492364,
+          "precision": 0.11278195488721804,
+          "recall": 0.6617647058823529,
+          "roc_auc": 0.6997189674656515,
+          "specificity": 0.6420626895854399
+        },
+        {
+          "accuracy": 0.630085146641438,
+          "balanced_accuracy": 0.5832094212811515,
+          "brier_score": 0.2309584786645327,
+          "f1": 0.15550755939524838,
+          "fold": 5,
+          "pr_auc_average_precision": 0.09929187890118488,
+          "precision": 0.09113924050632911,
+          "recall": 0.5294117647058824,
+          "roc_auc": 0.5969190507345505,
+          "specificity": 0.6370070778564206
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          3144,
+          1802
+        ],
+        [
+          125,
+          217
+        ]
+      ],
+      "oof_log_loss": 0.6513474267765267,
+      "oof_mean_score": 0.4645907564275837,
+      "oof_metrics": {
+        "accuracy": 0.635590015128593,
+        "balanced_accuracy": 0.6350840539818343,
+        "brier_score": 0.22862669882075876,
+        "f1": 0.18382041507835664,
+        "pr_auc_average_precision": 0.12133085488284778,
+        "precision": 0.10747894997523527,
+        "recall": 0.6345029239766082,
+        "roc_auc": 0.666157956219569,
+        "specificity": 0.6356651839870603
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "minimal_no_glucose_4",
+    "features": [
+      "age",
+      "gender",
+      "bmi",
+      "family_diabetes"
+    ],
+    "model": "Logistic Regression (balanced)"
+  },
+  {
+    "candidate_key": "random_forest_balanced",
+    "evaluation": {
+      "calibration": {
+        "bins": [
+          {
+            "bin_lower": 0.0,
+            "bin_upper": 0.1,
+            "count": 2275,
+            "mean_score": 0.037631628783561376,
+            "observed_positive_fraction": 0.03164835164835165
+          },
+          {
+            "bin_lower": 0.1,
+            "bin_upper": 0.2,
+            "count": 908,
+            "mean_score": 0.14381532580278691,
+            "observed_positive_fraction": 0.06938325991189427
+          },
+          {
+            "bin_lower": 0.2,
+            "bin_upper": 0.30000000000000004,
+            "count": 570,
+            "mean_score": 0.2466006508552434,
+            "observed_positive_fraction": 0.08070175438596491
+          },
+          {
+            "bin_lower": 0.30000000000000004,
+            "bin_upper": 0.4,
+            "count": 451,
+            "mean_score": 0.3460395462482477,
+            "observed_positive_fraction": 0.082039911308204
+          },
+          {
+            "bin_lower": 0.4,
+            "bin_upper": 0.5,
+            "count": 303,
+            "mean_score": 0.4469059402726677,
+            "observed_positive_fraction": 0.1188118811881188
+          },
+          {
+            "bin_lower": 0.5,
+            "bin_upper": 0.6000000000000001,
+            "count": 246,
+            "mean_score": 0.5494371536696012,
+            "observed_positive_fraction": 0.13821138211382114
+          },
+          {
+            "bin_lower": 0.6000000000000001,
+            "bin_upper": 0.7000000000000001,
+            "count": 228,
+            "mean_score": 0.6516225025706888,
+            "observed_positive_fraction": 0.12280701754385964
+          },
+          {
+            "bin_lower": 0.7000000000000001,
+            "bin_upper": 0.8,
+            "count": 150,
+            "mean_score": 0.743082607098148,
+            "observed_positive_fraction": 0.05333333333333334
+          },
+          {
+            "bin_lower": 0.8,
+            "bin_upper": 0.9,
+            "count": 129,
+            "mean_score": 0.8418612229129189,
+            "observed_positive_fraction": 0.13178294573643412
+          },
+          {
+            "bin_lower": 0.9,
+            "bin_upper": 1.0,
+            "count": 28,
+            "mean_score": 0.9195118230480157,
+            "observed_positive_fraction": 0.03571428571428571
+          }
+        ],
+        "expected_calibration_error": 0.15805129875458993,
+        "interpretation": "Internal out-of-fold diagnostic only. The score is not externally calibrated for an individual Bangladeshi elder and must not be called the chance of disease.",
+        "method": "10 fixed-width bins"
+      },
+      "cv_summary": {
+        "accuracy": {
+          "fold_values": [
+            0.8137996219281664,
+            0.8223062381852552,
+            0.8232514177693762,
+            0.826868495742668,
+            0.8183538315988647
+          ],
+          "mean": 0.8209159210448661,
+          "std": 0.004472732669892566
+        },
+        "balanced_accuracy": {
+          "fold_values": [
+            0.5649584076054665,
+            0.5813953488372093,
+            0.5616784630940344,
+            0.5651133051805151,
+            0.5194789746029858
+          ],
+          "mean": 0.5585248998640422,
+          "std": 0.02069968010982247
+        },
+        "brier_score": {
+          "fold_values": [
+            0.12910694762319608,
+            0.12472467848550411,
+            0.12352432347446832,
+            0.12194594754380086,
+            0.12990293555178242
+          ],
+          "mean": 0.12584096653575036,
+          "std": 0.003128908173242342
+        },
+        "f1": {
+          "fold_values": [
+            0.16170212765957448,
+            0.1826086956521739,
+            0.16143497757847533,
+            0.1643835616438356,
+            0.1111111111111111
+          ],
+          "mean": 0.15624809472903406,
+          "std": 0.023895876723722717
+        },
+        "pr_auc_average_precision": {
+          "fold_values": [
+            0.10553765658753955,
+            0.10351974104893094,
+            0.10618590519917503,
+            0.10317073653046471,
+            0.08833342931052647
+          ],
+          "mean": 0.10134949373532734,
+          "std": 0.006608727801262478
+        },
+        "precision": {
+          "fold_values": [
+            0.11377245508982035,
+            0.13043478260869565,
+            0.11688311688311688,
+            0.11920529801324503,
+            0.08108108108108109
+          ],
+          "mean": 0.1122753467351918,
+          "std": 0.01657917021337877
+        },
+        "recall": {
+          "fold_values": [
+            0.27941176470588236,
+            0.30434782608695654,
+            0.2608695652173913,
+            0.2647058823529412,
+            0.17647058823529413
+          ],
+          "mean": 0.2571611253196931,
+          "std": 0.04313540156884563
+        },
+        "roc_auc": {
+          "fold_values": [
+            0.6603535353535354,
+            0.6417989185387084,
+            0.6628566404361015,
+            0.6834815321477428,
+            0.5924061737940879
+          ],
+          "mean": 0.6481793600540352,
+          "std": 0.030858498983870792
+        },
+        "specificity": {
+          "fold_values": [
+            0.8505050505050505,
+            0.8584428715874621,
+            0.8624873609706775,
+            0.865520728008089,
+            0.8624873609706775
+          ],
+          "mean": 0.8598886744083913,
+          "std": 0.005203251191404004
+        }
+      },
+      "fold_metrics": [
+        {
+          "accuracy": 0.8137996219281664,
+          "balanced_accuracy": 0.5649584076054665,
+          "brier_score": 0.12910694762319608,
+          "f1": 0.16170212765957448,
+          "fold": 1,
+          "pr_auc_average_precision": 0.10553765658753955,
+          "precision": 0.11377245508982035,
+          "recall": 0.27941176470588236,
+          "roc_auc": 0.6603535353535354,
+          "specificity": 0.8505050505050505
+        },
+        {
+          "accuracy": 0.8223062381852552,
+          "balanced_accuracy": 0.5813953488372093,
+          "brier_score": 0.12472467848550411,
+          "f1": 0.1826086956521739,
+          "fold": 2,
+          "pr_auc_average_precision": 0.10351974104893094,
+          "precision": 0.13043478260869565,
+          "recall": 0.30434782608695654,
+          "roc_auc": 0.6417989185387084,
+          "specificity": 0.8584428715874621
+        },
+        {
+          "accuracy": 0.8232514177693762,
+          "balanced_accuracy": 0.5616784630940344,
+          "brier_score": 0.12352432347446832,
+          "f1": 0.16143497757847533,
+          "fold": 3,
+          "pr_auc_average_precision": 0.10618590519917503,
+          "precision": 0.11688311688311688,
+          "recall": 0.2608695652173913,
+          "roc_auc": 0.6628566404361015,
+          "specificity": 0.8624873609706775
+        },
+        {
+          "accuracy": 0.826868495742668,
+          "balanced_accuracy": 0.5651133051805151,
+          "brier_score": 0.12194594754380086,
+          "f1": 0.1643835616438356,
+          "fold": 4,
+          "pr_auc_average_precision": 0.10317073653046471,
+          "precision": 0.11920529801324503,
+          "recall": 0.2647058823529412,
+          "roc_auc": 0.6834815321477428,
+          "specificity": 0.865520728008089
+        },
+        {
+          "accuracy": 0.8183538315988647,
+          "balanced_accuracy": 0.5194789746029858,
+          "brier_score": 0.12990293555178242,
+          "f1": 0.1111111111111111,
+          "fold": 5,
+          "pr_auc_average_precision": 0.08833342931052647,
+          "precision": 0.08108108108108109,
+          "recall": 0.17647058823529413,
+          "roc_auc": 0.5924061737940879,
+          "specificity": 0.8624873609706775
+        }
+      ],
+      "observed_positive_prevalence": 0.06467473524962178,
+      "oof_confusion_matrix": [
+        [
+          4253,
+          693
+        ],
+        [
+          254,
+          88
+        ]
+      ],
+      "oof_log_loss": 0.41356923660986145,
+      "oof_mean_score": 0.2227260340042117,
+      "oof_metrics": {
+        "accuracy": 0.8209152798789713,
+        "balanced_accuracy": 0.5585983593570798,
+        "brier_score": 0.1258409349642632,
+        "f1": 0.15672306322350846,
+        "pr_auc_average_precision": 0.09663310969324329,
+        "precision": 0.11267605633802817,
+        "recall": 0.2573099415204678,
+        "roc_auc": 0.6477314647313795,
+        "specificity": 0.8598867771936919
+      },
+      "threshold": 0.5
+    },
+    "feature_set": "minimal_no_glucose_4",
+    "features": [
+      "age",
+      "gender",
+      "bmi",
+      "family_diabetes"
+    ],
+    "model": "Random Forest (balanced)"
+  }
+]

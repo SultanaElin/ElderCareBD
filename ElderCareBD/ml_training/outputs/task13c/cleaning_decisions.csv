@@ -1,0 +1,13 @@
+pattern,count,classification,decision
+"explicit missing, blank, or non-finite values",0,clearly invalid if present,none present; no imputation is activated by the audited CSV
+age below 18 years,3150,valid pediatric age but outside adult/elderly scope,retain for source audit; exclude only by declared subgroup analysis
+diabetes=no with positive diabetes duration,9963,likely invalid paired history,retain in full research baseline; exclude duration from reduced contracts
+diabetes=yes with zero diabetes duration,358,unknown (new diagnosis possible),retain; do not invent duration
+diabetes duration greater than age,2498,clearly invalid,retain only to expose source quality; exclude duration from reduced contracts
+hypertension=no with positive hypertension duration,9879,likely invalid paired history,retain in full research baseline; exclude duration from reduced contracts
+hypertension=yes with zero hypertension duration,330,unknown (new diagnosis possible),retain; do not invent duration
+hypertension duration greater than age,2503,clearly invalid,retain only to expose source quality; exclude duration from reduced contracts
+No_Disease label with eGFR below 15,1491,clinically discordant; target semantics unknown,do not relabel or delete; treat as target-validity evidence
+Severe_Disease label with eGFR at least 90,103,discordant with any simple eGFR severity interpretation,do not relabel or delete; treat as target-validity evidence
+No_Disease label with serum creatinine above 10 mg/dl,5637,clinically discordant or unit/source error,do not relabel or delete; target and provenance are unverified
+all individually bounded numeric values,575064,mostly plausible ranges; distribution shape suspicious,"preserve exactly; no value clipping, row deletion, or cleaned copy"

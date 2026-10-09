@@ -1,0 +1,15 @@
+feature,available_in_diabd,currently_available_in_eldercarebd,caregiver_can_reasonably_provide,measurement_or_lab_requirement,deployment_decision
+age,yes,assessment/profile,easy,none,use
+gender,yes,profile Male/Female/Other,easy,self-report,use Female/Male only; Other/unknown must fall back
+pulse_rate,yes,absent,possible,pulse measurement,full baseline only
+systolic_bp,yes,assessment,reasonable,BP cuff,use
+diastolic_bp,yes,assessment,reasonable,BP cuff,use
+glucose,yes,generic integer plus paused OGTT field; neither is equivalent,possible,glucometer,use only as decimal random-session mmol/L with explicit context
+height,yes,assessment cm,reasonable,measurement,derive BMI only
+weight,yes,assessment kg,reasonable,measurement,derive BMI only
+bmi,yes,derived,easy,height and weight,use
+family_diabetes,yes,absent,reportable,history,exclude; sparse/inverse
+hypertensive,yes,profile history,reportable,diagnosis,exclude; timing/proxy leakage unresolved
+family_hypertension,yes,absent,reportable,history,exclude
+cardiovascular_disease,yes,heart history is not exact CVD,reportable,diagnosis,exclude; sparse/downstream risk
+stroke,yes,profile history,reportable,diagnosis,exclude; sparse/downstream

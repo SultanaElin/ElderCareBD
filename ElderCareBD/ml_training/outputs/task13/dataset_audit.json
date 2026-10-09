@@ -1,0 +1,199 @@
+{
+  "diabetes": {
+    "age_counts": {
+      "age_60_or_older": 32,
+      "age_65_or_older": 16
+    },
+    "bytes": 23873,
+    "class_distribution": {
+      "0": 500,
+      "1": 268
+    },
+    "columns": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "DiabetesPedigreeFunction",
+      "Age",
+      "Outcome"
+    ],
+    "disease": "diabetes",
+    "display_name": "Diabetes",
+    "distribution_url": "https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database",
+    "duplicate_predictor_rows": 0,
+    "exact_duplicate_rows": 0,
+    "explicit_missing_values": 0,
+    "invalid_zero_convention": {
+      "BMI": 11,
+      "BloodPressure": 35,
+      "Glucose": 5,
+      "Insulin": 374,
+      "SkinThickness": 227
+    },
+    "license_note": "The matching distribution page labels its copy CC0, but the repository does not include a provenance or license manifest tying that grant to these exact bytes.",
+    "local_path": "data/diabetes.csv",
+    "missing_value_convention": "No explicit null markers are present. Zero is an invalid/missing sentinel for Glucose, BloodPressure, SkinThickness, Insulin, and BMI; zero Pregnancies is valid. Sentinel conversion occurs inside the pipeline.",
+    "non_finite_values": 0,
+    "observed_ranges_after_zero_sentinel_exclusion": {
+      "Age": {
+        "maximum": 81,
+        "minimum": 21
+      },
+      "BMI": {
+        "maximum": 67.1,
+        "minimum": 18.2
+      },
+      "BloodPressure": {
+        "maximum": 122,
+        "minimum": 24
+      },
+      "DiabetesPedigreeFunction": {
+        "maximum": 2.42,
+        "minimum": 0.078
+      },
+      "Glucose": {
+        "maximum": 199,
+        "minimum": 44
+      },
+      "Insulin": {
+        "maximum": 846,
+        "minimum": 14
+      },
+      "Pregnancies": {
+        "maximum": 17,
+        "minimum": 0
+      },
+      "SkinThickness": {
+        "maximum": 99,
+        "minimum": 7
+      }
+    },
+    "population_and_generalizability": "All subjects were women at least 21 years old of Pima Indian heritage near Phoenix, Arizona. The data are not representative validation for Bangladeshi elders, men, or gender-diverse patients.",
+    "predictor_count": 8,
+    "rows": 768,
+    "rows_with_any_invalid_zero_full_contract": 376,
+    "rows_with_any_invalid_zero_selected_contract": 16,
+    "screening_only": true,
+    "sha256": "698C203A14AA31941D2251175330C9199F3CCDB31597ABBBA2A3E35416257A72",
+    "source_name": "Pima Indians Diabetes Database, originally owned by the US National Institute of Diabetes and Digestive and Kidney Diseases",
+    "source_note": "The repository does not record the download URL, license, or chain of custody. Identification is based on the exact conventional 768-row schema and the original study; no replacement dataset was downloaded.",
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2245318/",
+    "target": "Outcome",
+    "target_definition": "The commonly documented Pima benchmark outcome forecasts diabetes onset within five years under the source study's WHO-based criteria. Because the repository lacks a byte-level provenance manifest, this is retained as the source-label interpretation rather than asserted as a current clinical diagnosis.",
+    "target_mapping": {
+      "0": "no diabetes onset within the five-year study horizon",
+      "1": "diabetes onset within the five-year study horizon"
+    }
+  },
+  "heart": {
+    "age_counts": {
+      "age_60_or_older": 91,
+      "age_65_or_older": 41
+    },
+    "bytes": 11106,
+    "class_distribution": {
+      "0": 160,
+      "1": 137
+    },
+    "columns": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal",
+      "condition"
+    ],
+    "disease": "heart",
+    "display_name": "Heart Disease",
+    "distribution_url": "https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci/data",
+    "duplicate_predictor_rows": 0,
+    "exact_duplicate_rows": 0,
+    "explicit_missing_values": 0,
+    "invalid_zero_convention": {},
+    "license_note": "UCI publishes the upstream dataset under CC BY 4.0. The repository does not include a local provenance/license manifest for this transformed copy.",
+    "local_path": "data/heart_cleveland_upload.csv",
+    "missing_value_convention": "The 297-row derivative has no null or '?' markers. It is a complete-case transformation of the 303-row upstream Cleveland data, which does contain missing values.",
+    "non_finite_values": 0,
+    "observed_ranges_after_zero_sentinel_exclusion": {
+      "age": {
+        "maximum": 77,
+        "minimum": 29
+      },
+      "ca": {
+        "maximum": 3,
+        "minimum": 0
+      },
+      "chol": {
+        "maximum": 564,
+        "minimum": 126
+      },
+      "cp": {
+        "maximum": 3,
+        "minimum": 0
+      },
+      "exang": {
+        "maximum": 1,
+        "minimum": 0
+      },
+      "fbs": {
+        "maximum": 1,
+        "minimum": 0
+      },
+      "oldpeak": {
+        "maximum": 6.2,
+        "minimum": 0
+      },
+      "restecg": {
+        "maximum": 2,
+        "minimum": 0
+      },
+      "sex": {
+        "maximum": 1,
+        "minimum": 0
+      },
+      "slope": {
+        "maximum": 2,
+        "minimum": 0
+      },
+      "thal": {
+        "maximum": 2,
+        "minimum": 0
+      },
+      "thalach": {
+        "maximum": 202,
+        "minimum": 71
+      },
+      "trestbps": {
+        "maximum": 200,
+        "minimum": 94
+      }
+    },
+    "population_and_generalizability": "Historical Cleveland clinical/referral cases are not a Bangladeshi or elderly-community cohort; only a small minority of local rows are age 65 or older. The target denotes disease presence, not future event risk.",
+    "predictor_count": 13,
+    "rows": 297,
+    "rows_with_any_invalid_zero_full_contract": 0,
+    "rows_with_any_invalid_zero_selected_contract": 0,
+    "screening_only": true,
+    "sha256": "386015BE85BCC9112CBAC782DAFD145AEEF7ABD4F8B9F2EE65F6C4C56ED82D9F",
+    "source_name": "UCI Heart Disease, Cleveland processed-data derivative",
+    "source_note": "The local 297-row file appears to be the common complete-case, binary-target, zero-based recoding of the 303-row Cleveland dataset. The repo does not contain a provenance/transformation record, so this relationship is documented as an inference and the local file hash is authoritative.",
+    "source_url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+    "target": "condition",
+    "target_definition": "Binary recoding of the Cleveland diagnostic num target: 0 means no angiographic disease and 1 represents original values greater than zero.",
+    "target_mapping": {
+      "0": "no disease",
+      "1": "disease present"
+    }
+  }
+}

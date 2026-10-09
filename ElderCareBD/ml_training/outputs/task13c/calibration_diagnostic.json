@@ -1,0 +1,27 @@
+{
+  "bins": [
+    {
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "count": 10460,
+      "mean_score": 0.4827634150632061,
+      "observed_positive_fraction": 0.1956022944550669
+    },
+    {
+      "bin_lower": 0.5,
+      "bin_upper": 0.6000000000000001,
+      "count": 10078,
+      "mean_score": 0.516791738776152,
+      "observed_positive_fraction": 0.2044056360388966
+    }
+  ],
+  "brier_score": 0.24996163479672448,
+  "expected_calibration_error": 0.2995390235148113,
+  "interpretation": "Negative-control internal diagnostic only. Unverified labels make these scores unsuitable as personal kidney-disease probabilities.",
+  "method": "10 fixed-width bins",
+  "reference": {
+    "candidate": "logistic_regression_balanced",
+    "feature_set": "eldercare_non_lab_12",
+    "formulation": "binary_any_non_no_disease"
+  }
+}
